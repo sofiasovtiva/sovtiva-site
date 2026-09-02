@@ -3,20 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SOVTIVA | Practical Automation</title>
-  <meta name="description" content="SOVTIVA builds practical automations for spreadsheets, data, APIs and repetitive business workflows.">
+
+  <title>SOVTIVA | Automation, Data & Revenue Systems</title>
+
+  <meta
+    name="description"
+    content="SOVTIVA builds practical automation, data and revenue systems using Excel, Google Sheets, Python, APIs, AI and research."
+  >
+
   <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: #111;
       background: #f7f7f2;
       line-height: 1.5;
     }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
 
     nav {
       display: flex;
@@ -24,16 +45,35 @@
       justify-content: space-between;
       padding: 24px 0;
     }
-    .logo { font-weight: 900; letter-spacing: -0.05em; font-size: 22px; }
-    .navlinks { display: flex; align-items: center; gap: 24px; font-size: 14px; }
+
+    .logo {
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      font-size: 22px;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+    }
+
     .button {
       display: inline-block;
       padding: 14px 20px;
       border-radius: 10px;
       background: #111;
-      color: white;
+      color: #fff;
       font-weight: 700;
+      transition: transform .15s ease, opacity .15s ease;
     }
+
+    .button:hover {
+      transform: translateY(-1px);
+      opacity: .9;
+    }
+
     .button.alt {
       background: transparent;
       color: #111;
@@ -47,6 +87,7 @@
       gap: 70px;
       align-items: center;
     }
+
     .eyebrow {
       font-size: 12px;
       font-weight: 800;
@@ -54,6 +95,7 @@
       text-transform: uppercase;
       margin-bottom: 18px;
     }
+
     h1 {
       margin: 0;
       font-size: clamp(54px, 7vw, 94px);
@@ -61,13 +103,31 @@
       letter-spacing: -.07em;
       max-width: 760px;
     }
+
+    h2 {
+      font-size: clamp(38px, 5vw, 64px);
+      letter-spacing: -.055em;
+      line-height: 1;
+      margin: 0 0 36px;
+    }
+
+    h3 {
+      letter-spacing: -.025em;
+    }
+
     .hero p {
       font-size: 20px;
-      max-width: 650px;
+      max-width: 660px;
       margin: 28px 0;
       color: #4d4d49;
     }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
     .micro {
       margin-top: 18px;
       font-size: 13px;
@@ -79,13 +139,15 @@
       color: white;
       border-radius: 22px;
       padding: 28px;
-      box-shadow: 0 20px 60px rgba(0,0,0,.12);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .12);
     }
+
     .flowtop {
       color: #9d9d97;
       font-size: 13px;
       margin-bottom: 20px;
     }
+
     .step {
       padding: 15px 17px;
       border-radius: 12px;
@@ -95,8 +157,17 @@
       justify-content: space-between;
       gap: 15px;
     }
-    .check { color: #b9ff66; font-weight: 900; }
-    .arrow { text-align: center; color: #777; }
+
+    .check {
+      color: #b9ff66;
+      font-weight: 900;
+    }
+
+    .arrow {
+      text-align: center;
+      color: #777;
+    }
+
     .status {
       margin-top: 18px;
       padding-top: 18px;
@@ -105,20 +176,31 @@
       font-size: 13px;
     }
 
-    section { padding: 90px 0; border-top: 1px solid #deded7; }
-    h2 {
-      font-size: clamp(38px, 5vw, 64px);
-      letter-spacing: -.055em;
-      line-height: 1;
-      margin: 0 0 36px;
+    section {
+      padding: 90px 0;
+      border-top: 1px solid #deded7;
     }
 
-    .grid4, .grid3 {
+    .section-copy {
+      max-width: 650px;
+      color: #5d5d58;
+      font-size: 18px;
+      margin: -18px 0 38px;
+    }
+
+    .grid4,
+    .grid3 {
       display: grid;
       gap: 18px;
     }
-    .grid4 { grid-template-columns: repeat(4,1fr); }
-    .grid3 { grid-template-columns: repeat(3,1fr); }
+
+    .grid4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     .card {
       background: white;
@@ -126,21 +208,58 @@
       border-radius: 16px;
       padding: 26px;
     }
-    .card h3 { margin: 0 0 12px; font-size: 20px; }
-    .card p { margin: 0; color: #62625e; }
-    .tags { margin-top: 22px; font-size: 12px; color: #777; }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #62625e;
+    }
+
+    .tags {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .revenue {
+      background: #111;
+      color: white;
+    }
+
+    .revenue .section-copy {
+      color: #aaa;
+    }
+
+    .revenue .card {
+      background: #1b1b1b;
+      border-color: #303030;
+    }
+
+    .revenue .card p {
+      color: #b5b5b0;
+    }
+
+    .revenue .tags {
+      color: #b9ff66;
+    }
 
     .demo {
       background: #eaffd1;
       border-radius: 24px;
       padding: 40px;
     }
+
     .pipeline {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin: 26px 0;
     }
+
     .pill {
       background: white;
       border: 1px solid #cbd9bb;
@@ -149,10 +268,22 @@
       font-weight: 700;
       font-size: 13px;
     }
-    .demo small { color: #606b55; }
 
-    .price { font-size: 44px; font-weight: 900; letter-spacing: -.05em; }
-    .popular { border: 2px solid #111; }
+    .demo small {
+      color: #606b55;
+    }
+
+    .price {
+      font-size: 44px;
+      font-weight: 900;
+      letter-spacing: -.05em;
+      margin: 8px 0;
+    }
+
+    .popular {
+      border: 2px solid #111;
+    }
+
     .badge {
       display: inline-block;
       font-size: 11px;
@@ -163,12 +294,41 @@
       margin-bottom: 12px;
     }
 
+    .pricing-note {
+      margin-top: 24px;
+      color: #686863;
+      font-size: 14px;
+    }
+
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 35px;
+    }
+
+    .trust div {
+      border-top: 1px solid #c9c9c2;
+      padding-top: 14px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
     .final {
       text-align: center;
       padding: 120px 0;
     }
-    .final h2 { max-width: 800px; margin: 0 auto 24px; }
-    .final p { max-width: 620px; margin: 0 auto 28px; color: #595955; }
+
+    .final h2 {
+      max-width: 800px;
+      margin: 0 auto 24px;
+    }
+
+    .final p {
+      max-width: 620px;
+      margin: 0 auto 28px;
+      color: #595955;
+    }
 
     footer {
       border-top: 1px solid #deded7;
@@ -180,96 +340,290 @@
       gap: 20px;
     }
 
-    @media (max-width: 850px) {
-      .hero { grid-template-columns: 1fr; padding-top: 55px; }
-      .grid4, .grid3 { grid-template-columns: 1fr; }
-      .navlinks a:not(.button) { display: none; }
-      h1 { font-size: 58px; }
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 55px;
+      }
+
+      .grid4,
+      .grid3,
+      .trust {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .navlinks a:not(.button) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        width: min(100% - 28px, 1120px);
+      }
+
+      h1 {
+        font-size: 56px;
+      }
+
+      .hero {
+        gap: 45px;
+      }
+
+      .grid4,
+      .grid3,
+      .trust {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .demo {
+        padding: 28px;
+      }
+
+      footer {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="wrap">
     <nav>
       <div class="logo">SOVTIVA</div>
+
       <div class="navlinks">
         <a href="#work">Work</a>
         <a href="#services">Services</a>
+        <a href="#revenue">Revenue</a>
         <a href="#pricing">Pricing</a>
-        <a class="button" href="mailto:sofia.delgado@sovtiva.com?subject=Workflow%20automation">show us the workflow →</a>
+
+        <a
+          class="button"
+          href="mailto:sofia.delgado@sovtiva.com?subject=SOVTIVA%20project"
+        >
+          show us the problem →
+        </a>
       </div>
     </nav>
 
     <main class="hero">
       <div>
-        <div class="eyebrow">automation for work you keep doing by hand</div>
-        <h1>still doing this by hand?</h1>
-        <p>
-          SOVTIVA builds small, practical automations that clean data,
-          connect tools, update spreadsheets and remove repetitive work.
-        </p>
-        <div class="actions">
-          <a class="button" href="mailto:sofia.delgado@sovtiva.com?subject=Workflow%20automation">show us the workflow →</a>
-          <a class="button alt" href="#work">see a working example</a>
+        <div class="eyebrow">
+          practical systems for work that should be easier
         </div>
-        <div class="micro">Fixed scope · Clear price · You keep what we build</div>
+
+        <h1>still doing this by hand?</h1>
+
+        <p>
+          SOVTIVA builds automation, data and revenue systems that remove
+          repetitive work, clean up messy processes and help businesses
+          find and move opportunities faster.
+        </p>
+
+        <div class="actions">
+          <a
+            class="button"
+            href="mailto:sofia.delgado@sovtiva.com?subject=SOVTIVA%20project"
+          >
+            show us the problem →
+          </a>
+
+          <a class="button alt" href="#work">
+            see a working example
+          </a>
+        </div>
+
+        <div class="micro">
+          Fixed scope · Clear price · Practical builds · You keep what we build
+        </div>
       </div>
 
       <div class="flow">
-        <div class="flowtop">New form submission</div>
-        <div class="step"><span>Validate required fields</span><span class="check">✓</span></div>
+        <div class="flowtop">New record arrives</div>
+
+        <div class="step">
+          <span>Validate required fields</span>
+          <span class="check">✓</span>
+        </div>
+
         <div class="arrow">↓</div>
-        <div class="step"><span>Clean + format data</span><span class="check">✓</span></div>
+
+        <div class="step">
+          <span>Clean + structure data</span>
+          <span class="check">✓</span>
+        </div>
+
         <div class="arrow">↓</div>
-        <div class="step"><span>Transfer valid record</span><span class="check">✓</span></div>
+
+        <div class="step">
+          <span>Route it where it belongs</span>
+          <span class="check">✓</span>
+        </div>
+
         <div class="arrow">↓</div>
-        <div class="step"><span>Prevent duplicates</span><span class="check">✓</span></div>
+
+        <div class="step">
+          <span>Prevent duplicates</span>
+          <span class="check">✓</span>
+        </div>
+
         <div class="arrow">↓</div>
-        <div class="step"><span>Notify when conditions match</span><span class="check">✓</span></div>
-        <div class="status">● Processed automatically</div>
+
+        <div class="step">
+          <span>Trigger the next action</span>
+          <span class="check">✓</span>
+        </div>
+
+        <div class="status">
+          ● Processed automatically
+        </div>
       </div>
     </main>
   </div>
 
+
   <section id="services">
     <div class="wrap">
+
+      <div class="eyebrow">automation + data</div>
+
       <h2>boring work is usually very automatable.</h2>
 
+      <p class="section-copy">
+        We use the simplest tool that solves the problem. Sometimes that is
+        AI. Sometimes it is a spreadsheet, script or API connection.
+      </p>
+
       <div class="grid4">
+
         <div class="card">
           <h3>Spreadsheets that run themselves</h3>
-          <p>Validation, cleanup, formulas, reporting, transfers and alerts.</p>
-          <div class="tags">Excel · Google Sheets · Apps Script</div>
+          <p>
+            Validation, cleanup, formulas, reporting, transfers and alerts.
+          </p>
+          <div class="tags">
+            Excel · Google Sheets · Apps Script
+          </div>
         </div>
 
         <div class="card">
           <h3>Data without the cleanup headache</h3>
-          <p>CSV cleanup, deduplication, formatting and repeatable transformations.</p>
-          <div class="tags">Python · Excel · CSV</div>
+          <p>
+            CSV cleanup, deduplication, formatting, analysis and repeatable transformations.
+          </p>
+          <div class="tags">
+            Python · Excel · CSV
+          </div>
         </div>
 
         <div class="card">
           <h3>Tools that actually talk</h3>
-          <p>Move information between forms, spreadsheets, APIs and internal tools.</p>
-          <div class="tags">APIs · Webhooks · Automation</div>
+          <p>
+            Move information between forms, spreadsheets, APIs and internal tools.
+          </p>
+          <div class="tags">
+            APIs · Webhooks · Automation
+          </div>
         </div>
 
         <div class="card">
           <h3>AI where it makes sense</h3>
-          <p>Classification, extraction, drafting and decision steps inside real workflows.</p>
-          <div class="tags">OpenAI · Claude · LLM workflows</div>
+          <p>
+            Classification, extraction, drafting, research and decision steps inside real workflows.
+          </p>
+          <div class="tags">
+            OpenAI · Claude · LLM Workflows
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
+
+  <section id="revenue" class="revenue">
+    <div class="wrap">
+
+      <div class="eyebrow">revenue systems</div>
+
+      <h2>more pipeline. less busywork.</h2>
+
+      <p class="section-copy">
+        Research, prospecting and sales operations work better when the
+        data is clean, the targeting makes sense and the repetitive parts
+        stop eating people's time.
+      </p>
+
+      <div class="grid4">
+
+        <div class="card">
+          <h3>Lead + account research</h3>
+          <p>
+            Find and structure relevant companies, contacts, market signals
+            and buyer context.
+          </p>
+          <div class="tags">
+            Lead Research · Account Research · Market Signals
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Outbound systems</h3>
+          <p>
+            Build practical workflows for prospecting, personalization,
+            sequencing and follow-up.
+          </p>
+          <div class="tags">
+            Outbound · Email · Sales Workflows
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>CRM + pipeline</h3>
+          <p>
+            Clean sales data, organize handoffs and automate repetitive
+            pipeline work.
+          </p>
+          <div class="tags">
+            CRM · Pipeline · Sales Ops
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Research-backed prospecting</h3>
+          <p>
+            Use company, market and buyer research to make outreach less random
+            and more relevant.
+          </p>
+          <div class="tags">
+            Research · Lead Gen · GTM
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <section id="work">
     <div class="wrap">
+
       <div class="demo">
+
         <div class="eyebrow">real build</div>
+
         <h2>one spreadsheet. six manual steps gone.</h2>
-        <p>Our Google Sheets demonstration processes incoming records automatically.</p>
+
+        <p>
+          Our Google Sheets demonstration processes incoming records
+          automatically.
+        </p>
 
         <div class="pipeline">
           <span class="pill">Validate</span>
@@ -280,81 +634,153 @@
           <span class="pill">Log</span>
         </div>
 
-        <small>SOVTIVA demonstration project. Fictional sample data.</small>
+        <small>
+          SOVTIVA demonstration project. Fictional sample data.
+        </small>
+
       </div>
     </div>
   </section>
 
+
   <section>
     <div class="wrap">
+
       <h2>the smallest fix that solves the problem.</h2>
 
       <div class="grid4">
+
         <div class="card">
-          <h3>01 · show us what's manual</h3>
-          <p>Send the Sheet, file, workflow or annoying task someone keeps repeating.</p>
+          <h3>01 · show us what's happening</h3>
+          <p>
+            Send the Sheet, file, workflow, sales process or annoying task
+            someone keeps repeating.
+          </p>
         </div>
 
         <div class="card">
           <h3>02 · we cut the unnecessary stuff</h3>
-          <p>If a formula solves it, we won't sell you an AI agent.</p>
+          <p>
+            If a formula solves it, we won't sell you an AI agent.
+          </p>
         </div>
 
         <div class="card">
-          <h3>03 · we build + break it</h3>
-          <p>We test normal cases, bad data, duplicates and errors.</p>
+          <h3>03 · we build + test it</h3>
+          <p>
+            We test normal cases, bad data, duplicates, edge cases and errors.
+          </p>
         </div>
 
         <div class="card">
-          <h3>04 · you get it working</h3>
-          <p>The automation, setup and simple handoff. No mystery dependency.</p>
+          <h3>04 · you get something usable</h3>
+          <p>
+            The system, setup and clear handoff. No mystery dependency on us.
+          </p>
         </div>
+
       </div>
+
+      <div class="trust">
+        <div>Clear scope</div>
+        <div>Tested before delivery</div>
+        <div>No unnecessary rebuilds</div>
+        <div>Your system stays yours</div>
+      </div>
+
     </div>
   </section>
 
+
   <section id="pricing">
     <div class="wrap">
+
+      <div class="eyebrow">starting points</div>
+
       <h2>start small.</h2>
 
       <div class="grid3">
+
         <div class="card">
           <h3>Small fix</h3>
           <div class="price">from $49</div>
-          <p>One contained spreadsheet, data or automation problem.</p>
+          <p>
+            One contained spreadsheet, data, research or automation problem.
+          </p>
         </div>
 
         <div class="card popular">
           <div class="badge">MOST COMMON</div>
-          <h3>Workflow automation</h3>
+          <h3>Workflow system</h3>
           <div class="price">from $99</div>
-          <p>A complete small workflow with triggers, logic, cleanup and error handling.</p>
+          <p>
+            A complete small workflow with logic, cleanup, triggers,
+            research or handoffs.
+          </p>
         </div>
 
         <div class="card">
-          <h3>Connected workflow</h3>
+          <h3>Connected system</h3>
           <div class="price">from $199</div>
-          <p>When the process needs an API, webhook or another system involved.</p>
+          <p>
+            When the process needs APIs, multiple tools, custom logic
+            or a broader revenue workflow.
+          </p>
         </div>
+
       </div>
+
+      <div class="pricing-note">
+        Bigger automation, research or revenue project? We scope it first and
+        give you the number before we start.
+      </div>
+
     </div>
   </section>
 
+
   <div class="wrap final">
+
+    <div class="eyebrow">your turn</div>
+
     <h2>what are you still doing manually?</h2>
+
     <p>
-      Send us the ugly version. Spreadsheet, screenshots, current process,
-      half-working script. All good.
+      Send us the ugly version. Spreadsheet, screenshots, lead list,
+      sales process, current workflow, half-working script. All good.
     </p>
-    <a class="button" href="mailto:sofia.delgado@sovtiva.com?subject=Workflow%20automation">show us the workflow →</a>
+
+    <a
+      class="button"
+      href="mailto:sofia.delgado@sovtiva.com?subject=SOVTIVA%20project"
+    >
+      show us the problem →
+    </a>
+
   </div>
+
 
   <div class="wrap">
     <footer>
-      <div><strong>SOVTIVA</strong><br>Practical automation for repetitive work.</div>
-      <div>Mexico City · Remote worldwide<br>sofia.delgado@sovtiva.com</div>
-      <div>© 2026 SOVTIVA</div>
+
+      <div>
+        <strong>SOVTIVA</strong>
+        <br>
+        Automation, data and revenue systems.
+      </div>
+
+      <div>
+        Mexico City · Remote worldwide
+        <br>
+        sofia.delgado@sovtiva.com
+      </div>
+
+      <div>
+        © 2026 SOVTIVA
+      </div>
+
     </footer>
   </div>
+
 </body>
 </html>

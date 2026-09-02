@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOVTIVA | Practical Automation</title>
+  <meta name="description" content="SOVTIVA builds practical automations for spreadsheets, data, APIs and repetitive business workflows.">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #111;
+      background: #f7f7f2;
+      line-height: 1.5;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0;
+    }
+    .logo { font-weight: 900; letter-spacing: -0.05em; font-size: 22px; }
+    .navlinks { display: flex; align-items: center; gap: 24px; font-size: 14px; }
+    .button {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 10px;
+      background: #111;
+      color: white;
+      font-weight: 700;
+    }
+    .button.alt {
+      background: transparent;
+      color: #111;
+      border: 1px solid #cfcfc8;
+    }
+
+    .hero {
+      padding: 85px 0 100px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 70px;
+      align-items: center;
+    }
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(54px, 7vw, 94px);
+      line-height: .92;
+      letter-spacing: -.07em;
+      max-width: 760px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 650px;
+      margin: 28px 0;
+      color: #4d4d49;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .micro {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #70706c;
+    }
+
+    .flow {
+      background: #111;
+      color: white;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.12);
+    }
+    .flowtop {
+      color: #9d9d97;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .step {
+      padding: 15px 17px;
+      border-radius: 12px;
+      background: #1e1e1e;
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    .check { color: #b9ff66; font-weight: 900; }
+    .arrow { text-align: center; color: #777; }
+    .status {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid #333;
+      color: #b9ff66;
+      font-size: 13px;
+    }
+
+    section { padding: 90px 0; border-top: 1px solid #deded7; }
+    h2 {
+      font-size: clamp(38px, 5vw, 64px);
+      letter-spacing: -.055em;
+      line-height: 1;
+      margin: 0 0 36px;
+    }
+
+    .grid4, .grid3 {
+      display: grid;
+      gap: 18px;
+    }
+    .grid4 { grid-template-columns: repeat(4,1fr); }
+    .grid3 { grid-template-columns: repeat(3,1fr); }
+
+    .card {
+      background: white;
+      border: 1px solid #dfdfd9;
+      border-radius: 16px;
+      padding: 26px;
+    }
+    .card h3 { margin: 0 0 12px; font-size: 20px; }
+    .card p { margin: 0; color: #62625e; }
+    .tags { margin-top: 22px; font-size: 12px; color: #777; }
+
+    .demo {
+      background: #eaffd1;
+      border-radius: 24px;
+      padding: 40px;
+    }
+    .pipeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 26px 0;
+    }
+    .pill {
+      background: white;
+      border: 1px solid #cbd9bb;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .demo small { color: #606b55; }
+
+    .price { font-size: 44px; font-weight: 900; letter-spacing: -.05em; }
+    .popular { border: 2px solid #111; }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      background: #b9ff66;
+      padding: 5px 8px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .final {
+      text-align: center;
+      padding: 120px 0;
+    }
+    .final h2 { max-width: 800px; margin: 0 auto 24px; }
+    .final p { max-width: 620px; margin: 0 auto 28px; color: #595955; }
+
+    footer {
+      border-top: 1px solid #deded7;
+      padding: 30px 0 50px;
+      color: #666;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; padding-top: 55px; }
+      .grid4, .grid3 { grid-template-columns: 1fr; }
+      .navlinks a:not(.button) { display: none; }
+      h1 { font-size: 58px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">SOVTIVA</div>
+      <div class="navlinks">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a class="button" href="mailto:sofia.delgado@sovtiva.com?subject=Workflow%20automation">show us the workflow →</a>
+      </div>
+    </nav>
+
+    <main class="hero">
+      <div>
+        <div class="eyebrow">automation for work you keep doing by hand</div>
+        <h1>still doing this by hand?</h1>
+        <p>
+          SOVTIVA builds small, practical automations that clean data,
+          connect tools, update spreadsheets and remove repetitive work.
+        </p>
+        <div class="actions">
+          <a class="button" href="mailto:sofia.delgado@sovtiva.com?subject=Workflow%20automation">show us the workflow →</a>
+          <a class="button alt" href="#work">see a working example</a>
+        </div>
+        <div class="micro">Fixed scope · Clear price · You keep what we build</div>
+      </div>
+
+      <div class="flow">
+        <div class="flowtop">New form submission</div>
+        <div class="step"><span>Validate required fields</span><span class="check">✓</span></div>
+        <div class="arrow">↓</div>
+        <div class="step"><span>Clean + format data</span><span class="check">✓</span></div>
+        <div class="arrow">↓</div>
+        <div class="step"><span>Transfer valid record</span><span class="check">✓</span></div>
+        <div class="arrow">↓</div>
+        <div class="step"><span>Prevent duplicates</span><span class="check">✓</span></div>
+        <div class="arrow">↓</div>
+        <div class="step"><span>Notify when conditions match</span><span class="check">✓</span></div>
+        <div class="status">● Processed automatically</div>
+      </div>
+    </main>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>boring work is usually very automatable.</h2>
+
+      <div class="grid4">
+        <div class="card">
+          <h3>Spreadsheets that run themselves</h3>
+          <p>Validation, cleanup, formulas, reporting, transfers and alerts.</p>
+          <div class="tags">Excel · Google Sheets · Apps Script</div>
+        </div>
+
+        <div class="card">
+          <h3>Data without the cleanup headache</h3>
+          <p>CSV cleanup, deduplication, formatting and repeatable transformations.</p>
+          <div class="tags">Python · Excel · CSV</div>
+        </div>
+
+        <div class="card">
+          <h3>Tools that actually talk</h3>
+          <p>Move information between forms, spreadsheets, APIs and internal tools.</p>
+          <div class="tags">APIs · Webhooks · Automation</div>
+        </div>
+
+        <div class="card">
+          <h3>AI where it makes sense</h3>
+          <p>Classification, extraction, drafting and decision steps inside real workflows.</p>
+          <div class="tags">OpenAI · Claude · LLM workflows</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="demo">
+        <div class="eyebrow">real build</div>
+        <h2>one spreadsheet. six manual steps gone.</h2>
+        <p>Our Google Sheets demonstration processes incoming records automatically.</p>
+
+        <div class="pipeline">
+          <span class="pill">Validate</span>
+          <span class="pill">Clean</span>
+          <span class="pill">Transfer</span>
+          <span class="pill">Deduplicate</span>
+          <span class="pill">Notify</span>
+          <span class="pill">Log</span>
+        </div>
+
+        <small>SOVTIVA demonstration project. Fictional sample data.</small>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>the smallest fix that solves the problem.</h2>
+
+      <div class="grid4">
+        <div class="card">
+          <h3>01 · show us what's manual</h3>
+          <p>Send the Sheet, file, workflow or annoying task someone keeps repeating.</p>
+        </div>
+
+        <div class="card">
+          <h3>02 · we cut the unnecessary stuff</h3>
+          <p>If a formula solves it, we won't sell you an AI agent.</p>
+        </div>
+
+        <div class="card">
+          <h3>03 · we build + break it</h3>
+          <p>We test normal cases, bad data, duplicates and errors.</p>
+        </div>
+
+        <div class="card">
+          <h3>04 · you get it working</h3>
+          <p>The automation, setup and simple handoff. No mystery dependency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <h2>start small.</h2>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Small fix</h3>
+          <div class="price">from $49</div>
+          <p>One contained spreadsheet, data or automation problem.</p>
+        </div>
+
+        <div class="card popular">
+          <div class="badge">MOST COMMON</div>
+          <h3>Workflow automation</h3>
+          <div class="price">from $99</div>
+          <p>A complete small workflow with triggers, logic, cleanup and error handling.</p>
+        </div>
+
+        <div class="card">
+          <h3>Connected workflow</h3>
+          <div class="price">from $199</div>
+          <p>When the process needs an API, webhook or another system involved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap final">
+    <h2>what are you still doing manually?</h2>
+    <p>
+      Send us the ugly version. Spreadsheet, screenshots, current process,
+      half-working script. All good.
+    </p>
+    <a class="button" href="mailto:sofia.delgado@sovtiva.com?subject=Workflow%20automation">show us the workflow →</a>
+  </div>
+
+  <div class="wrap">
+    <footer>
+      <div><strong>SOVTIVA</strong><br>Practical automation for repetitive work.</div>
+      <div>Mexico City · Remote worldwide<br>sofia.delgado@sovtiva.com</div>
+      <div>© 2026 SOVTIVA</div>
+    </footer>
+  </div>
+</body>
+</html>

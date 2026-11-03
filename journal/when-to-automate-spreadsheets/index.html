@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical seven-question test for deciding whether a recurring spreadsheet workflow should be automated, simplified or left alone.">
+  <meta property="og:type" content="article"><meta property="og:title" content="Should this spreadsheet be automated? | SOVTIVA"><meta property="og:description" content="Seven questions to ask before writing code or connecting tools."><meta property="og:url" content="https://sovtiva.com/journal/when-to-automate-spreadsheets/">
+  <link rel="canonical" href="https://sovtiva.com/journal/when-to-automate-spreadsheets/"><link rel="alternate" type="application/rss+xml" title="SOVTIVA Journal RSS" href="https://sovtiva.com/feed.xml"><link rel="stylesheet" href="/journal/styles.css">
+  <title>Should This Spreadsheet Be Automated? | SOVTIVA Journal</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Should this spreadsheet be automated?","description":"A practical seven-question test for deciding whether a recurring spreadsheet workflow should be automated.","url":"https://sovtiva.com/journal/when-to-automate-spreadsheets/","author":{"@type":"Organization","name":"SOVTIVA"},"publisher":{"@type":"Organization","name":"SOVTIVA","url":"https://sovtiva.com/"},"mainEntityOfPage":"https://sovtiva.com/journal/when-to-automate-spreadsheets/"}</script>
+</head>
+<body>
+  <header class="topbar"><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="/">SOVTIVA</a><div class="navlinks"><a href="/">Home</a><a href="/journal/">Journal</a><a class="btn" href="mailto:sofia.delgado@sovtiva.com?subject=Spreadsheet%20workflow%20inquiry">Talk to us ↗</a></div></nav></header>
+  <main class="wrap"><article class="article">
+    <a class="back" href="/journal/">← Back to the Journal</a>
+    <div class="eyebrow" style="margin-top:48px">Automation · Field guide</div>
+    <h1>Should this spreadsheet be automated?</h1>
+    <p class="dek">Not every repetitive spreadsheet deserves a script. Some need a cleaner process. Some need a better template. A few really do need automation.</p>
+    <p>The useful question is not “Can we automate it?” Almost anything can be stitched together with enough time. The better question is: “What will still work when the person who built this is on vacation?”</p>
+    <p>Here is the seven-question test we use to think through that decision.</p>
+    <h2>1. Does the work happen the same way twice?</h2>
+    <p>Automation needs a recognizable pattern. If every run follows a different set of undocumented judgments, record the decisions first. A three-minute checklist may do more good than a brittle integration.</p>
+    <h2>2. What triggers the work?</h2>
+    <p>Be specific: a new row, a weekly export, a form submission, a closed deal, or a message from a customer. “Whenever someone remembers” is a process problem, not a technical trigger.</p>
+    <h2>3. Where does the source data actually live?</h2>
+    <p>A spreadsheet may be the visible work surface while the real source is a CRM, inbox or vendor portal. Identify which system owns each field. Otherwise the automation can make conflicting copies faster.</p>
+    <h2>4. Which exceptions matter?</h2>
+    <p>List the strange cases: empty IDs, duplicate records, mixed currencies, bad dates and requests that must go to a human. A useful workflow catches those cases and says what happened. A dangerous one silently skips them.</p>
+    <h2>5. What should the result look like?</h2>
+    <p>Define the output before the build. One clean report? Updated CRM fields? A notification with the records that failed? If success is not observable, nobody will know whether the automation helped.</p>
+    <h2>6. How much time or risk does it remove?</h2>
+    <p>Estimate honestly: runs per month × minutes per run, plus the cost of errors or delays. Compare that against build, review and maintenance effort. A task repeated four times a year may be easier to document and leave manual.</p>
+    <h2>7. Who owns it after launch?</h2>
+    <p>Choose an owner, a place to see failures and a way to stop or fix the workflow. “It runs automatically” is not an ownership plan.</p>
+    <div class="example"><div class="eyebrow">A simple example</div>
+      <p><strong>Before:</strong> Every Monday, someone downloads three exports, copies values between tabs, removes duplicates and emails a summary.</p>
+      <p><strong>Possible first improvement:</strong> Agree on stable source files and column names, define duplicate rules, then build one repeatable consolidation step with an exception report. The email can come later.</p>
+      <p><strong>Why this order:</strong> It makes the data reliable before adding another moving part.</p>
+    </div>
+    <h2>What to do with the answers</h2>
+    <ul>
+      <li><strong>Stable inputs, rules and outputs:</strong> a small automation is worth scoping.</li>
+      <li><strong>Unclear rules or inconsistent data:</strong> simplify and document first.</li>
+      <li><strong>Rare task with low downside:</strong> a better template might be enough.</li>
+    </ul>
+    <blockquote>Automate the decision you understand. Fix the decision you don't.</blockquote>
+    <div class="endnote"><h3>Have an ugly workflow?</h3><p>A screenshot, sample spreadsheet and five sentences about what goes wrong are enough to start a useful conversation.</p><p><a class="btn" href="mailto:sofia.delgado@sovtiva.com?subject=SOVTIVA%20spreadsheet%20workflow">Show us the workflow ↗</a></p><p class="small">SOVTIVA builds practical automation, data and revenue systems. This article is general guidance, not a claim that any particular workflow has been tested.</p></div>
+  </article></main>
+  <div class="wrap"><footer><div><strong>SOVTIVA</strong><br>Automation, data and revenue systems.</div><div><a href="/journal/">More field notes</a> · <a href="/feed.xml">RSS</a></div><div>© 2026 SOVTIVA</div></footer></div>
+</body>
+</html>

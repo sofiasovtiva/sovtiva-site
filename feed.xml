@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SOVTIVA Journal</title>
+    <link>https://sovtiva.com/journal/</link>
+    <description>Practical notes on automation, data quality, revenue systems, and partnerships.</description>
+    <language>en</language>
+    <atom:link href="https://sovtiva.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Should this spreadsheet be automated?</title>
+      <link>https://sovtiva.com/journal/when-to-automate-spreadsheets/</link>
+      <guid isPermaLink="true">https://sovtiva.com/journal/when-to-automate-spreadsheets/</guid>
+      <description>Seven questions that help distinguish a real automation opportunity from a process that needs cleaning up first.</description>
+    </item>
+    <item>
+      <title>What a research-ready prospect list actually needs.</title>
+      <link>https://sovtiva.com/journal/research-ready-prospect-list/</link>
+      <guid isPermaLink="true">https://sovtiva.com/journal/research-ready-prospect-list/</guid>
+      <description>Identity, role, relevance, data provenance and contact rules that make a B2B research list usable.</description>
+    </item>
+    <item>
+      <title>How we cover partner solutions.</title>
+      <link>https://sovtiva.com/journal/partner-notes/</link>
+      <guid isPermaLink="true">https://sovtiva.com/journal/partner-notes/</guid>
+      <description>Editorial standards for accurate product information, practical recommendations and commercial relationship disclosure.</description>
+    </item>
+  </channel>
+</rss>

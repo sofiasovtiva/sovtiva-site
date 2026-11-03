@@ -68,3 +68,25 @@ footer a { text-decoration: none; }
 }
 /* Editorial expression of the SOVTIVA palette. */
 body{background:#eee4d6;color:#20251f}.topbar{background:#111619;color:#f2e9dc}.brand{color:#f2e9dc}.btn{background:#c5dce9;color:#111619}.btn:hover{background:#e3f0f7}.accent{background:#c5dce9}.card.feature{background:#c5dce9;border-color:#c5dce9}.card.feature p,.card.feature .meta{color:#425a64}.card{background:#f8f1e8;border-color:#d8c9bd}.note-panel{background:#702e44;color:#f8ebe0}.note-panel a{color:#c5dce9}.article blockquote{background:#d5dcbf;border-color:#758565}.article .example{background:#f8f1e8;border-color:#d8c9bd}
+
+/* Warm editorial palette shared with the main website */
+body{background:#eee5d7;color:#292e26}
+.topbar{background:#171a16;color:#f4ecdf;border-color:#43493f}
+.brand{color:#f3e8d5}
+.btn{background:#e7d8c2;color:#252922;border-radius:18px}
+.btn:hover{background:#cfd8c8}
+a:focus-visible{outline:3px solid #afc6d3;outline-offset:4px}
+.hero{border-color:#d9cdbb}
+.hero p,.section-head p{color:#676e61}
+.accent{background:#c8d0b8}
+.card{background:#faf3e7;border:1px solid #ddd0bf;border-radius:10px}
+.card.feature{background:#d4dbc9;border-color:#d4dbc9}
+.card.feature .meta,.card.feature p{color:#465442}
+.card .meta{color:#69705f}
+.card p{color:#62695e}
+.note-panel{background:#6b3d43;border-radius:12px}
+.note-panel a{color:#f5e0c0}
+.article .dek{color:#566051}
+.article blockquote{background:#dce1d3;border-color:#67785c}
+.article .example{background:#faf3e7;border-color:#ded1c2}
+footer{border-color:#d9cdbb;color:#6e7268}

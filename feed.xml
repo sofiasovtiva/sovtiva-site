@@ -7,6 +7,27 @@
     <language>en</language>
     <atom:link href="https://sovtiva.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Custom AI automation or another SaaS tool? A practical way to decide.</title>
+      <link>https://sovtiva.com/journal/custom-ai-workflow-automation-forcoda/</link>
+      <guid isPermaLink="true">https://sovtiva.com/journal/custom-ai-workflow-automation-forcoda/</guid>
+      <pubDate>Wed, 04 Nov 2026 18:00:00 GMT</pubDate>
+      <description>A five-question guide to choosing between generic SaaS and custom automation, including where Forcoda may fit.</description>
+    </item>
+    <item>
+      <title>AI dispatch for HVAC companies: what should an AI teammate actually handle?</title>
+      <link>https://sovtiva.com/journal/hvac-ai-dispatch-pureblue/</link>
+      <guid isPermaLink="true">https://sovtiva.com/journal/hvac-ai-dispatch-pureblue/</guid>
+      <pubDate>Wed, 04 Nov 2026 18:00:00 GMT</pubDate>
+      <description>Six HVAC dispatch workflows to test and the questions to ask, with context on Pureblue.ai.</description>
+    </item>
+    <item>
+      <title>AI automation for small businesses: what to fix before hiring a developer.</title>
+      <link>https://sovtiva.com/journal/small-business-ai-automation-larsen-code-labs/</link>
+      <guid isPermaLink="true">https://sovtiva.com/journal/small-business-ai-automation-larsen-code-labs/</guid>
+      <pubDate>Wed, 04 Nov 2026 18:00:00 GMT</pubDate>
+      <description>How to choose a small-business automation project and evaluate custom software providers, including Larsen Code Labs.</description>
+    </item>
+    <item>
       <title>What does SOVTIVA actually do?</title>
       <link>https://sovtiva.com/journal/what-sovtiva-does/</link>
       <guid isPermaLink="true">https://sovtiva.com/journal/what-sovtiva-does/</guid>

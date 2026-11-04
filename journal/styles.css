@@ -91,3 +91,12 @@ a:focus-visible{outline:3px solid #6cafbc;outline-offset:4px}
 .article blockquote{background:#e1e9e3;border-color:#718a78}
 .article .example{background:#fafbf8;border-color:#d4e1dd}
 footer{border-color:#d0dbd9;color:#6b858c}
+
+/* Partner editorial: visible disclosure and intentional introduction path */
+.editorial-disclosure{background:#d8e8eb;border-left:4px solid #5a97a8;padding:18px 22px;margin:0 0 40px;border-radius:0 10px 10px 0;color:#28434d;font-size:15px;line-height:1.6}
+.article .endnote{background:#e1ebe9;border:1px solid #c4d8d5;border-radius:14px;padding:30px;margin-top:55px}
+.article .endnote h2{margin:0 0 15px;font-size:clamp(28px,4vw,36px)}
+.article .endnote p{margin:14px 0;font-size:16px}
+.article .endnote .small{font-size:13px;line-height:1.6;color:#51676d}
+.article .endnote a:not(.btn){text-underline-offset:4px}
+@media(max-width:720px){.editorial-disclosure{padding:16px}.article .endnote{padding:22px}}

@@ -18,7 +18,7 @@
 .contact-direct{font-size:13px!important;margin-top:18px!important;color:#e1d4d6!important}
 .contact-direct a{color:#fff;text-underline-offset:4px}
 
-/* Dedicated lead-in page: two fields, clear expectations, no tracking scripts. */
+/* Dedicated lead-in page: a short request form with clear expectations. */
 .review-page{background:#12232a;color:#f5f2e8}
 .review-page .site-header{background:#12232a}
 .review-page .primary-nav .nav-cta{background:#dce9df;color:#17323a}
@@ -41,12 +41,20 @@
 .review-form{display:grid;gap:13px}
 .review-form label{display:block;font-size:13px;font-weight:800;letter-spacing:-.01em;margin-top:7px}
 .review-form label small{font-weight:500;color:#75868a}
-.review-form select,.review-form textarea{display:block;width:100%;font:inherit;font-size:14px;color:#173139;background:#fff;border:1px solid #bcccca;border-radius:6px;padding:13px 14px;line-height:1.5;transition:border-color .2s,box-shadow .2s}
-.review-form select:focus-visible,.review-form textarea:focus-visible{outline:0;border-color:#557c87;box-shadow:0 0 0 3px #83b5bd55}
+.review-form input:not([type="checkbox"]),.review-form select,.review-form textarea{display:block;width:100%;font:inherit;font-size:14px;color:#173139;background:#fff;border:1px solid #bcccca;border-radius:6px;padding:13px 14px;line-height:1.5;transition:border-color .2s,box-shadow .2s}
+.review-form input:focus-visible,.review-form select:focus-visible,.review-form textarea:focus-visible{outline:0;border-color:#557c87;box-shadow:0 0 0 3px #83b5bd55}
 .review-form textarea{min-height:123px;resize:vertical}
+.review-form .review-consent{display:flex;align-items:flex-start;gap:9px;font-size:12px;line-height:1.5;font-weight:500;color:#526b6d;margin:3px 0 0}
+.review-consent input{width:17px;height:17px;flex:none;accent-color:#193e47;margin:1px 0 0}
+.review-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .review-form .review-submit{appearance:none;border:0;border-radius:999px;background:#193e47;color:#fff;font:inherit;font-size:14px;font-weight:800;padding:16px 22px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:9px;transition:background .2s,transform .2s}
 .review-form .review-submit:hover,.review-form .review-submit:focus-visible{background:#684a55;transform:translateY(-2px)}
+.review-form .review-submit:disabled{opacity:.65;cursor:wait;transform:none}
 .review-form-note{font-size:11px!important;line-height:1.65!important;color:#6e7e7c!important;margin:0!important}
+.review-status{padding:12px 14px;border-radius:6px;background:#e0e9e6;color:#294a4c;font-size:13px;line-height:1.5;margin:0}
+.review-status-success{background:#d9ead8;color:#214e33}
+.review-status-error{background:#f4e4e1;color:#803d3e}
+.review-status[hidden]{display:none}
 .review-fallback{background:#e3eae7;border:1px solid #bbcfc9;padding:16px;border-radius:7px;margin-top:7px}
 .review-fallback p{font-size:12px;line-height:1.5;margin:0 0 11px}
 .review-fallback textarea{min-height:160px;background:#fff}

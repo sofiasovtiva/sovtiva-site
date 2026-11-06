@@ -1,6 +1,7 @@
 /* Three buyer-focused paths. Shares the current SOVTIVA type and palette. */
 .offer-page{background:#f1f1ea;color:#19313a}
 .offer-page .site-header{background:#10242b}
+.offer-page .site-header .wordmark{color:#f6f3e9}
 .offer-page .primary-nav .nav-cta{background:#d9e9df;color:#172f35}
 .offer-hero{position:relative;overflow:hidden;background:#10242b;color:#f6f3e9;padding:100px 0 104px}
 .offer-hero:before{content:"";position:absolute;width:min(64vw,750px);aspect-ratio:1;border:1px solid #bdd9dd20;box-shadow:0 0 0 105px #bdd9dd08,0 0 0 210px #bdd9dd05;border-radius:50%;right:-19%;top:-35%;pointer-events:none}
@@ -8,7 +9,7 @@
 .offer-kicker{font-size:11px;font-weight:800;letter-spacing:.19em;color:#a8d0d7;text-transform:uppercase;margin:0 0 27px}
 .offer-hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(270px,.7fr);gap:8vw;align-items:end}
 .offer-hero h1{font-size:clamp(54px,6vw,94px);line-height:.99;letter-spacing:-.07em;max-width:970px;margin:0 0 24px}
-.offer-hero h1 em{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;color:#bce0e2}
+.offer-hero h1 em{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;color:#bce0e2;margin-left:.09em}
 .offer-hero-lede{font-size:clamp(17px,1.4vw,20px);line-height:1.65;max-width:700px;color:#c6d8d7;margin:0}
 .offer-hero-aside{border-top:1px solid #8eb0b2;padding-top:22px}
 .offer-hero-aside span{font-size:10px;font-weight:800;letter-spacing:.15em;color:#a8d0d7}
@@ -44,7 +45,7 @@
 .offer-related-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
 .offer-related-links a{border:1px solid #a7858e;color:#fff;text-decoration:none;border-radius:999px;padding:13px 20px;font-size:13px;font-weight:700}
 .offer-related-links a:hover{background:#ffffff1a}
-.offer-page .site-footer{background:#10242b}
+.offer-page .site-footer{background:#10242b;color:#f6f3e9}
 @media(max-width:900px){.offer-hero-grid,.offer-heading,.offer-process-grid,.offer-faq-grid{grid-template-columns:1fr;gap:34px}.offer-hero{padding:75px 0 83px}.offer-hero-aside{max-width:630px}.offer-cases{grid-template-columns:1fr;gap:12px}.offer-case h3{margin-top:18px}.offer-intro{padding:75px 0 40px}.offer-cases{padding-bottom:75px}}
 @media(max-width:600px){.offer-hero h1{font-size:clamp(49px,12vw,75px)}.offer-process,.offer-faq{padding:75px 0}.offer-related{padding:70px 0}.offer-case{padding:27px}.offer-process-list li{grid-template-columns:40px 1fr}}
 @media(prefers-reduced-motion:reduce){.offer-primary{transition:none}}

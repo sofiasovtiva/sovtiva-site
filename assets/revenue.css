@@ -1,0 +1,72 @@
+/* Focused, no-cost conversion path for the existing SOVTIVA identity. */
+.review-hero-cta{display:flex;align-items:center;flex-wrap:wrap;gap:13px 18px;margin-top:23px}
+.review-hero-cta .review-hero-link{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:#c5e8ed;color:#10272f!important;font-size:14px;font-weight:800;letter-spacing:-.02em;text-decoration:none;padding:14px 21px;border-radius:999px;transition:background .2s,transform .2s}
+.review-hero-cta .review-hero-link:hover,.review-hero-cta .review-hero-link:focus-visible{background:#f4f4e8;transform:translateY(-2px)}
+.review-hero-cta>span{max-width:240px;color:#9cb2b8;font-size:12px;line-height:1.5}
+.review-spotlight{position:relative;background:#dae8df;color:#173035;overflow:hidden;padding:95px 0 105px}
+.review-spotlight:before{content:"";position:absolute;right:-7%;bottom:-55%;width:min(70vw,820px);aspect-ratio:1;border:1px solid #4c717233;border-radius:50%;box-shadow:0 0 0 110px #4c717210,0 0 0 215px #4c71720a;pointer-events:none}
+.review-spotlight-layout{position:relative;display:grid;grid-template-columns:minmax(170px,1fr) minmax(0,2.35fr);gap:8vw}
+.review-spotlight-label{display:flex;align-items:flex-start;gap:20px;font-size:10px;line-height:1.8;font-weight:800;letter-spacing:.17em;color:#42685f}
+.review-asterisk{font-size:54px;line-height:.7;font-weight:400;color:#6a836d}
+.review-spotlight-main h2{max-width:900px;margin:-10px 0 22px;font-size:clamp(44px,5.5vw,82px);line-height:1.02;letter-spacing:-.07em;font-weight:700}
+.review-spotlight-main h2 em{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;color:#71525d;letter-spacing:-.05em}
+.review-spotlight-main p{max-width:670px;margin:0;font-size:clamp(15px,1.5vw,19px);line-height:1.65;color:#48656b}
+.review-spotlight-actions{display:flex;align-items:center;gap:23px;flex-wrap:wrap;margin-top:32px}
+.review-spotlight-actions .button{background:#17343a;color:#f4f4eb;border-radius:999px;white-space:normal}
+.review-spotlight-actions .button:hover{background:#5a3f4a;color:#fff}
+.review-spotlight-actions>span{max-width:220px;font-size:12px;line-height:1.5;color:#60766b}
+.contact-direct{font-size:13px!important;margin-top:18px!important;color:#e1d4d6!important}
+.contact-direct a{color:#fff;text-underline-offset:4px}
+
+/* Dedicated lead-in page: two fields, clear expectations, no tracking scripts. */
+.review-page{background:#12232a;color:#f5f2e8}
+.review-page .site-header{background:#12232a}
+.review-page .primary-nav .nav-cta{background:#dce9df;color:#17323a}
+.review-page .review-main{overflow:hidden}
+.review-hero{position:relative;padding:105px 0 116px;background:radial-gradient(ellipse at 78% 16%,#37677855,transparent 43%),#12232a}
+.review-hero:before{content:"";position:absolute;inset:auto -15% -65% auto;width:min(70vw,900px);aspect-ratio:1;border:1px solid #b2d7dc21;border-radius:50%;box-shadow:0 0 0 125px #b2d7dc08,0 0 0 260px #b2d7dc05;pointer-events:none}
+.review-hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.06fr) minmax(320px,.94fr);gap:clamp(40px,7vw,124px);align-items:start}
+.review-eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 31px;font-size:11px;font-weight:800;letter-spacing:.2em;color:#acd2d9;text-transform:uppercase}
+.review-eyebrow:before{content:"";width:24px;height:1px;background:#acd2d9}
+.review-hero h1{font-size:clamp(57px,6.5vw,104px);line-height:.98;letter-spacing:-.078em;margin:0 0 27px;max-width:770px}
+.review-hero h1 em{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.12em;font-weight:500;color:#bbdfe6;letter-spacing:-.065em}
+.review-lede{font-size:clamp(16px,1.35vw,19px);line-height:1.7;color:#b9cdd0;max-width:570px;margin:0 0 31px}
+.review-facts{display:grid;gap:11px;margin:32px 0 0;padding:0;list-style:none}
+.review-facts li{position:relative;padding-left:28px;color:#d7e1dc;font-size:14px;line-height:1.55}
+.review-facts li:before{content:"✳";position:absolute;left:0;top:0;color:#b2dbd7}
+.review-card{position:relative;background:#f3f1e9;color:#213638;border:1px solid #fff6;box-shadow:0 35px 90px #09171988;padding:clamp(26px,3.2vw,49px);border-radius:12px}
+.review-card-index{display:flex;justify-content:space-between;gap:16px;color:#5c7580;font-size:10px;font-weight:800;letter-spacing:.17em;margin-bottom:24px}
+.review-card h2{font-size:clamp(28px,3vw,43px);line-height:1.08;letter-spacing:-.055em;margin:0 0 11px}
+.review-card>p{font-size:14px;line-height:1.6;color:#61747a;margin:0 0 24px}
+.review-form{display:grid;gap:13px}
+.review-form label{display:block;font-size:13px;font-weight:800;letter-spacing:-.01em;margin-top:7px}
+.review-form label small{font-weight:500;color:#75868a}
+.review-form select,.review-form textarea{display:block;width:100%;font:inherit;font-size:14px;color:#173139;background:#fff;border:1px solid #bcccca;border-radius:6px;padding:13px 14px;line-height:1.5;transition:border-color .2s,box-shadow .2s}
+.review-form select:focus-visible,.review-form textarea:focus-visible{outline:0;border-color:#557c87;box-shadow:0 0 0 3px #83b5bd55}
+.review-form textarea{min-height:123px;resize:vertical}
+.review-form .review-submit{appearance:none;border:0;border-radius:999px;background:#193e47;color:#fff;font:inherit;font-size:14px;font-weight:800;padding:16px 22px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:9px;transition:background .2s,transform .2s}
+.review-form .review-submit:hover,.review-form .review-submit:focus-visible{background:#684a55;transform:translateY(-2px)}
+.review-form-note{font-size:11px!important;line-height:1.65!important;color:#6e7e7c!important;margin:0!important}
+.review-fallback{background:#e3eae7;border:1px solid #bbcfc9;padding:16px;border-radius:7px;margin-top:7px}
+.review-fallback p{font-size:12px;line-height:1.5;margin:0 0 11px}
+.review-fallback textarea{min-height:160px;background:#fff}
+.review-copy{border:1px solid #7b9497;border-radius:5px;background:transparent;color:#193e47;padding:10px 13px;font-weight:800;font:inherit;cursor:pointer;margin-top:10px}
+.review-fallback[hidden]{display:none!important}
+.review-direct{font-size:12px;margin:23px 0 0;color:#5e7076;line-height:1.55}
+.review-direct a{color:#193e47;font-weight:700;text-underline-offset:3px}
+.review-steps{background:#e9f1ed;color:#20373c;padding:96px 0 106px}
+.review-steps h2{font-size:clamp(40px,5vw,72px);line-height:1.03;letter-spacing:-.065em;margin:14px 0 43px}
+.review-steps h2 em{font-family:'Cormorant Garamond',Georgia,serif;color:#71525d;font-weight:500}
+.review-steps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.review-step{border-top:1px solid #8ba6a4;padding:27px 18px 10px 0}
+.review-step>span{font-size:11px;color:#52727b;font-weight:800;letter-spacing:.16em}
+.review-step h3{font-size:clamp(23px,2.35vw,34px);line-height:1.1;letter-spacing:-.045em;margin:23px 0 13px}
+.review-step p{max-width:340px;font-size:14px;line-height:1.75;color:#5a7276;margin:0}
+.review-truth{background:#4e353e;color:#f6efec;padding:64px 0}
+.review-truth-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:8vw}
+.review-truth h2{font-size:clamp(34px,4vw,56px);line-height:1.05;letter-spacing:-.06em;margin:0}
+.review-truth p{font-size:15px;line-height:1.8;color:#e1cfd2;margin:0 0 16px;max-width:650px}
+.review-truth a{color:#fff;text-underline-offset:5px}
+@media(max-width:960px){.review-hero-grid{grid-template-columns:1fr;gap:48px}.review-hero{padding:76px 0 88px}.review-card{max-width:720px}.review-spotlight-layout{gap:36px;grid-template-columns:1fr}.review-spotlight-label{align-items:center}.review-spotlight-main h2{margin:0}.review-truth-grid{grid-template-columns:1fr;gap:30px}}
+@media(max-width:650px){.review-hero{padding:53px 0 68px}.review-hero h1{font-size:clamp(53px,12vw,76px)}.review-card{padding:27px 23px}.review-steps{padding:74px 0}.review-steps-grid{grid-template-columns:1fr;gap:24px}.review-spotlight{padding:75px 0 82px}.review-spotlight-main h2{font-size:clamp(45px,10vw,66px)}.review-spotlight-actions{align-items:flex-start;flex-direction:column;gap:12px}.review-hero-cta{align-items:flex-start;flex-direction:column}.review-hero-cta>span{max-width:300px}.review-truth{padding:65px 0}}
+@media(prefers-reduced-motion:reduce){.review-hero-link,.review-submit{transition:none!important}}

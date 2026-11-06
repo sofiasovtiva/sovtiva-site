@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sovtiva.com/</loc></url>
-  <url><loc>https://sovtiva.com/solutions/</loc></url>
+  <url><loc>https://sovtiva.com/</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://sovtiva.com/ai-review/</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://sovtiva.com/solutions/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://sovtiva.com/partners/</loc></url>
   <url><loc>https://sovtiva.com/journal/</loc></url>
   <url><loc>https://sovtiva.com/journal/what-sovtiva-does/</loc><lastmod>2026-11-03</lastmod></url>

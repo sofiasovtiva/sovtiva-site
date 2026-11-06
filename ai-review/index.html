@@ -39,7 +39,11 @@
         <div class="review-card-index"><span>START HERE / 01</span><span>ABOUT A MINUTE</span></div>
         <h2>Tell us about one task.</h2>
         <p>You don't need a technical plan. Just tell us what happens today.</p>
-        <form class="review-form" id="review-form">
+        <form class="review-form" id="review-form" action="https://formspree.io/f/xljjkgrq" method="POST">
+          <label for="review-name">Your name</label>
+          <input id="review-name" name="name" type="text" autocomplete="name" maxlength="100" required placeholder="What should we call you?">
+          <label for="review-email">Your email</label>
+          <input id="review-email" name="email" type="email" autocomplete="email" maxlength="200" required placeholder="you@company.com">
           <label for="review-category">What kind of work is it?</label>
           <select id="review-category" name="category" required>
             <option value="">Choose the closest fit</option>
@@ -52,11 +56,16 @@
             <option value="Something else">Something else</option>
           </select>
           <label for="review-task">What happens now?</label>
-          <textarea id="review-task" name="task" minlength="12" maxlength="1200" required placeholder="For example: Every Friday, I pull numbers from three systems and build the same report by hand."></textarea>
-          <button class="review-submit" type="submit">Prepare my email to Sofia <span aria-hidden="true">→</span></button>
-          <p class="review-form-note">This opens your email app with your note filled in. Nothing is sent until you press Send. Please don't include passwords, confidential files or customer data.</p>
+          <textarea id="review-task" name="message" minlength="12" maxlength="1200" required placeholder="For example: Every Friday, I pull numbers from three systems and build the same report by hand."></textarea>
+          <input type="hidden" name="source" id="review-source" value="direct">
+          <input type="hidden" name="_subject" value="Free AI Leverage Review | SOVTIVA">
+          <div class="review-honeypot" aria-hidden="true"><label for="review-website">Leave this blank</label><input id="review-website" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+          <label class="review-consent" for="review-consent"><input id="review-consent" type="checkbox" required><span>It's okay for SOVTIVA to contact me about this request. I understand my details are processed through Formspree to deliver this message.</span></label>
+          <button class="review-submit" type="submit">Send my free review request <span aria-hidden="true">→</span></button>
+          <p class="review-form-note">No payment needed. We only use these details to respond to your request. Please don't include passwords, confidential files or customer data.</p>
+          <p class="review-status" id="review-status" role="status" aria-live="polite" hidden></p>
           <div class="review-fallback" id="review-fallback" hidden aria-live="polite">
-            <p>If your email app didn't open, copy this note and send it to <strong>sofia.delgado@sovtiva.com</strong>.</p>
+            <p>Your request wasn't sent. You can copy the note below and email it to <strong>sofia.delgado@sovtiva.com</strong> instead.</p>
             <textarea id="review-copy-text" aria-label="Prepared email text" readonly></textarea>
             <button class="review-copy" type="button" id="review-copy">Copy note</button>
           </div>
@@ -80,6 +89,6 @@
   </main>
   <footer class="site-footer"><div class="shell footer-grid"><div><a class="wordmark footer-brand" href="/">SOVTIVA<span class="wordmark-point">.</span></a><p>Independent by design.<br>Connected by possibility.</p></div><div><span class="footer-label">EXPLORE</span><a href="/solutions/">Solutions</a><a href="/partners/">Partner network</a><a href="/journal/">Journal</a></div><div><span class="footer-label">FIND US</span><a href="mailto:sofia.delgado@sovtiva.com">sofia.delgado@sovtiva.com</a></div><div class="footer-end"><span>MEXICO CITY · REMOTE WORLDWIDE</span><span>© 2026 SOVTIVA</span></div></div></footer>
   <script src="/assets/site.js?v=20261103-tech-balance" defer></script>
-  <script src="/assets/review.js?v=20261106" defer></script>
+  <script src="/assets/review.js?v=20261106-formspree" defer></script>
 </body>
 </html>

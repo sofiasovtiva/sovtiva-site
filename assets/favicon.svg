@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><title>SOVTIVA</title><rect width="64" height="64" rx="14" fill="#0b1923"/><g fill="#bfe6f0" transform="rotate(-17 32 32)"><rect x="14" y="18" width="36" height="7" rx="3.5"/><rect x="25" y="29" width="25" height="7" rx="3.5"/><rect x="34" y="40" width="16" height="7" rx="3.5"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">SOVTIVA</title>
+  <rect width="64" height="64" rx="12" fill="#091b26"/>
+  <g fill="#b9eaf6">
+    <path d="M7 36.2 56.5 7v5.2L7 41.5z"/>
+    <path d="M7 46.3 48.3 22v5.2L7 51.5z"/>
+    <path d="M14.5 51.7 40 36.7v5.4l-25.5 15z"/>
+  </g>
+</svg>

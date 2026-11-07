@@ -11,6 +11,7 @@
   const source = (params.get('from') || 'direct').replace(/[^a-z0-9-]/gi, '').slice(0,45) || 'direct';
   document.getElementById('review-source').value = source;
   const contact = 'sofia.delgado@sovtiva.com';
+  const spanish = () => document.documentElement.lang === 'es';
   let prepared = '';
 
   function prepareFallback() {
@@ -18,18 +19,22 @@
     const email = document.getElementById('review-email').value.trim();
     const category = document.getElementById('review-category').value;
     const task = document.getElementById('review-task').value.trim();
-    const subject = 'Free AI Leverage Review | sovtiva';
-    const body = [
-      'Hi Sofia,', '',
-      "I'd like a free first look at a workflow.", '',
+    const subject = spanish() ? 'Diagnóstico gratuito de IA | Sovtiva' : 'Free AI Leverage Review | Sovtiva';
+    const body = (spanish() ? [
+      'Hola, Sofía:', '', 'Me gustaría revisar una tarea que podríamos simplificar.', '',
+      `Nombre: ${name}`, `Correo: ${email}`, `Tipo de trabajo: ${category}`, '',
+      'Así funciona hoy:', task, '',
+      `Origen en el sitio: ${source}`, '', '¡Gracias!'
+    ] : [
+      'Hi Sofia,', '', "I'd like a free first look at a workflow.", '',
       `Name: ${name}`, `Email: ${email}`, `Type of work: ${category}`, '',
       'What happens now:', task, '',
       `Website source: ${source}`, '', 'Thanks!'
-    ].join('\n');
+    ]).join('\n');
     prepared = `To: ${contact}\nSubject: ${subject}\n\n${body}`;
     output.value = prepared;
     fallback.hidden = false;
-    copyButton.textContent = 'Copy note';
+    copyButton.textContent = spanish() ? 'Copiar mensaje' : 'Copy note';
   }
 
   form.addEventListener('submit', async event => {
@@ -38,7 +43,7 @@
     fallback.hidden = true;
     status.hidden = false;
     status.className = 'review-status';
-    status.textContent = 'Sending your request…';
+    status.textContent = spanish() ? 'Enviando tu solicitud…' : 'Sending your request…';
     submitButton.disabled = true;
 
     try {
@@ -54,13 +59,15 @@
       }
       form.reset();
       status.className = 'review-status review-status-success';
-      status.textContent = 'Got it. Your request has been sent to sovtiva. We’ll reply by email.';
+      status.textContent = spanish() ? 'Listo. Recibimos tu solicitud en Sovtiva y te responderemos por correo.' : 'Got it. Your request has been sent to Sovtiva. We’ll reply by email.';
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'generate_lead', { method: 'formspree', form_id: 'ai_review' });
       }
     } catch (error) {
       status.className = 'review-status review-status-error';
-      status.textContent = `Not sent. ${error.message || 'Please try again.'} You can use the email option below.`;
+      status.textContent = spanish()
+        ? `No se pudo enviar. ${error.message || 'Inténtalo de nuevo.'} Puedes usar la opción de correo de abajo.`
+        : `Not sent. ${error.message || 'Please try again.'} You can use the email option below.`;
       prepareFallback();
     } finally {
       submitButton.disabled = false;
@@ -71,11 +78,11 @@
     if (!prepared) return;
     try {
       await navigator.clipboard.writeText(prepared);
-      copyButton.textContent = 'Copied ✓';
+      copyButton.textContent = spanish() ? 'Copiado ✓' : 'Copied ✓';
     } catch {
       output.focus();
       output.select();
-      copyButton.textContent = 'Select and copy the note above';
+      copyButton.textContent = spanish() ? 'Selecciona y copia el mensaje de arriba' : 'Select and copy the note above';
     }
   });
 })();

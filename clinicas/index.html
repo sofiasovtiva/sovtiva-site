@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101611">
+  <meta name="description" content="Automatización administrativa para consultorios y clínicas privadas en México. SOVTIVA revisa cómo conectar solicitudes de WhatsApp, Instagram, web y agenda. Primera revisión sin costo.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Automatización para consultorios y clínicas | SOVTIVA">
+  <meta property="og:description" content="Menos pasos manuales entre mensajes, recepción y agenda. Hablemos de un proceso concreto.">
+  <meta property="og:url" content="https://sovtiva.com/clinicas/">
+  <link rel="canonical" href="https://sovtiva.com/clinicas/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20261103-tech-balance">
+  <title>Automatización administrativa para clínicas | SOVTIVA</title>
+  <style>
+    .clinic-page{overflow-x:hidden;background:#101611}
+    .clinic-page .shell{position:relative}
+    .clinic-nav .nav-cta{white-space:nowrap}
+    .clinic-hero{position:relative;overflow:hidden;border-bottom:1px solid rgba(220,255,118,.15);padding:105px 0 110px;background:radial-gradient(circle at 83% 30%,rgba(135,199,135,.14),transparent 30%),#101611}
+    .clinic-hero::before{content:"";position:absolute;inset:0 0 0 43%;opacity:.35;background-image:linear-gradient(rgba(192,229,209,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(192,229,209,.13) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(90deg,transparent,#000 40%)}
+    .clinic-hero-grid{display:grid;grid-template-columns:minmax(0,1.13fr) minmax(290px,.87fr);gap:60px;align-items:center}
+    .clinic-kicker,.clinic-minilabel{font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--lime)}
+    .clinic-hero h1{font-size:clamp(48px,6.2vw,94px);line-height:1.025;letter-spacing:-.087em;max-width:870px;margin:25px 0}
+    .clinic-hero h1 em{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.15em;font-weight:500;letter-spacing:-.035em;color:var(--lime)}
+    .clinic-lede{font-size:clamp(16px,1.4vw,19px);line-height:1.75;color:#bdcbbb;max-width:640px;margin:0}
+    .clinic-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin:37px 0 21px}
+    .clinic-actions .button{border-radius:100px;padding:19px 25px}
+    .clinic-actions .quiet-link{color:#e9f2df}
+    .clinic-fine{color:#95a392;font-size:12px;line-height:1.6}
+    .clinic-flow{position:relative;padding:27px;background:#e4f1da;color:#17271b;box-shadow:20px 20px 0 rgba(208,248,169,.06);transform:rotate(1.5deg)}
+    .clinic-flow::before{content:"";position:absolute;inset:-24px;border:1px solid rgba(220,255,118,.18);z-index:-1}
+    .clinic-flow-top{display:flex;justify-content:space-between;border-bottom:1px solid #afc5b0;padding-bottom:20px;font-size:10px;font-weight:800;letter-spacing:.16em}
+    .clinic-flow h2{font-size:clamp(31px,3.1vw,46px);line-height:1.08;letter-spacing:-.065em;margin:25px 0 25px}
+    .clinic-flow-step{display:flex;gap:14px;align-items:center;border-top:1px solid #c4d5c0;padding:15px 0;font-size:14px;font-weight:700}
+    .clinic-flow-step b{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#183323;color:#d8ff8c;font-size:11px}
+    .clinic-flow-step:last-child{padding-bottom:0}
+    .clinic-flow-note{background:#1e3d2a;color:#d9ff92;padding:16px 18px;margin-top:18px;font-size:12px;line-height:1.5}
+    .clinic-fit{background:#f2f3e9;color:#1e3023;padding:100px 0 108px}
+    .clinic-heading{font-size:clamp(43px,5.1vw,70px);line-height:1.08;letter-spacing:-.075em;margin:15px 0 20px;max-width:790px}
+    .clinic-section-lede{color:#657469;font-size:17px;line-height:1.65;max-width:700px;margin-bottom:38px}
+    .clinic-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+    .clinic-card{background:#e2eadf;min-height:290px;padding:28px;display:flex;flex-direction:column}
+    .clinic-card:nth-child(2){background:#dddfeb}.clinic-card:nth-child(3){background:#e9e0d2}
+    .clinic-card .index{font-weight:900;font-size:10px;letter-spacing:.19em;color:#657967}
+    .clinic-card h3{margin:46px 0 16px;font-size:clamp(27px,2.7vw,37px);letter-spacing:-.065em;line-height:1.1}
+    .clinic-card p{font-size:14px;line-height:1.7;color:#48584a;margin:0}
+    .clinic-bottom{padding:90px 0 100px;border-top:1px solid #29362a}
+    .clinic-bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
+    .clinic-bottom h2{font-size:clamp(40px,4.6vw,66px);letter-spacing:-.075em;line-height:1.07;margin:17px 0 24px}
+    .clinic-bottom p{font-size:15px;color:#b5c1b4;line-height:1.75}
+    .clinic-steps{border-top:1px solid #455345}
+    .clinic-step{display:grid;grid-template-columns:55px 1fr;gap:18px;border-bottom:1px solid #455345;padding:22px 0}
+    .clinic-step b{font-size:12px;color:var(--lime)}
+    .clinic-step strong{font-size:19px;letter-spacing:-.035em}
+    .clinic-step p{font-size:13px;margin:7px 0 0}
+    .clinic-privacy{border:1px solid #51634c;padding:15px 17px;color:#c2cdba;font-size:12px;line-height:1.7;margin-top:28px}
+    .clinic-page .site-footer{border-top:1px solid #283a2d}
+    @media(max-width:950px){.clinic-hero-grid,.clinic-bottom-grid{grid-template-columns:1fr;gap:42px}.clinic-flow{max-width:530px;transform:none}.clinic-cards{grid-template-columns:1fr}.clinic-card{min-height:auto}.clinic-card h3{margin-top:25px}.clinic-hero{padding:74px 0 76px}}
+    @media(max-width:600px){.clinic-page .shell{width:calc(100% - 36px)}.clinic-hero h1{font-size:clamp(45px,12vw,66px)}.clinic-fit,.clinic-bottom{padding:70px 0}.clinic-flow{padding:20px}.clinic-actions{align-items:stretch}.clinic-actions .button{width:100%}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Revisión de automatización administrativa para consultorios y clínicas","serviceType":"Análisis de flujos administrativos y oportunidades de automatización","provider":{"@type":"Organization","name":"SOVTIVA","url":"https://sovtiva.com/"},"areaServed":{"@type":"Country","name":"México"},"url":"https://sovtiva.com/clinicas/"}</script>
+  <script src="/assets/analytics.js?v=20261106-ga4" defer></script>
+</head>
+<body class="clinic-page">
+  <a class="skip-link" href="#main">Ir al contenido</a>
+  <header class="site-header"><div class="shell header-inner">
+    <a class="wordmark" href="/" aria-label="Inicio de SOVTIVA"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>SOVTIVA<span class="wordmark-point">.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span></button>
+    <nav class="primary-nav clinic-nav" id="primary-nav" aria-label="Navegación"><a href="/solutions/">Qué hacemos</a><a href="/ai-review/">Revisión inicial</a><a href="/partners/">Colaboraciones</a><a class="nav-cta" href="#hablemos">Hablemos →</a></nav>
+  </div></header>
+  <main id="main">
+    <section class="clinic-hero" aria-labelledby="clinic-title"><div class="shell clinic-hero-grid">
+      <div>
+        <p class="clinic-kicker">SOVTIVA / PARA CONSULTORIOS Y CLÍNICAS EN MÉXICO</p>
+        <h1 id="clinic-title">De Instagram a WhatsApp. De WhatsApp a la <em>agenda.</em></h1>
+        <p class="clinic-lede">Cuando una solicitud pasa por varias personas y herramientas, lo administrativo se complica. En SOVTIVA ayudamos a revisar y conectar esos pasos para que recepción tenga un proceso más claro, sin tener que cambiar todo lo que ya utilizan.</p>
+        <div class="clinic-actions">
+          <a class="button button-lime" href="https://wa.me/5215666485824?text=Hola%2C%20vi%20la%20p%C3%A1gina%20para%20cl%C3%ADnicas%20de%20SOVTIVA.%20Quiero%20revisar%20un%20proceso%20administrativo%20de%20nuestro%20consultorio.%20Pueden%20responderme%20por%20WhatsApp." rel="noopener noreferrer" target="_blank">Cuéntanos por WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="quiet-link" href="#casos">Ver qué podemos revisar ↓</a>
+        </div>
+        <p class="clinic-fine">Primera revisión sin costo · Sin compromiso de contratar · Tratamos únicamente procesos administrativos</p>
+      </div>
+      <aside class="clinic-flow" aria-label="Ejemplo de un proceso a revisar">
+        <div class="clinic-flow-top"><span>UN EJEMPLO</span><span>FLUJO ADMINISTRATIVO / 01</span></div>
+        <h2>Una pregunta. Varios canales. Un solo seguimiento.</h2>
+        <div class="clinic-flow-step"><b>01</b><span>Consulta por redes, web o WhatsApp</span></div>
+        <div class="clinic-flow-step"><b>02</b><span>Recepción identifica el servicio y la sede</span></div>
+        <div class="clinic-flow-step"><b>03</b><span>Se coordina la agenda y el seguimiento</span></div>
+        <p class="clinic-flow-note">Evaluamos dónde conviene automatizar, conectar herramientas o simplemente simplificar el proceso actual.</p>
+      </aside>
+    </div></section>
+    <section class="clinic-fit" id="casos" aria-labelledby="clinic-fit-title"><div class="shell">
+      <p class="clinic-minilabel" style="color:#486849">QUÉ PODEMOS REVISAR</p>
+      <h2 class="clinic-heading" id="clinic-fit-title">Menos trabajo repetido. Más claridad para recepción.</h2>
+      <p class="clinic-section-lede">No ofrecemos una solución idéntica a todos los consultorios. Partimos de las herramientas y las tareas que de verdad usan.</p>
+      <div class="clinic-cards">
+        <article class="clinic-card"><span class="index">01 / VARIAS SEDES</span><h3>Mensajes a la sede correcta.</h3><p>Revisamos cómo entra cada solicitud y cómo se asigna al equipo o sucursal que corresponde.</p></article>
+        <article class="clinic-card"><span class="index">02 / VARIOS CANALES</span><h3>Menos copiar y pegar.</h3><p>Exploramos si web, redes, WhatsApp y agenda pueden compartir la información administrativa necesaria.</p></article>
+        <article class="clinic-card"><span class="index">03 / SEGUIMIENTO</span><h3>Pendientes más visibles.</h3><p>Ayudamos a diseñar un flujo claro para solicitudes, confirmaciones y tareas de recepción, según las herramientas disponibles.</p></article>
+      </div>
+    </div></section>
+    <section class="clinic-bottom" id="hablemos" aria-labelledby="clinic-talk-title"><div class="shell clinic-bottom-grid">
+      <div>
+        <p class="clinic-kicker">EMPEZAMOS POR UNA CONVERSACIÓN</p>
+        <h2 id="clinic-talk-title">Cuéntanos qué tarea les quita tiempo.</h2>
+        <p>No hace falta que sepas de tecnología. Cuéntanos cómo funciona hoy y qué se vuelve tedioso. Te diremos si vemos una mejora razonable y qué habría que validar.</p>
+        <div class="clinic-actions"><a class="button button-lime" href="https://wa.me/5215666485824?text=Hola%2C%20vi%20la%20p%C3%A1gina%20para%20cl%C3%ADnicas%20de%20SOVTIVA.%20Quiero%20revisar%20un%20proceso%20administrativo%20de%20nuestro%20consultorio.%20Pueden%20responderme%20por%20WhatsApp." rel="noopener noreferrer" target="_blank">Escribir por WhatsApp <span aria-hidden="true">↗</span></a></div>
+        <p>¿Prefieres correo? <a class="quiet-link" href="mailto:sofia.delgado@sovtiva.com?subject=Revisi%C3%B3n%20de%20proceso%20administrativo%20%7C%20SOVTIVA">Escríbele a Sofía ↗</a></p>
+        <div class="clinic-privacy">Por privacidad, no envíes datos de pacientes, diagnósticos, expedientes ni documentos médicos. Al escribirnos, nos autorizas a responder sobre tu consulta. No enviaremos campañas por WhatsApp sin permiso adicional.</div>
+      </div>
+      <div class="clinic-steps">
+        <div class="clinic-step"><b>01</b><div><strong>Una revisión inicial gratuita.</strong><p>Nos explicas un proceso administrativo y las herramientas que utilizan.</p></div></div>
+        <div class="clinic-step"><b>02</b><div><strong>Una propuesta aterrizada.</strong><p>Identificamos dónde conviene ajustar, conectar o automatizar, si realmente tiene sentido.</p></div></div>
+        <div class="clinic-step"><b>03</b><div><strong>Tú decides el siguiente paso.</strong><p>Si hace falta desarrollo, se cotiza por separado. Si conviene un especialista independiente, podemos explorar una introducción con tu autorización.</p></div></div>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-grid"><div><a class="wordmark footer-brand" href="/">SOVTIVA<span class="wordmark-point">.</span></a><p>Procesos más simples.<br>Decisiones con criterio.</p></div><div><span class="footer-label">EXPLORAR</span><a href="/solutions/">Soluciones</a><a href="/ai-review/">Revisión inicial</a><a href="/partners/">Colaboraciones</a></div><div><span class="footer-label">CONTACTO</span><a href="mailto:sofia.delgado@sovtiva.com">sofia.delgado@sovtiva.com</a></div><div class="footer-end"><span>CIUDAD DE MÉXICO · TRABAJO REMOTO</span><span>© 2026 SOVTIVA</span></div></div></footer>
+  <script src="/assets/site.js?v=20261103-tech-balance" defer></script>
+</body>
+</html>

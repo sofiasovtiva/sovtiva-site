@@ -381,3 +381,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #8fdfed;outline-offset:4p
 @media(prefers-reduced-motion:reduce){
   .intent-choice,.intent-choice:before,.intent-choice:after,.intent-choice-top i{transition:none!important}
 }
+
+/* Keep the SOVTIVA wordmark readable on dark navigation bars across light pages. */
+.site-header .wordmark{color:#edf6f8}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c23">
+  <meta name="description" content="Vibe coding in 2026 is moving beyond websites: a 2005 Canon, Fujifilm X70 firmware and an open-source Photoshop-like editor show how AI agents are changing hardware and software.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Your Old Camera Is Not Finished: Vibe Coding and the New Software Frontier | SOVTIVA">
+  <meta property="og:description" content="From film looks on an old Canon to a Photoshop-like editor built from scratch, coding agents are redrawing the boundaries of what existing technology can do.">
+  <meta property="og:url" content="https://sovtiva.com/journal/vibe-coding-old-cameras-photoshop-software/">
+  <meta property="article:published_time" content="2026-11-07">
+  <link rel="canonical" href="https://sovtiva.com/journal/vibe-coding-old-cameras-photoshop-software/">
+  <link rel="alternate" type="application/rss+xml" title="SOVTIVA Journal RSS" href="/feed.xml">
+  <link rel="icon" href="/assets/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/journal/styles.css?v=20261107-vibecoding">
+  <title>Vibe Coding in 2026: Old Cameras, Photoshop Alternatives &amp; What Comes Next | SOVTIVA</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Your old camera is not finished: vibe coding and the new software frontier","description":"How AI coding agents are helping developers revisit old camera firmware, build Photoshop-like tools, and rethink the relationship between hardware and software.","datePublished":"2026-11-07","dateModified":"2026-11-07","inLanguage":"en","mainEntityOfPage":"https://sovtiva.com/journal/vibe-coding-old-cameras-photoshop-software/","author":{"@type":"Organization","name":"SOVTIVA Editorial","url":"https://sovtiva.com/"},"publisher":{"@type":"Organization","name":"SOVTIVA","url":"https://sovtiva.com/"},"isAccessibleForFree":true,"citation":["https://fujimod.com/","https://github.com/jiijii0/soup-engine","https://github.com/storytold/photocraft","https://github.blog/changelog/2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github/","https://developers.openai.com/blog/codex-as-a-platform"]}</script>
+  <script src="/assets/analytics.js?v=20261106-ga4" defer></script>
+</head>
+<body>
+  <header class="topbar"><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="/">SOVTIVA</a><div class="navlinks"><a href="/">Home</a><a href="/solutions/">Solutions</a><a href="/partners/">Partners</a><a href="/journal/" aria-current="page">Journal</a><a class="btn" href="/ai-review/">Get an AI review ↗</a></div></nav></header>
+  <main class="wrap"><article class="article">
+    <a class="back" href="/journal/">← Back to the Journal</a>
+    <div class="eyebrow" style="margin-top:48px">SOVTIVA / THE FUTURE OF SOFTWARE · November 7, 2026</div>
+    <h1>Your old camera is not finished. Vibe coding is changing who gets to upgrade it.</h1>
+    <p class="dek">A 2005 DSLR getting new film looks. A Fujifilm with features its maker never shipped. A Photoshop-style editor written from scratch. The interesting part is not the AI hype. It's who gets to make software now.</p>
+
+    <p>Most technology upgrades follow a familiar script: a company announces a new feature, puts it in a new product or subscription, and asks you to pay again. A growing group of developers is asking a less expensive question: <strong>what if the hardware we already own has more life in it?</strong></p>
+    <p>That question is one reason <em>vibe coding</em> has moved from internet punchline to something worth paying attention to. In its casual form, it means describing software in ordinary language and letting an AI model write much of the code. The more serious version is iterative engineering: an agent reads a codebase, makes changes, runs tests, inspects failures and tries again, with a human deciding what is safe enough to ship.</p>
+
+    <h2>First, the camera that refuses to retire.</h2>
+    <p>The original <strong>Canon EOS 5D</strong> came out in 2005. It has no idea what a modern film-simulation menu looks like. Yet the open-source <a href="https://github.com/jiijii0/soup-engine" rel="noopener noreferrer" target="_blank">Soup Engine project</a> brings film-inspired looks directly into that generation of Canon DSLRs.</p>
+    <p>The beta software runs with the established Magic Lantern firmware community's work. You pick a look on the camera; it saves a processed JPEG next to the original RAW file, leaving the RAW untouched. The project began on the 5D Classic and has community ports for several other older Canon bodies. Each port is tied to specific firmware and carries its own warnings.</p>
+    <p>That's a different kind of upgrade. There is no new sensor, no AI-powered megapixel miracle. The glass and electronics are the same. The photographer simply gets another way to use them.</p>
+
+    <h2>Then there's the Fujifilm X70.</h2>
+    <p><a href="https://fujimod.com/" rel="noopener noreferrer" target="_blank">FujiMod</a> starts with the 2016 Fujifilm X70 and proposes 23 additional features: more aspect ratios, configurable controls, shooting recipes, film-look editing and other tools. Its creator, Jake, offers an early release that can dual-boot from an SD card without flashing the camera, plus a browser emulator for curious people who don't own one.</p>
+    <p>The caveats matter. The creator says not every feature has been tested on a physical camera. Some newer film looks are explicitly marked as approximations. And users need to provide official firmware themselves because the project cannot redistribute Fujifilm's copyrighted code.</p>
+    <p>Still, the premise is remarkable: the boundary between “old model” and “new capability” can sometimes be a software decision, not a hardware one.</p>
+
+    <h2>What about rebuilding something as big as Photoshop?</h2>
+    <p>Consider <a href="https://github.com/storytold/photocraft" rel="noopener noreferrer" target="_blank">PhotoCraft</a>, an open-source photo editor written in Rust. Its developers are building familiar image-editing territory from scratch: layers, masks, file compatibility and tools that can also be controlled programmatically.</p>
+    <p>Let's be precise: this is <strong>not</strong> a complete, professional replacement for Adobe Photoshop. PhotoCraft's own maintainers call it an early alpha and list substantial gaps in generative features, typography, tools, plug-ins and advanced workflows. They also point out that connecting a menu item to code isn't the same as making that feature work well.</p>
+    <p>That honesty makes the experiment more interesting. A small team can now attempt software that used to require enormous engineering resources just to get started. It still takes real engineering to make that software reliable, fast and pleasant to use.</p>
+    <p>There's an important distinction, too. Rebuilding a Photoshop-like workflow from independent code is not the same as stealing Adobe's source, copying its protected assets or bypassing licensing controls. Reverse engineering for compatibility, clean-room implementations and interoperability raise different legal questions depending on the product and jurisdiction.</p>
+
+    <h2>Why 2026 feels different.</h2>
+    <p>The tools have become more capable of doing work <em>inside</em> a real project, not just answering code questions. In February 2026, <a href="https://github.blog/changelog/2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github/" rel="noopener noreferrer" target="_blank">GitHub brought Claude and Codex coding agents</a> into issues, pull requests and development workflows in public preview. The <a href="https://developers.openai.com/blog/codex-as-a-platform" rel="noopener noreferrer" target="_blank">Codex agent platform</a> similarly documents software that can inspect context, use tools, run work and request approval.</p>
+    <p>That is the leap. “Build me a photo app” is no longer necessarily a one-shot request for a pile of code. It can become a sequence: inspect the files, implement a small feature, test it, compare the output, catch an error and improve it. Experienced developers still have to judge the result. But the cost of trying an idea is falling.</p>
+
+    <h2>Where else could this go?</h2>
+    <div class="example">
+      <h3>Five frontiers worth watching</h3>
+      <ul>
+        <li><strong>Older devices:</strong> new interfaces or optional functions for cameras, music gear, 3D printers and home devices where documented access or healthy modding communities exist.</li>
+        <li><strong>Abandoned software:</strong> community-maintained replacements for discontinued tools, legacy file converters and applications that no longer run on modern systems.</li>
+        <li><strong>Accessible interfaces:</strong> bespoke controls, larger text, keyboard-first workflows, translation and assistive features overlooked by mass-market products.</li>
+        <li><strong>Small-business software:</strong> a focused scheduling, quoting or inventory tool that fits one business instead of making its team adapt to another bloated subscription.</li>
+        <li><strong>Interoperability:</strong> bridges between data formats, machines and apps that were never designed to communicate, provided access and licensing permit it.</li>
+      </ul>
+    </div>
+    <p>These are opportunities, not claims that an AI prompt can safely unlock every device. Firmware changes can brick hardware. Security reviews, backups, recovery procedures, licenses, hardware specifications and actual testing are non-negotiable. A prompt cannot invent more RAM, improve the optics or repeal the laws of physics.</p>
+
+    <h2>What changes for the hardware and software businesses?</h2>
+    <p><strong>For hardware makers,</strong> a device may stay valuable for longer when its software is open, documented or modifiable. That could make repairability, supported APIs and update policies more meaningful selling points. It could also put pressure on the habit of reserving software-only features for next year's model.</p>
+    <p><strong>For software companies,</strong> simply having a large feature list becomes a weaker moat if smaller teams can reproduce useful slices of it faster. Trust, compatibility, collaboration, support, design quality, security and distribution become more important. Big applications have decades of hard-won edge cases. Vibe coding doesn't make those disappear.</p>
+    <p><strong>For everyone else,</strong> the interesting shift is permission. A photographer, designer or business owner can describe an annoyance and test a workaround without waiting for a vendor roadmap. Sometimes the answer will be a small script. Sometimes an open-source project. Sometimes a team of specialists.</p>
+
+    <h2>Our take.</h2>
+    <p>The best future for vibe coding isn't millions of disposable apps that almost work. It's more people able to improve useful things, with fewer ideas dying between “somebody should build this” and a working prototype.</p>
+    <p>At SOVTIVA, that's how we look at business software, too. Start with the friction. Figure out what can be improved with existing tools, what deserves a custom build, and when an independent specialist should own the harder engineering. The goal isn't more code. It's a better result.</p>
+
+    <div class="endnote">
+      <h2>Got a workflow that should work better?</h2>
+      <p>Tell us which tools you use and what keeps getting in the way. We'll help identify a practical next step, whether that's a small automation or a specialist-led software project.</p>
+      <p><a class="btn" href="/ai-review/?source=SOV-JNL-VIBE-20261107">Request a free AI leverage review ↗</a></p>
+      <p class="small"><strong>Primary sources:</strong> <a href="https://fujimod.com/" rel="noopener noreferrer">FujiMod</a> · <a href="https://github.com/jiijii0/soup-engine" rel="noopener noreferrer">Soup Engine</a> · <a href="https://github.com/storytold/photocraft" rel="noopener noreferrer">PhotoCraft</a> · <a href="https://github.blog/changelog/2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github/" rel="noopener noreferrer">GitHub agents announcement</a> · <a href="https://developers.openai.com/blog/codex-as-a-platform" rel="noopener noreferrer">Codex platform</a>.</p>
+      <p class="small">SOVTIVA Editorial · November 7, 2026. Features and compatibility are described by the respective project maintainers; independent testing has not been performed by SOVTIVA. <a href="/journal/partner-notes/">Editorial standards</a>.</p>
+    </div>
+  </article></main>
+  <div class="wrap"><footer><div><strong>SOVTIVA</strong><br>Business systems, digital tools, specialist connections.</div><div><a href="/">Home</a> · <a href="/partners/">Partners</a> · <a href="/journal/">Journal</a> · <a href="/feed.xml">RSS</a></div><div>Mexico City · Remote worldwide<br>sofia.delgado@sovtiva.com</div><div>© 2026 SOVTIVA</div></footer></div>
+</body>
+</html>

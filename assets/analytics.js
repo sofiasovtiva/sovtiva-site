@@ -1,4 +1,4 @@
-/* SOVTIVA website analytics. No Google request is made before opt-in. */
+/* sovtiva website analytics. No Google request is made before opt-in. */
 (() => {
   'use strict';
 

@@ -66,11 +66,11 @@ footer a { text-decoration: none; }
   .note-panel { padding: 33px; }
   .article { padding: 55px 0 75px; }
 }
-/* Editorial expression of the SOVTIVA palette. */
+/* Editorial expression of the sovtiva palette. */
 body{background:#eee4d6;color:#20251f}.topbar{background:#111619;color:#f2e9dc}.brand{color:#f2e9dc}.btn{background:#c5dce9;color:#111619}.btn:hover{background:#e3f0f7}.accent{background:#c5dce9}.card.feature{background:#c5dce9;border-color:#c5dce9}.card.feature p,.card.feature .meta{color:#425a64}.card{background:#f8f1e8;border-color:#d8c9bd}.note-panel{background:#702e44;color:#f8ebe0}.note-panel a{color:#c5dce9}.article blockquote{background:#d5dcbf;border-color:#758565}.article .example{background:#f8f1e8;border-color:#d8c9bd}
 
 
-/* SOVTIVA Tech Balance | aligned with the main website */
+/* sovtiva Tech Balance | aligned with the main website */
 body{background:#edf1ee;color:#162e39}
 .topbar{background:#0b1923;color:#eff5f2;border-color:#395663}
 .brand{color:#eff5f2}

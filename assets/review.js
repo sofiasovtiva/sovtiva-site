@@ -18,7 +18,7 @@
     const email = document.getElementById('review-email').value.trim();
     const category = document.getElementById('review-category').value;
     const task = document.getElementById('review-task').value.trim();
-    const subject = 'Free AI Leverage Review | SOVTIVA';
+    const subject = 'Free AI Leverage Review | sovtiva';
     const body = [
       'Hi Sofia,', '',
       "I'd like a free first look at a workflow.", '',
@@ -54,7 +54,7 @@
       }
       form.reset();
       status.className = 'review-status review-status-success';
-      status.textContent = 'Got it. Your request has been sent to SOVTIVA. We’ll reply by email.';
+      status.textContent = 'Got it. Your request has been sent to sovtiva. We’ll reply by email.';
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'generate_lead', { method: 'formspree', form_id: 'ai_review' });
       }

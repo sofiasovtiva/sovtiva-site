@@ -21,7 +21,7 @@
 .hero-copy{padding-top:40px;padding-bottom:55px}
 @media(max-width:820px){.hero-copy{padding-top:48px;padding-bottom:65px}}
 @media(max-width:540px){.hero-copy{padding-top:42px;padding-bottom:50px}}
-/* SOVTIVA color direction: pale blue, beige, burgundy, black and olive. */
+/* sovtiva color direction: pale blue, beige, burgundy, black and olive. */
 :root{--ink:#111619;--deep:#0d1214;--cream:#f2e9dc;--paper:#eee4d6;--lime:#c5dce9;--mint:#69785c;--muted:#b7b7ab;--burgundy:#702e44;--blue:#c5dce9;--beige:#eee4d6;--olive:#69785c}
 .announcement{background:var(--burgundy);color:#f6e8df}.announcement-rule{background:#d3aeb8}.announcement .signal-dot{background:#c5dce9;box-shadow:0 0 0 3px #ffffff1d}
 .site-header{background:rgba(17,22,25,.93)}.brand-mark i,.line-glyph{background:var(--blue)}.primary-nav .nav-cta{background:var(--blue)}.primary-nav .nav-cta:hover{background:#e8f4f7}.wordmark-point,.top-link:hover{color:var(--blue)}.button-lime{background:var(--blue);color:#101519}.button-lime:hover{background:#e5f1f7}.hero h1 em{color:var(--blue)}.hero-art{background:radial-gradient(circle at 59% 45%,rgba(143,180,199,.29),transparent 27%),radial-gradient(circle at 60% 47%,rgba(110,50,74,.18),transparent 54%)}.art-grid{background-image:linear-gradient(rgba(200,221,231,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(200,221,231,.06) 1px,transparent 1px)}.art-orbit{border-color:rgba(195,220,232,.27)}.orbit-two{border-color:rgba(214,189,201,.32)}.orbit-three{border-color:rgba(210,230,242,.42)}.art-core{background:radial-gradient(circle at 34% 24%,#e4f5f8 0,#9abfce 21%,#5a7381 44%,#343f4c 63%,#0e1319 81%);border-color:rgba(232,238,246,.55);box-shadow:-28px 0 80px rgba(178,211,233,.20),28px 20px 85px #080b0f,inset -25px -20px 60px #06090b}.art-core:before{border-color:rgba(230,237,243,.39);box-shadow:0 0 70px #a8bdcb33}.art-label{color:#aebcc5}
@@ -41,7 +41,7 @@
 @media(max-width:650px){.intent-grid{gap:8px}.intent-choice{min-height:165px;padding:16px 13px}.intent-choice-top b{font-size:8px}.intent-choice-top i{font-size:21px}.intent-choice strong{font-size:clamp(18px,5vw,27px);margin-top:22px}.intent-choice-foot{font-size:8px;padding-top:12px}.intent-hero h1{font-size:clamp(52px,11.4vw,76px);margin:19px 0 14px}.hero .intent-hero{padding:42px 0 62px}.intent-hero .hero-description{margin-bottom:23px;line-height:1.6}.intent-preview{padding:10px 12px;font-size:11px}.intent-preview-right{display:none}.hero .hero-art{opacity:.2;left:0}.hero-bottom span:nth-child(2){display:none}}
 @media(max-width:360px){.intent-choice{min-height:155px}.intent-choice strong{font-size:17px}.intent-preview{font-size:10px}}
 
-/* 2026-11-03 | Editorial Earth: distilled from SOVTIVA's visual references.
+/* 2026-11-03 | Editorial Earth: distilled from sovtiva's visual references.
    Warm paper + deep olive-black lead. Burgundy and mist blue are rare accents. */
 :root{
   --ink:#161b17;--deep:#101511;--cream:#f2ecdf;--paper:#e9e4d8;
@@ -209,7 +209,7 @@ a:focus-visible,button:focus-visible{outline-color:#d1d9bd}
 
 
 
-/* 2026-11-03 | SOVTIVA Tech Balance
+/* 2026-11-03 | sovtiva Tech Balance
    Obsidian-navy foundation, icy-blue signal, warm paper.
    Olive and oxblood are deliberate secondary accents, not competing fields. */
 :root{
@@ -382,7 +382,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #8fdfed;outline-offset:4p
   .intent-choice,.intent-choice:before,.intent-choice:after,.intent-choice-top i{transition:none!important}
 }
 
-/* Keep the SOVTIVA wordmark readable on dark navigation bars across light pages. */
+/* Keep the sovtiva wordmark readable on dark navigation bars across light pages. */
 .site-header .wordmark{color:#edf6f8}
 
 

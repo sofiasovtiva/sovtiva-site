@@ -1,4 +1,4 @@
-/* Focused, no-cost conversion path for the existing SOVTIVA identity. */
+/* Focused, no-cost conversion path for the existing sovtiva identity. */
 .review-hero-cta{display:flex;align-items:center;flex-wrap:wrap;gap:13px 18px;margin-top:23px}
 .review-hero-cta .review-hero-link{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:#c5e8ed;color:#10272f!important;font-size:14px;font-weight:800;letter-spacing:-.02em;text-decoration:none;padding:14px 21px;border-radius:999px;transition:background .2s,transform .2s}
 .review-hero-cta .review-hero-link:hover,.review-hero-cta .review-hero-link:focus-visible{background:#f4f4e8;transform:translateY(-2px)}

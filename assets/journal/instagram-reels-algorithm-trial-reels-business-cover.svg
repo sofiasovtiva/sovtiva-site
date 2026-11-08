@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+    <title id="t">From Reel attention to qualified conversations</title><desc id="d">Four-stage editorial diagram: hook, hold, share, inquire, with attention and trust as the pathway rather than an algorithm hack.</desc>
+    <rect width="1200" height="630" fill="#0B1923"/>
+    <text x="65" y="65" font-family="Arial,sans-serif" font-size="18" letter-spacing="4" fill="#BFE6F0">SOVTIVA / INSTAGRAM RESEARCH</text>
+    <text x="65" y="133" font-family="Georgia,serif" font-size="50" fill="#F1EEE5">You cannot order reach.</text>
+    <text x="65" y="186" font-family="Georgia,serif" font-size="48" fill="#F1EEE5">You can make a Reel worth passing on.</text>
+    <path d="M65 230H1135" stroke="#72816A" stroke-width="2"/>
+    <g font-family="Arial,sans-serif">
+      <rect x="65" y="280" width="249" height="205" rx="4" fill="#193E47"/><text x="87" y="322" fill="#BFE6F0" font-size="17">01 / HOOK</text><text x="87" y="393" fill="#F1EEE5" font-size="28">Who's this for?</text><text x="87" y="449" fill="#BFE6F0" font-size="17">First seconds</text>
+      <rect x="339" y="280" width="249" height="205" rx="4" fill="#193E47"/><text x="361" y="322" fill="#BFE6F0" font-size="17">02 / HOLD</text><text x="361" y="393" fill="#F1EEE5" font-size="28">A real payoff</text><text x="361" y="449" fill="#BFE6F0" font-size="17">Watch time</text>
+      <rect x="613" y="280" width="249" height="205" rx="4" fill="#763F4B"/><text x="635" y="322" fill="#F1EEE5" font-size="17">03 / SHARE</text><text x="635" y="393" fill="#F1EEE5" font-size="28">Worth sending</text><text x="635" y="449" fill="#F1EEE5" font-size="17">Useful to a peer</text>
+      <rect x="887" y="280" width="249" height="205" rx="4" fill="#193E47"/><text x="909" y="322" fill="#BFE6F0" font-size="17">04 / INQUIRE</text><text x="909" y="393" fill="#F1EEE5" font-size="28">Relevant buyer</text><text x="909" y="449" fill="#BFE6F0" font-size="17">Qualified conversation</text>
+    </g>
+    <g stroke="#72816A" stroke-width="3" fill="none"><path d="M317 385h20m-10-10 10 10-10 10"/><path d="M591 385h20m-10-10 10 10-10 10"/><path d="M865 385h20m-10-10 10 10-10 10"/></g>
+    <text x="65" y="567" fill="#BFE6F0" font-family="Arial,sans-serif" font-size="18">No secret threshold. No guaranteed push. Measure what follows the view.</text>
+  </svg>

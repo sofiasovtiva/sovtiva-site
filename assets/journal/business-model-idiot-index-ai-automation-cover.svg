@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+    <title id="t">Business model economics and AI execution</title><desc id="d">An original editorial decision framework comparing demand and delivery leverage, not a measured industry ranking.</desc>
+    <rect width="1200" height="630" fill="#F1EEE5"/>
+    <text x="60" y="64" font-family="Arial,sans-serif" letter-spacing="3" font-size="19" fill="#763F4B">SOVTIVA / BUSINESS STRATEGY</text>
+    <text x="60" y="133" font-family="Georgia,serif" font-size="51" fill="#0B1923">Effort is not the same as leverage.</text>
+    <text x="60" y="191" font-family="Georgia,serif" font-size="36" fill="#193E47">Choose the model. Then improve the machine.</text>
+    <g transform="translate(70,237)" font-family="Arial,sans-serif">
+      <rect x="0" y="0" width="525" height="278" rx="4" fill="#193E47"/>
+      <text x="28" y="47" fill="#BFE6F0" font-size="17" letter-spacing="2">BEFORE YOU CHOOSE</text>
+      <text x="28" y="103" fill="#F1EEE5" font-size="32">Real demand?</text>
+      <text x="28" y="151" fill="#F1EEE5" font-size="32">Healthy contribution?</text>
+      <text x="28" y="199" fill="#F1EEE5" font-size="32">Repeatable delivery?</text>
+      <text x="28" y="247" fill="#F1EEE5" font-size="32">Defensible access?</text>
+      <rect x="555" y="0" width="525" height="278" rx="4" fill="#763F4B"/>
+      <text x="583" y="47" fill="#F1EEE5" font-size="17" letter-spacing="2">THEN IMPROVE EXECUTION</text>
+      <text x="583" y="103" fill="#F1EEE5" font-size="32">Capture inquiries.</text>
+      <text x="583" y="151" fill="#F1EEE5" font-size="32">Route work.</text>
+      <text x="583" y="199" fill="#F1EEE5" font-size="32">Reduce rework.</text>
+      <text x="583" y="247" fill="#F1EEE5" font-size="32">Measure outcomes.</text>
+    </g>
+    <text x="60" y="565" font-family="Arial,sans-serif" font-size="18" fill="#193E47">No industry is automatically easy. AI doesn't replace business fundamentals.</text>
+  </svg>

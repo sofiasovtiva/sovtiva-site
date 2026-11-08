@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+    <title id="t">The work behind an image</title><desc id="d">Editorial illustration showing a chain from a rough sketch to layers and a signed source record.</desc>
+    <rect width="1200" height="630" fill="#F1EEE5"/>
+    <text x="60" y="61" font-family="Arial,sans-serif" font-size="18" letter-spacing="4" fill="#763F4B">SOVTIVA / CREATIVE PROVENANCE</text>
+    <text x="60" y="132" font-family="Georgia,serif" fill="#0B1923" font-size="55">A polished image tells you</text>
+    <text x="60" y="193" font-family="Georgia,serif" fill="#0B1923" font-size="55">very little about its origin.</text>
+    <rect x="59" y="240" width="337" height="312" rx="7" fill="#D1E9E8" stroke="#72816A"/>
+    <text x="79" y="274" font-family="Arial,sans-serif" fill="#193E47" font-size="17" letter-spacing="2">01 / THE SKETCH</text>
+    <path d="M131 460Q116 351 191 329Q241 307 263 353Q306 364 324 454M146 449Q194 397 239 459M179 376Q195 357 204 382M248 371Q273 359 277 384M172 406Q200 428 247 409" fill="none" stroke="#763F4B" stroke-width="5" stroke-linecap="round" opacity=".77"/>
+    <path d="M109 504L349 503" stroke="#72816A" stroke-width="2"/>
+    <rect x="429" y="240" width="337" height="312" rx="7" fill="#193E47"/>
+    <text x="449" y="274" font-family="Arial,sans-serif" fill="#BFE6F0" font-size="17" letter-spacing="2">02 / THE PROCESS</text>
+    <rect x="477" y="316" width="212" height="147" rx="5" fill="#72816A" opacity=".4" transform="rotate(-9 584 389)"/>
+    <rect x="487" y="323" width="212" height="147" rx="5" fill="#BFE6F0" opacity=".65" transform="rotate(4 593 396)"/>
+    <rect x="510" y="342" width="194" height="132" rx="5" fill="#F1EEE5"/>
+    <path d="M531 437Q545 360 612 367T677 438" fill="none" stroke="#763F4B" stroke-width="9"/>
+    <rect x="799" y="240" width="341" height="312" rx="7" fill="#763F4B"/>
+    <text x="819" y="274" font-family="Arial,sans-serif" fill="#F1EEE5" font-size="17" letter-spacing="2">03 / THE RECORD</text>
+    <rect x="844" y="312" width="251" height="178" rx="4" fill="#F1EEE5"/>
+    <text x="868" y="345" font-family="Arial,sans-serif" fill="#0B1923" font-size="20">Source file</text>
+    <text x="868" y="377" font-family="Arial,sans-serif" fill="#193E47" font-size="16">Creator / version</text>
+    <text x="868" y="405" font-family="Arial,sans-serif" fill="#193E47" font-size="16">Edits / licenses</text>
+    <circle cx="1059" cy="449" r="23" fill="#72816A"/><path d="M1048 449l8 8 14-17" stroke="#F1EEE5" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <text x="62" y="599" font-family="Arial,sans-serif" fill="#193E47" font-size="16">A provenance trail is supporting evidence, not a universal AI detector.</text>
+  </svg>

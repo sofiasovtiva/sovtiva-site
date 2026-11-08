@@ -1,0 +1,19 @@
+/* SOVTIVA / Research to Recommendations, November 8, 2026.
+   Supplements existing journal stylesheet; intentionally small and accessible. */
+.research-series .hero-feature img { aspect-ratio: 1200 / 630; object-fit: contain; background:#0b1923; }
+.research-series .eyebrow { color:#627f86; font-weight:800; letter-spacing:.12em; font-size:12px; }
+.research-series .answer-box { background:#d8eaf0; border-left:5px solid #763f4b; padding:22px 27px; margin:30px 0 45px; border-radius:0 12px 12px 0; }
+.research-series .answer-box span { display:block; font-size:12px; letter-spacing:.11em; color:#4d646c; font-weight:800; }
+.research-series .answer-box p { font-size:18px; line-height:1.65; margin:9px 0 0; }
+.research-series a { text-underline-offset:3px; overflow-wrap:anywhere; }
+.research-series .series-table-wrap { width:100%; overflow-x:auto; margin:25px 0 36px; border-radius:12px; border:1px solid #cbdad9; background:#fbfcf8; }
+.research-series .series-table { border-collapse:collapse; width:100%; min-width:560px; table-layout:fixed; }
+.research-series .series-table th,.research-series .series-table td { text-align:left; vertical-align:top; padding:14px 15px; border-bottom:1px solid #d9e4e1; font-size:14px; line-height:1.55; }
+.research-series .series-table th { background:#173e49; color:#f3f3ed; font-size:12px; letter-spacing:.02em; }
+.research-series .series-table tr:last-child td { border-bottom:0; }
+.research-series .series-table tr:nth-child(even) td { background:#f0f5f2; }
+.research-series .series-table td:first-child { color:#193e47; font-weight:700; }
+.research-series .dual-video { display:grid; grid-template-columns:1fr; gap:12px; margin:30px 0 40px; }
+.research-series .dual-video .media-note { margin-bottom:12px; }
+.research-series .references .small { font-size:13px; color:#50666b; line-height:1.6; }
+@media(max-width:640px){.research-series .answer-box{padding:18px}.research-series .answer-box p{font-size:16px}.research-series .series-table{min-width:620px}.research-series .series-table th,.research-series .series-table td{padding:11px}}

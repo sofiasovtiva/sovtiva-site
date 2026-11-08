@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI tools are only a piece of the system. A practical guide to AI automation ownership, connectors, exceptions, human approvals and workflow measurement from sovtiva.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI Tools Aren't the Operating Model | sovtiva Journal">
+  <meta property="og:description" content="The operating model is the work around the AI: ownership, connectors, controls and proof that the workflow works.">
+  <meta property="og:image" content="https://sovtiva.com/assets/journal/ai-tools-operating-model.svg">
+  <meta property="og:url" content="https://sovtiva.com/journal/ai-tools-operating-model/">
+  <meta property="article:published_time" content="2026-11-08">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://sovtiva.com/journal/ai-tools-operating-model/">
+  <link rel="alternate" type="application/rss+xml" title="sovtiva Journal RSS" href="/feed.xml">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/journal/styles.css?v=20261108-multimedia">
+  <title>AI Tools Aren't the Operating Model: A Practical AI Automation Guide | sovtiva</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI tools aren't the operating model","description":"How to build a useful AI automation operating model around ownership, integration, approvals, exceptions and measurement.","datePublished":"2026-11-08","dateModified":"2026-11-08","inLanguage":"en","mainEntityOfPage":"https://sovtiva.com/journal/ai-tools-operating-model/","author":{"@type":"Organization","name":"sovtiva","url":"https://sovtiva.com/"},"publisher":{"@type":"Organization","name":"sovtiva","url":"https://sovtiva.com/"},"image":"https://sovtiva.com/assets/journal/ai-tools-operating-model.svg","isAccessibleForFree":true}</script>
+  <script src="/assets/i18n.js?v=20261107-bilingual-v2" defer></script>
+  <script src="/assets/analytics.js?v=20261106-ga4" defer></script>
+</head>
+<body>
+  <header class="topbar"><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="/">sovtiva</a><div class="navlinks"><a href="/">Home</a><a href="/solutions/">Solutions</a><a href="/partners/">Partners</a><a href="/journal/" aria-current="page">Journal</a><a class="btn" href="/ai-review/">Start with your workflow ↗</a></div></nav></header>
+  <main class="wrap"><article class="article">
+    <a class="back" href="/journal/">← Back to the Journal</a>
+    <div class="eyebrow" style="margin-top:48px">Field notes · AI advisory · November 8, 2026</div>
+    <h1>AI tools aren't the operating model.</h1>
+    <p class="dek">The model is the work around them: who makes the decision, which systems are allowed to talk, what happens when something breaks, and how anyone knows it worked.</p>
+    <figure class="article-media editorial-visual"><img src="/assets/journal/ai-tools-operating-model.svg" alt="Original sovtiva editorial illustration with concentric rings around a single decision point and the headline AI tools aren't the operating model" width="1200" height="675" loading="eager"><figcaption>Editorial illustration by sovtiva. The tool sits inside a larger operating system.</figcaption></figure>
+
+    <p>Businesses have more ways than ever to connect AI to the software they already use. The technology can read a request, interpret a document, draft an update or call another application. But a connector does not tell the business <em>who should approve the result</em>. A prompt does not decide which customer record is authoritative. A successful demo does not prove a process will survive an outage.</p>
+    <p>That is the difference between owning an AI tool and having an AI operating model.</p>
+
+    <h2>Start with a decision, not a product.</h2>
+    <p>Take a familiar case: a request arrives in an inbox, somebody checks the customer's details, updates a spreadsheet, alerts a colleague and follows up two days later.</p>
+    <p>A tool-first conversation asks which chatbot or workflow builder can do all five steps. A useful operating-model conversation asks five different questions:</p>
+    <ol>
+      <li><strong>Trigger:</strong> What exact event starts the process, and what should not?</li>
+      <li><strong>Source:</strong> Which system owns the customer record, and what makes the input trustworthy?</li>
+      <li><strong>Decision:</strong> What can be handled by a fixed rule, what needs judgment, and what must be reviewed by a person?</li>
+      <li><strong>Exception:</strong> Where does a duplicate, missing field, failed API call or ambiguous request go?</li>
+      <li><strong>Outcome:</strong> What observable change tells us the task is finished correctly?</li>
+    </ol>
+    <p>Sometimes the resulting system needs an AI model. Sometimes it needs a form, a clean source of data and two well-designed rules.</p>
+
+    <h2>The connector is a bridge. Permission is the architecture.</h2>
+    <p>Microsoft's Power Platform can govern which connector groups are allowed to share data, using data loss prevention policies. Google's Apps Script can extend Sheets and connect services, but its triggers and services have authorization and quota limits. These are engineering constraints, not fine print. <a href="https://learn.microsoft.com/power-automate/prevent-data-loss">Microsoft documents the policy model</a>, while <a href="https://developers.google.com/apps-script/guides/services/quotas">Google documents Apps Script quotas</a> and <a href="https://developers.google.com/apps-script/guides/triggers">trigger behavior</a>.</p>
+    <p>Before joining a CRM, inbox, document store and AI system, document which data may cross each connection, which credentials it uses, who owns those credentials and what happens when access expires. A workflow that only works while its creator is signed in is fragile by design.</p>
+
+    <h2>Give the workflow a human-shaped escape route.</h2>
+    <p>Reliable systems have a place for uncertainty. For example, an AI assistant might classify a request with reasonable confidence but encounter two possible customer records. It should not quietly pick one and continue. It should flag the ambiguity, retain context and ask the right owner to decide.</p>
+    <p>That principle is consistent with the <a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">NIST AI Risk Management Framework</a>, which emphasizes governance, mapping, measurement and management. OpenAI also documents <a href="https://developers.openai.com/api/docs/guides/agents/guardrails-approvals">guardrails and human approval points</a> for agent workflows with consequential actions.</p>
+    <figure class="article-media editorial-visual"><img src="/assets/journal/ai-operating-model-workflow.svg" alt="Six-stage workflow diagram: trigger, verify source, decide, approve exceptions, act and audit" width="1200" height="520" loading="lazy"><figcaption>A reference pattern, not a depiction of a deployed customer system. Automated decisions should have visible exception paths.</figcaption></figure>
+
+    <h2>Measure the boring things that actually matter.</h2>
+    <p>Before building, record a modest baseline: how many requests arrive, how long handling takes, how often data must be corrected, and what proportion needs human review. After implementation, measure the same items. Count failed runs and rework. An impressive number of AI-generated drafts means little if a person must repair every one.</p>
+    <div class="example"><h3>A practical first-week test</h3><ol>
+      <li>Choose one recurring workflow, not the entire department.</li>
+      <li>Observe five to ten recent examples, including the awkward ones.</li>
+      <li>Draw the trigger, source of truth, decision, owner and failure path.</li>
+      <li>Identify the smallest change that eliminates avoidable manual work.</li>
+      <li>Run with a human check before increasing autonomy.</li>
+    </ol><p>This is an assessment method, not a guarantee of time or cost savings. The appropriate design depends on the systems, data and risk involved.</p></div>
+
+    <h2>Where sovtiva fits.</h2>
+    <p>At <strong>sovtiva</strong>, we help teams find the manual work worth changing, review their existing software and design practical AI automation, integrations or custom workflows. We can help set up and explain the system so your team understands how to operate it. Where specialist delivery makes more sense, we can help with the introduction and scope through our independent <a href="/partners/">partner network</a>.</p>
+    <p>Our starting point is a workflow review, not a shopping list. You can <a href="/ai-review/">show us the task that keeps coming back</a> or read our guide to <a href="/journal/when-to-automate-spreadsheets/">deciding when a spreadsheet is actually worth automating</a>.</p>
+    <div class="example" lang="es"><h3>En breve</h3><p>Una herramienta de inteligencia artificial no es un sistema operativo para tu negocio. Antes de automatizar, define quién toma decisiones, qué aplicaciones se conectan, quién revisa excepciones y cómo medirás el resultado. <a href="/ai-review/">Cuéntanos qué tarea quieres simplificar.</a></p></div>
+    <p class="small">Sources: <a href="https://learn.microsoft.com/power-automate/prevent-data-loss">Microsoft Power Automate DLP</a> · <a href="https://developers.google.com/apps-script/guides/services/quotas">Google Apps Script quotas</a> · <a href="https://developers.google.com/apps-script/guides/triggers">Google triggers</a> · <a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">NIST AI RMF</a> · <a href="https://developers.openai.com/api/docs/guides/agents/guardrails-approvals">OpenAI guardrails</a>. Accessed November 8, 2026. Illustrations and hypothetical workflows are original explanatory examples, not client case studies.</p>
+  </article></main>
+  <div class="wrap"><footer><div><strong>sovtiva</strong><br>Practical AI, software and systems.</div><div><a href="/journal/">More field notes</a> · <a href="/feed.xml">RSS</a></div><div>© 2026 sovtiva</div></footer></div>
+</body>
+</html>

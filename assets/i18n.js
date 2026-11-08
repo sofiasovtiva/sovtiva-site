@@ -64,6 +64,8 @@
     'Visit our Research Desk': 'Visita nuestra sección de investigación',
     'See the evidence': 'Consulta la evidencia',
     'When AI recommends someone else.': 'Cuando la IA recomienda a alguien más.',
+    'The most important AI breakthrough may be a permission screen.': 'La innovación más importante de la IA podría ser una pantalla de permisos.',
+    'AI connectors, real workflows and the permissions that matter.': 'Conectores de IA, procesos reales y los permisos que importan.',
     'Research is part of the work.': 'Investigar también es parte del trabajo.',
     'About sovtiva': 'Sobre sovtiva',
     'Elsewhere': 'Más proyectos',

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The connector shift: from question to verified action</title>
+  <desc id="desc">An original four-stage Sovtiva diagram showing intent, contextual read access, a human approval gate, and a verified action. A connector never grants unlimited permission.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#082430"/><stop offset="1" stop-color="#194355"/></linearGradient>
+    <linearGradient id="glow" x1="0" x2="1"><stop stop-color="#c4eaf0"/><stop offset="1" stop-color="#e5efde"/></linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#b5d6da" stroke-opacity=".10" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/><rect width="1200" height="630" fill="url(#grid)"/>
+  <path d="M0 195H1200M0 535H1200" stroke="#7da5ae" stroke-opacity=".28"/>
+  <text x="70" y="68" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5" fill="#b8e6ec">SOVTIVA / RESEARCH DESK</text>
+  <text x="70" y="148" font-family="Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="-2" fill="#f2f7f4">THE CONNECTOR SHIFT.</text>
+  <text x="72" y="181" font-family="Arial,sans-serif" font-size="23" fill="#c4d9db">The breakthrough is not access. It's controlled, verified work.</text>
+  <rect x="70" y="235" width="250" height="238" rx="16" fill="#d6e8e5"/>
+  <rect x="340" y="235" width="250" height="238" rx="16" fill="#bfdfe2"/>
+  <rect x="610" y="235" width="250" height="238" rx="16" fill="#e7d6dc"/>
+  <rect x="880" y="235" width="250" height="238" rx="16" fill="#dfe6d7"/>
+  <g font-family="Arial,sans-serif" fill="#0e2b38">
+    <text x="92" y="277" font-size="17" font-weight="800" fill="#45636d" letter-spacing="1.1">01 / INTENT</text>
+    <text x="92" y="333" font-size="31" font-weight="800">Ask</text>
+    <text x="92" y="370" font-size="31" font-weight="800">a question.</text>
+    <text x="92" y="418" font-size="18" fill="#4a6870">Human goal + context</text>
+    <text x="362" y="277" font-size="17" font-weight="800" fill="#45636d" letter-spacing="1.1">02 / READ</text>
+    <text x="362" y="333" font-size="31" font-weight="800">Use scoped</text>
+    <text x="362" y="370" font-size="31" font-weight="800">data.</text>
+    <text x="362" y="418" font-size="18" fill="#4a6870">Tools, sources, limits</text>
+    <text x="632" y="277" font-size="17" font-weight="800" fill="#8d5669" letter-spacing="1.1">03 / APPROVE</text>
+    <text x="632" y="333" font-size="31" font-weight="800">Review</text>
+    <text x="632" y="370" font-size="31" font-weight="800">the change.</text>
+    <text x="632" y="418" font-size="18" fill="#8a5c6b">Policy + human gate</text>
+    <text x="902" y="277" font-size="17" font-weight="800" fill="#60755d" letter-spacing="1.1">04 / VERIFY</text>
+    <text x="902" y="333" font-size="31" font-weight="800">Act. Check.</text>
+    <text x="902" y="370" font-size="31" font-weight="800">Log.</text>
+    <text x="902" y="418" font-size="18" fill="#60755d">Outcome + exception</text>
+  </g>
+  <g fill="#f2f7f4"><circle cx="330" cy="349" r="14"/><circle cx="600" cy="349" r="14"/><circle cx="870" cy="349" r="14"/></g>
+  <g fill="none" stroke="#0d2b38" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m326 343 7 6-7 6"/><path d="m596 343 7 6-7 6"/><path d="m866 343 7 6-7 6"/></g>
+  <text x="72" y="578" font-family="Arial,sans-serif" font-size="21" font-weight="800" letter-spacing="2.1" fill="url(#glow)">A CONNECTION IS NOT A PERMISSION SLIP.</text>
+  <text x="1128" y="583" text-anchor="end" font-family="Arial,sans-serif" font-size="16" fill="#acc7cb">NOV 2026 · ORIGINAL FRAMEWORK</text>
+</svg>

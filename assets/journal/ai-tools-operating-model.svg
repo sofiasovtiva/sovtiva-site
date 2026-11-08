@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AI tools aren't the operating model</title>
+  <desc id="desc">Editorial typographic cover with a restrained circular decision diagram in sovtiva's cream, navy, olive and burgundy palette</desc>
+  <rect width="1200" height="675" fill="#F1EEE5"/>
+  <text x="72" y="75" font-family="Arial, sans-serif" font-size="24" letter-spacing="6" fill="#0B1923" font-weight="700">SOVTIVA</text>
+  <path d="M72 105H1128" stroke="#0B1923" stroke-width="1.4"/>
+  <text x="72" y="171" font-family="Arial, sans-serif" font-size="18" letter-spacing="2" fill="#763F4B">FIELD NOTES / AI ADVISORY</text>
+  <text x="72" y="280" font-family="Georgia, serif" font-size="82" fill="#0B1923">AI tools aren't</text>
+  <text x="72" y="374" font-family="Georgia, serif" font-size="82" fill="#0B1923">the operating</text>
+  <text x="72" y="468" font-family="Georgia, serif" font-size="82" fill="#0B1923">model.</text>
+  <text x="75" y="529" font-family="Arial, sans-serif" font-size="21" fill="#193E47">Decisions. Ownership. Integration. Exceptions.</text>
+  <g transform="translate(935 335)" fill="none">
+    <circle r="161" stroke="#193E47" stroke-width="2"/>
+    <circle r="120" stroke="#72816A" stroke-width="1.5"/>
+    <circle r="72" stroke="#BFE6F0" stroke-width="1.5"/>
+    <path d="M-190 0H190M0-190V190" stroke="#BFE6F0" stroke-width="1.4"/>
+    <circle r="14" fill="#763F4B"/>
+  </g>
+  <path d="M72 605H1128" stroke="#D1E9E8" stroke-width="2"/>
+  <text x="72" y="638" font-family="Arial, sans-serif" font-size="16" letter-spacing="1.6" fill="#193E47">RESEARCH / ADVISORY / OPERATIONS</text>
+  <text x="1050" y="638" font-family="Arial, sans-serif" font-size="16" fill="#0B1923">01 / 26</text>
+</svg>

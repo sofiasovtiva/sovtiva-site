@@ -59,6 +59,12 @@
     'No code needed.': 'Sin necesidad de programar.',
     'CUSTOM SOFTWARE': 'SOFTWARE A MEDIDA',
     'Journal': 'Journal',
+    'Research': 'Investigación',
+    'Explore the Research Desk': 'Explora nuestras investigaciones',
+    'Visit our Research Desk': 'Visita nuestra sección de investigación',
+    'See the evidence': 'Consulta la evidencia',
+    'When AI recommends someone else.': 'Cuando la IA recomienda a alguien más.',
+    'Research is part of the work.': 'Investigar también es parte del trabajo.',
     'About sovtiva': 'Sobre sovtiva',
     'Elsewhere': 'Más proyectos',
     'The right provider matters more than the longest list of providers.': 'Importa encontrar al especialista correcto, no presentar una lista interminable.'

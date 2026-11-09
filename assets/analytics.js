@@ -4,7 +4,7 @@
 
   const measurementId = 'G-M3D4CMY2XM';
   const consentKey = 'sovtiva_analytics_consent_v1';
-  const language = (document.documentElement.lang || '').toLowerCase().startsWith('es') ? 'es' : 'en';
+  const currentLanguage = () => (document.documentElement.lang || '').toLowerCase().startsWith('es') ? 'es' : 'en';
 
   function storedChoice() {
     try { return localStorage.getItem(consentKey); } catch (_) { return null; }
@@ -17,13 +17,31 @@
   function enableAnalytics() {
     if (typeof window.gtag === 'function') return;
 
+    // Preserve campaign attribution without sending arbitrary query parameters
+    // (which may contain names, emails or other information) to Analytics.
+    const publicUrl = new URL(window.location.href);
+    const campaignKeys = new Set(['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'from']);
+    for (const key of [...publicUrl.searchParams.keys()]) {
+      const value = publicUrl.searchParams.get(key) || '';
+      if (!campaignKeys.has(key.toLowerCase()) || value.length > 120 || value.includes('@')) {
+        publicUrl.searchParams.delete(key);
+      }
+    }
+    publicUrl.hash = '';
+    // Keep the referring website, but strip its query string and fragment.
+    let safeReferrer = '';
+    try {
+      const referrer = document.referrer && new URL(document.referrer);
+      if (referrer && /^https?:$/.test(referrer.protocol)) safeReferrer = referrer.origin + referrer.pathname;
+    } catch (_) { /* An invalid referrer should not prevent the visit. */ }
+
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag('js', new Date());
     window.gtag('config', measurementId, {
       send_page_view: true,
-      page_location: window.location.origin + window.location.pathname,
-      page_referrer: '',
+      page_location: publicUrl.toString(),
+      page_referrer: safeReferrer,
       page_title: document.title,
       allow_google_signals: false,
       allow_ad_personalization_signals: false
@@ -57,35 +75,44 @@
     const banner = document.createElement('section');
     banner.id = 'sovtiva-analytics-choice';
     banner.setAttribute('role', 'region');
-    banner.setAttribute('aria-label', language === 'es' ? 'Preferencias de analítica' : 'Analytics preferences');
     const title = document.createElement('strong');
-    title.textContent = language === 'es' ? '¿Nos ayudas a mejorar el sitio?' : 'Help us make this site more useful?';
     const description = document.createElement('p');
-    description.textContent = language === 'es'
-      ? 'Si aceptas, Google Analytics medirá visitas y solicitudes exitosas. No enviamos el contenido de formularios. Puedes rechazarlo y seguir navegando.'
-      : 'If you agree, Google Analytics will measure visits and successful inquiries. We do not send form contents. You can say no and keep browsing.';
     const actions = document.createElement('div');
     actions.className = 'actions';
     const yes = document.createElement('button');
     yes.type = 'button';
     yes.id = 'sovtiva-analytics-yes';
-    yes.textContent = language === 'es' ? 'Aceptar analítica' : 'Allow analytics';
     const no = document.createElement('button');
     no.type = 'button';
     no.id = 'sovtiva-analytics-no';
-    no.textContent = language === 'es' ? 'No, gracias' : 'No, thanks';
+    const translateChoice = () => {
+      const spanish = currentLanguage() === 'es';
+      banner.setAttribute('aria-label', spanish ? 'Preferencias de analítica' : 'Analytics preferences');
+      title.textContent = spanish ? '¿Nos ayudas a mejorar el sitio?' : 'Help us make this site more useful?';
+      description.textContent = spanish
+        ? 'Si aceptas, Google Analytics medirá visitas y solicitudes exitosas. No enviamos el contenido de formularios. Puedes rechazarlo y seguir navegando.'
+        : 'If you agree, Google Analytics will measure visits and successful inquiries. We do not send form contents. You can say no and keep browsing.';
+      yes.textContent = spanish ? 'Aceptar analítica' : 'Allow analytics';
+      no.textContent = spanish ? 'No, gracias' : 'No, thanks';
+    };
+    const dismiss = () => {
+      document.removeEventListener('sovtiva:language', translateChoice);
+      banner.remove();
+    };
 
     yes.addEventListener('click', () => {
       rememberChoice('yes');
-      banner.remove();
+      dismiss();
       enableAnalytics();
     });
     no.addEventListener('click', () => {
       rememberChoice('no');
-      banner.remove();
+      dismiss();
     });
     actions.append(yes, no);
     banner.append(title, description, actions);
+    translateChoice();
+    document.addEventListener('sovtiva:language', translateChoice);
     document.body.appendChild(banner);
   }
 

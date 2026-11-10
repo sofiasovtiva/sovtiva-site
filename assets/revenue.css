@@ -100,3 +100,10 @@
   font-weight:600;
   letter-spacing:.035em;
 }
+
+/* 2026-11-10 / Explicit Sovtiva-only partner lead intake. */
+.review-partner-context{background:#dcece9;color:#223f42;border:1px solid #98b5b1;border-left:4px solid #416f76;padding:20px 22px;margin:0 0 25px;border-radius:5px}
+.review-partner-context[hidden]{display:none}
+.review-partner-kicker{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-style:italic;font-size:21px;line-height:1.1;color:#35575a;margin-bottom:12px}
+.review-partner-context strong{font-size:18px;font-weight:800;display:block;letter-spacing:-.035em;line-height:1.4}
+.review-partner-context p{color:#365156;font-size:13px;line-height:1.75;margin:10px 0 0}

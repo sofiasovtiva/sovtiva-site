@@ -1,25 +1,24 @@
 name: IndexNow after successful GitHub Pages deployment
 
 on:
-  workflow_run:
-    workflows:
-      - pages build and deployment
-    types:
-      - completed
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
   notify-indexnow:
-    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the deployed revision
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
-          fetch-depth: 2
+          ref: ${{ github.sha }}
+          fetch-depth: 3
       - name: Notify IndexNow of changed HTML pages
         env:
           INDEXNOW_KEY: SovtivaIndexNow2026b15e9a7c2d4f
@@ -41,6 +40,10 @@ jobs:
               raise SystemExit('IndexNow key file mismatch')
           key_url = f'https://{host}/{key_file}'
           diff = subprocess.run(['git','diff','--name-only','HEAD^','HEAD'],capture_output=True,text=True,check=True).stdout.splitlines()
+          # Initial enablement: this commit only changes the workflow; publish
+          # the pages from its immediately preceding site release once.
+          if diff == ['.github/workflows/indexnow-after-pages.yml']:
+              diff = subprocess.run(['git','diff','--name-only','HEAD^^','HEAD^'],capture_output=True,text=True,check=True).stdout.splitlines()
           urls = set()
           for path in diff:
               if path == 'index.html':

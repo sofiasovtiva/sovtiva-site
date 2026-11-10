@@ -425,3 +425,16 @@ a:focus-visible,button:focus-visible{outline:3px solid #8fdfed;outline-offset:4p
 .venture-book span{color:#304b47}
 .journal-intro p a{color:#d8f1f4;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .contact-direct a{color:#fff;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+
+/* Editorial secondary typography for newly clarified supporting labels. */
+.partner-tile-head,
+.partner-type,
+.mock-eyebrow,
+.ventures-section .eyebrow,
+.venture-id,
+.venture-status{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-style:italic;
+  font-weight:600;
+  letter-spacing:.045em;
+}

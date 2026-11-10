@@ -88,3 +88,15 @@
 .review-direct a,.review-truth a{text-decoration:underline;text-decoration-thickness:1px}
 .review-steps .review-eyebrow{color:#315e65}
 .review-step p{color:#415c61}
+
+/* Editorial secondary typography: retain the site's Cormorant accent on supporting labels. */
+.review-eyebrow,
+.review-card-index,
+.review-spotlight-label,
+.review-steps .review-eyebrow,
+.review-step>span{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-style:italic;
+  font-weight:600;
+  letter-spacing:.035em;
+}

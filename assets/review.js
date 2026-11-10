@@ -10,8 +10,35 @@
   const params = new URLSearchParams(location.search);
   const source = (params.get('from') || 'direct').replace(/[^a-z0-9-]/gi, '').slice(0,45) || 'direct';
   document.getElementById('review-source').value = source;
+  const partnerMatch = /^partner-(forcoda|pureblue|larsen)-([a-z0-9-]+)$/.exec(source);
+  const partnerNames = { forcoda: 'Forcoda', pureblue: 'Pureblue.ai', larsen: 'Larsen Code Labs' };
+  const partnerName = partnerMatch ? partnerNames[partnerMatch[1]] : '';
+  const solutionCode = partnerMatch ? partnerMatch[2] : '';
+  const solutionLabel = solutionCode.replace(/-/g, ' ');
+  const partnerContext = document.getElementById('review-partner-context');
+  if (partnerMatch) {
+    document.getElementById('review-partner').value = partnerName;
+    document.getElementById('review-solution').value = solutionCode;
+    document.getElementById('review-category').value = 'Find a technology specialist';
+    form.querySelector('input[name="_subject"]').value = 'Sovtiva specialist inquiry | ' + partnerName + ' | ' + source;
+    partnerContext.hidden = false;
+  }
   const contact = 'sofia.delgado@sovtiva.com';
   const spanish = () => document.documentElement.lang === 'es';
+  function translatePartnerContext() {
+    if (!partnerMatch) return;
+    document.getElementById('review-partner-kicker').textContent = spanish()
+      ? 'CONSULTA DE ESPECIALISTA / POR MEDIO DE SOVTIVA'
+      : 'SPECIALIST REQUEST / THROUGH SOVTIVA';
+    document.getElementById('review-partner-title').textContent = spanish()
+      ? 'Interés en ' + partnerName + ' · ' + solutionLabel
+      : 'Interested in ' + partnerName + ' · ' + solutionLabel;
+    document.getElementById('review-partner-description').textContent = spanish()
+      ? 'Sovtiva recibe tu solicitud primero, valida el encaje y las condiciones de referido. Solo compartiremos tus datos con el especialista si tú lo autorizas.'
+      : 'Sovtiva receives your request first, checks fit and referral eligibility, and asks your permission before sharing any details with the provider.';
+  }
+  document.addEventListener('sovtiva:language', translatePartnerContext);
+  if (partnerMatch) translatePartnerContext();
   let prepared = '';
 
   function prepareFallback() {
@@ -24,12 +51,12 @@
       'Hola, Sofía:', '', 'Me gustaría revisar una tarea que podríamos simplificar.', '',
       `Nombre: ${name}`, `Correo: ${email}`, `Tipo de trabajo: ${category}`, '',
       'Así funciona hoy:', task, '',
-      `Origen en el sitio: ${source}`, '', '¡Gracias!'
+      `Origen en el sitio: ${source}`, ...(partnerMatch ? [`Especialista: ${partnerName}`, `Solución solicitada: ${solutionLabel}`] : []), '', '¡Gracias!'
     ] : [
       'Hi Sofia,', '', "I'd like a free first look at a workflow.", '',
       `Name: ${name}`, `Email: ${email}`, `Type of work: ${category}`, '',
       'What happens now:', task, '',
-      `Website source: ${source}`, '', 'Thanks!'
+      `Website source: ${source}`, ...(partnerMatch ? [`Delivery partner: ${partnerName}`, `Requested solution: ${solutionLabel}`] : []), '', 'Thanks!'
     ]).join('\n');
     prepared = `To: ${contact}\nSubject: ${subject}\n\n${body}`;
     output.value = prepared;

@@ -44,6 +44,11 @@
         <h2>Tell us about one task.</h2>
         <p>You don't need a technical plan. Just tell us what happens today.</p>
         <form class="review-form" id="review-form" action="https://formspree.io/f/xljjkgrq" method="POST">
+          <div class="review-partner-context" id="review-partner-context" hidden aria-live="polite">
+            <span class="review-partner-kicker" id="review-partner-kicker">SPECIALIST REQUEST / THROUGH SOVTIVA</span>
+            <strong id="review-partner-title">Explore a specialist solution.</strong>
+            <p id="review-partner-description">Your request comes to Sovtiva first. We check fit and referral requirements, and never share your details with a provider without asking you.</p>
+          </div>
           <label for="review-name">Your name</label>
           <input id="review-name" name="name" type="text" autocomplete="name" maxlength="100" required placeholder="What should we call you?">
           <label for="review-email">Your email</label>
@@ -62,6 +67,8 @@
           <label for="review-task">What happens now?</label>
           <textarea id="review-task" name="message" minlength="12" maxlength="1200" required placeholder="For example: Every Friday, I pull numbers from three systems and build the same report by hand."></textarea>
           <input type="hidden" name="source" id="review-source" value="direct">
+          <input type="hidden" name="partner_interest" id="review-partner" value="">
+          <input type="hidden" name="solution_interest" id="review-solution" value="">
           <input type="hidden" name="_subject" value="Free AI Leverage Review | sovtiva">
           <div class="review-honeypot" aria-hidden="true"><label for="review-website">Leave this blank</label><input id="review-website" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
           <label class="review-consent" for="review-consent"><input id="review-consent" type="checkbox" required><span>It's okay for sovtiva to contact me about this request. I understand my details are processed through Formspree to deliver this message.</span></label>

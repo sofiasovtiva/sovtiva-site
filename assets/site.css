@@ -438,3 +438,11 @@ a:focus-visible,button:focus-visible{outline:3px solid #8fdfed;outline-offset:4p
   font-weight:600;
   letter-spacing:.045em;
 }
+
+/* 2026-11-10: internally linked discovery paths beneath primary choice cards. */
+.popular-services{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:26px;padding:21px 0 0;border-top:1px solid #5e777266}
+.popular-services-label{font-size:10px;font-weight:800;letter-spacing:.15em;color:#38565b;text-transform:uppercase;margin-right:8px}
+.popular-services a{display:inline-block;font-size:12px;font-weight:750;color:#244953;padding:9px 13px;border:1px solid #658789;border-radius:30px;text-decoration:underline;text-underline-offset:3px}
+.popular-services a:hover{background:#244953;color:white}
+.popular-services a:focus-visible{outline:3px solid #20677c;outline-offset:3px}
+@media(max-width:600px){.popular-services{gap:9px}.popular-services-label{flex-basis:100%}.popular-services a{font-size:11px}}

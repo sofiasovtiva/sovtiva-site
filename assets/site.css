@@ -412,3 +412,29 @@ a:focus-visible,button:focus-visible{outline:3px solid #8fdfed;outline-offset:4p
 @media(max-width:1100px){.journal-sideband-inner{grid-template-columns:minmax(0,1fr) minmax(200px,.8fr)}.journal-sideband-center{grid-column:1/-1;grid-row:1;display:grid;grid-template-columns:1fr auto;column-gap:20px;align-items:end;padding:6px 0 12px}.journal-sideband-center h2{margin:9px 0 0}.journal-sideband-center p{grid-column:2;grid-row:2;margin:0;max-width:285px}.journal-sideband-center a{grid-column:2;grid-row:3;justify-self:start}.journal-sideband-kicker{grid-column:1/-1}.journal-sidecard-feature{min-height:275px}}
 @media(max-width:650px){.journal-sideband{padding:20px 0 23px}.journal-sideband-inner{display:flex;flex-direction:column;gap:13px}.journal-sideband-center{order:0;display:block;padding:0 0 7px}.journal-sideband-center h2{font-size:34px;margin:9px 0}.journal-sideband-center p{max-width:none;margin:0 0 12px}.journal-sidecard-feature{order:1;min-height:240px}.journal-sideband-stack{order:2;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:10px}.journal-sidecard-small{min-height:190px;padding:16px 15px}.journal-sidecard-small .journal-sidecard-title{font-size:20px}.journal-sidecard-small .journal-sidecard-meta{font-size:9px;letter-spacing:.08em}.journal-sidecard-small .journal-sidecard-bottom{font-size:9px}.journal-sidecard{padding:20px 21px}.journal-sidecard-small{padding:15px}}
 @media(max-width:400px){.journal-sideband-stack{grid-template-columns:1fr}.journal-sidecard-small{min-height:155px}.journal-sidecard-feature .journal-sidecard-title{font-size:29px}}
+
+/* 2026-11-09 / Contrast and link clarity, audited against Lighthouse mobile.
+   Preserve the editorial palette while keeping supporting text legible. */
+.fit-intro p{color:#3e5b62}
+.partner-lead p,.partner-tile p{color:#38565d}
+.partner-tile-head,.partner-type{color:#365861}
+.partner-note{color:#415961}
+.mock-eyebrow,.mock-data,.mock-footer{color:#315963}
+.ventures-intro p{color:#485d63}
+.ventures-section .eyebrow{color:#3b575d}
+.venture-book span{color:#304b47}
+.journal-intro p a{color:#d8f1f4;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.contact-direct a{color:#fff;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+
+/* Editorial secondary typography for newly clarified supporting labels. */
+.partner-tile-head,
+.partner-type,
+.mock-eyebrow,
+.ventures-section .eyebrow,
+.venture-id,
+.venture-status{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-style:italic;
+  font-weight:600;
+  letter-spacing:.045em;
+}

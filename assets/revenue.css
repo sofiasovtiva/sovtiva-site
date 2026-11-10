@@ -78,3 +78,25 @@
 @media(max-width:960px){.review-hero-grid{grid-template-columns:1fr;gap:48px}.review-hero{padding:76px 0 88px}.review-card{max-width:720px}.review-spotlight-layout{gap:36px;grid-template-columns:1fr}.review-spotlight-label{align-items:center}.review-spotlight-main h2{margin:0}.review-truth-grid{grid-template-columns:1fr;gap:30px}}
 @media(max-width:650px){.review-hero{padding:53px 0 68px}.review-hero h1{font-size:clamp(53px,12vw,76px)}.review-card{padding:27px 23px}.review-steps{padding:74px 0}.review-steps-grid{grid-template-columns:1fr;gap:24px}.review-spotlight{padding:75px 0 82px}.review-spotlight-main h2{font-size:clamp(45px,10vw,66px)}.review-spotlight-actions{align-items:flex-start;flex-direction:column;gap:12px}.review-hero-cta{align-items:flex-start;flex-direction:column}.review-hero-cta>span{max-width:300px}.review-truth{padding:65px 0}}
 @media(prefers-reduced-motion:reduce){.review-hero-link,.review-submit{transition:none!important}}
+
+/* Mobile Lighthouse accessibility: explanatory copy must pass 4.5:1 contrast. */
+.review-spotlight-actions>span{color:#3b5a52}
+.review-card-index{color:#3c5a63}
+.review-card>p{color:#405a60}
+.review-form-note{color:#405b5b!important}
+.review-direct{color:#435b60}
+.review-direct a,.review-truth a{text-decoration:underline;text-decoration-thickness:1px}
+.review-steps .review-eyebrow{color:#315e65}
+.review-step p{color:#415c61}
+
+/* Editorial secondary typography: retain the site's Cormorant accent on supporting labels. */
+.review-eyebrow,
+.review-card-index,
+.review-spotlight-label,
+.review-steps .review-eyebrow,
+.review-step>span{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-style:italic;
+  font-weight:600;
+  letter-spacing:.035em;
+}

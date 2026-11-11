@@ -14,7 +14,6 @@
   <link rel="canonical" href="https://sovtiva.com/links/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/site.css?v=20261109-accessibility">
-  <link rel="stylesheet" href="/assets/analytics.js?v=20261106-ga4" as="script">
   <title>Start here | sovtiva</title>
   <script src="/assets/analytics.js?v=20261106-ga4" defer></script>
   <style>
@@ -89,12 +88,13 @@
           <span class="hub-card-foot"><span data-lang="en">EXPLORE SOLUTIONS</span><span data-lang="es">EXPLORAR SOLUCIONES</span><span>↗</span></span>
         </a>
       </section>
-      <div class="hub-section-label"><span data-lang="en">MORE FROM SOVTIVA</span><span data-lang="es">MÁS DE SOVTIVA</span><span>03 — 06</span></div>
+      <div class="hub-section-label"><span data-lang="en">MORE FROM SOVTIVA</span><span data-lang="es">MÁS DE SOVTIVA</span><span>03 — 07</span></div>
       <nav class="hub-links" aria-label="Sovtiva destinations">
         <a class="hub-link" data-track="specialist-solutions" href="/solutions/#partner-solutions"><span class="hub-link-index">03</span><span class="hub-link-copy"><strong><span data-lang="en">Specialist-led solutions</span><span data-lang="es">Soluciones con especialistas</span></strong><small><span data-lang="en">Tell Sovtiva what you need. We coordinate the right introduction and commercial route.</span><span data-lang="es">Cuéntanos qué necesitas. Coordinamos la presentación y la ruta comercial adecuada.</span></small></span><span class="hub-link-arrow">↗</span></a>
         <a class="hub-link" data-track="digital-shop" href="https://sovtiva.etsy.com/"><span class="hub-link-index">04</span><span class="hub-link-copy"><strong><span data-lang="en">Digital tools & templates</span><span data-lang="es">Herramientas y plantillas digitales</span></strong><small><span data-lang="en">Original tools for the details behind everyday business.</span><span data-lang="es">Herramientas originales para organizar el día a día de un negocio.</span></small></span><span class="hub-link-arrow">↗</span></a>
         <a class="hub-link" data-track="journal" href="/journal/"><span class="hub-link-index">05</span><span class="hub-link-copy"><strong><span data-lang="en">The Journal & Research Desk</span><span data-lang="es">Journal e Investigación</span></strong><small><span data-lang="en">Independent thinking on technology, business systems and what works.</span><span data-lang="es">Ideas e investigación sobre tecnología, sistemas de negocio y lo que funciona.</span></small></span><span class="hub-link-arrow">↗</span></a>
-        <a class="hub-link" data-track="contact" href="mailto:sofia.delgado@sovtiva.com?subject=Hello%20Sovtiva"><span class="hub-link-index">06</span><span class="hub-link-copy"><strong><span data-lang="en">Start a conversation</span><span data-lang="es">Inicia una conversación</span></strong><small><span data-lang="en">A direct line to the Sovtiva team.</span><span data-lang="es">Contacto directo con el equipo de Sovtiva.</span></small></span><span class="hub-link-arrow">↗</span></a>
+        <a class="hub-link" data-track="whatsapp" data-whatsapp-link href="https://wa.me/5215666485824"><span class="hub-link-index">06</span><span class="hub-link-copy"><strong><span data-lang="en">Talk to Sovtiva on WhatsApp</span><span data-lang="es">Habla con Sovtiva por WhatsApp</span></strong><small><span data-lang="en">A direct conversation. Every specialist request starts with Sovtiva.</span><span data-lang="es">Una conversación directa. Cada solicitud de especialistas comienza con Sovtiva.</span></small></span><span class="hub-link-arrow">↗</span></a>
+        <a class="hub-link" data-track="email" href="mailto:sofia.delgado@sovtiva.com?subject=Hello%20Sovtiva"><span class="hub-link-index">07</span><span class="hub-link-copy"><strong><span data-lang="en">Write to the team</span><span data-lang="es">Escribe al equipo</span></strong><small><span data-lang="en">Prefer email? Start a direct conversation with Sovtiva.</span><span data-lang="es">¿Prefieres correo? Inicia una conversación directa con Sovtiva.</span></small></span><span class="hub-link-arrow">↗</span></a>
       </nav>
     </main>
     <footer class="hub-footer"><span><span data-lang="en">MEXICO CITY · REMOTE WORLDWIDE</span><span data-lang="es">CIUDAD DE MÉXICO · ATENCIÓN REMOTA EN TODO EL MUNDO</span><br>© 2026 sovtiva</span><a href="/">sovtiva.com ↗</a></footer>
@@ -109,11 +109,24 @@
           if(source)url.searchParams.set('utm_source',source);
           if(medium)url.searchParams.set('utm_medium',medium);
           if(campaign)url.searchParams.set('utm_campaign',campaign);
-          url.searchParams.set('utm_content','links-'+link.dataset.track);
+          if(link.dataset.track!=='whatsapp')url.searchParams.set('utm_content','links-'+link.dataset.track);
           if(link.origin===location.origin)link.href=url.pathname+url.search+url.hash;
           else link.href=url.toString();
         }catch(_){}
+        link.addEventListener('click',function(){
+          if(typeof window.gtag==='function'){
+            window.gtag('event','hub_click',{hub_destination:link.dataset.track,link_url:link.href});
+          }
+        });
       });
+      function updateWhatsAppMessage(){
+        const link=document.querySelector('[data-whatsapp-link]');
+        if(!link)return;
+        const message=document.documentElement.lang==='es'
+          ? 'Hola, Sovtiva. Me gustaría hablar sobre una solución para mi negocio.'
+          : 'Hi Sovtiva. I would like to discuss a solution for my business.';
+        link.href='https://wa.me/5215666485824?text='+encodeURIComponent(message);
+      }
       document.querySelectorAll('[data-set-lang]').forEach(function(button){
         button.addEventListener('click',function(){
           const lang=button.dataset.setLang;
@@ -123,6 +136,8 @@
         });
       });
       try{const saved=localStorage.getItem('sovtiva_links_language');if(saved==='es'||saved==='en'){document.documentElement.lang=saved;document.querySelectorAll('[data-set-lang]').forEach(function(button){button.setAttribute('aria-pressed',String(button.dataset.setLang===saved));});}}catch(_){}
+      updateWhatsAppMessage();
+      document.querySelectorAll('[data-set-lang]').forEach(function(button){button.addEventListener('click',updateWhatsAppMessage);});
     })();
   </script>
 </body>

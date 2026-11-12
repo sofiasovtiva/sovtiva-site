@@ -1,0 +1,119 @@
+{
+  "project": "SOVTIVA SV-SOC-001-V5",
+  "stage": "PREPRODUCTION_ONLY_NOT_RENDERED",
+  "owner": "SOVTIVA",
+  "fps": 24,
+  "width": 1080,
+  "height": 1920,
+  "cut_frames": 576,
+  "duration_s": 24,
+  "render_engine": "Blender 5.2 LTS EEVEE previews; Cycles optional selectively after benchmark",
+  "claims": [
+    "US$1.09 per 1000 eligible verified approved views is an illustrative offered CPM, not observed net revenue",
+    "100000 eligible views would imply approx US$109 gross before fees and only if funds, caps and approval allow",
+    "unapproved posts may earn zero"
+  ],
+  "sources": [
+    "https://sovtiva.com/journal/higgsfield-seeded-paid-views-2026/es/",
+    "https://github.com/Leonxlnx/escapement",
+    "https://www.blender.org/releases/5-2/"
+  ],
+  "approval": {
+    "storyboard": "PENDING",
+    "rights": "PENDING",
+    "expenditure": "NOT_AUTHORIZED",
+    "social_publication": "NOT_AUTHORIZED"
+  },
+  "shots": [
+    {
+      "id": "V5-A",
+      "start_frame": 0,
+      "cut_frames": 48,
+      "title": "The count breaks reality",
+      "action": "Phone in a dark tactile studio; count rises toward 100,000 then the glass bulges as physical metallic digits push from the screen",
+      "camera": "65mm macro, slow 12cm push, shallow rack-focus to screen; never rotate arbitrarily",
+      "transition": "Last frame metallic digits at lens fills next shot",
+      "sound": "Two vibration taps, short low sub rise; first spoken hook",
+      "caption": "100,000 VISTAS",
+      "quality": "Recognizable phone/count and impossible event within 2 seconds",
+      "end_frame_exclusive": 48,
+      "duration_s": 2,
+      "handle_frames_each_side": 6
+    },
+    {
+      "id": "V5-B",
+      "start_frame": 48,
+      "cut_frames": 84,
+      "title": "The camera follows the explosion",
+      "action": "Metal objects/coins spill from phone with a believable floor contact and scattered reflections; tracking camera follows one minted token",
+      "camera": "35mm perspective, quick motivated chase, physical acceleration and safe handheld stabilization",
+      "transition": "Follow the same hero coin across shot boundary",
+      "sound": "Coin clusters, textured whoosh, momentum hits exactly as coin crosses frame",
+      "caption": "¿Y cuánto pagan?",
+      "quality": "Coin movement has mass; reflections, motion blur and shadows are coherent",
+      "end_frame_exclusive": 132,
+      "duration_s": 3.5,
+      "handle_frames_each_side": 6
+    },
+    {
+      "id": "V5-C",
+      "start_frame": 132,
+      "cut_frames": 96,
+      "title": "The $109 conditional reveal",
+      "action": "Coin spins into light, engraved $109 BRUTOS* appears; visible smaller 'ejemplo sujeto a elegibilidad' in a readable safe region",
+      "camera": "85mm macro/rack focus; restrained rotation and believable studio light sweep",
+      "transition": "Coin surface shape and warm highlight become embossed seal on next receipt",
+      "sound": "Delicate metal ring; lower music for number and caveat",
+      "caption": "US$109 BRUTOS* / EJEMPLO",
+      "quality": "No false assertion of real payout; rate context legible and linked in caption",
+      "end_frame_exclusive": 228,
+      "duration_s": 4,
+      "handle_frames_each_side": 6
+    },
+    {
+      "id": "V5-D",
+      "start_frame": 228,
+      "cut_frames": 120,
+      "title": "Payment terms become the story",
+      "action": "Coin transforms into paper statement with clear fields: rate example US$1.09/1K eligible; 100K accepted views; cap/approval applies. Hand-style stamp is visually implied without impersonating a platform",
+      "camera": "60mm shoulder-level product shot, parallax across paper fibers, motivated pan following receipt",
+      "transition": "Receipt flips end-over-end, same framing for rejected version",
+      "sound": "Paper drag + quiet stamp; voice explains eligibility",
+      "caption": "SOLO SI CALIFICA",
+      "quality": "No proprietary platform UI spoofing; terms simplified without misrepresentation",
+      "end_frame_exclusive": 348,
+      "duration_s": 5,
+      "handle_frames_each_side": 6
+    },
+    {
+      "id": "V5-E",
+      "start_frame": 348,
+      "cut_frames": 108,
+      "title": "The twist: rejected video pays zero",
+      "action": "Reverse flips printed statement to NOT APPROVED; brass token fractures into fragments settling on floor; $0 payout visible",
+      "camera": "35mm lateral whip then lock to falling fragments, depth of field carries the punchline",
+      "transition": "Fragments and floor reflection compress into glow of phone screen",
+      "sound": "Hard paper crack and low bass drop; drop music to emphasize zero",
+      "caption": "NO APROBADO = US$0",
+      "quality": "Rejected payout framed as possible outcome, not universal; debris physics plausible",
+      "end_frame_exclusive": 456,
+      "duration_s": 4.5,
+      "handle_frames_each_side": 6
+    },
+    {
+      "id": "V5-F",
+      "start_frame": 456,
+      "cut_frames": 120,
+      "title": "Return to the phone; seamless loop",
+      "action": "Fragments pull back into phone, count glows, simple phrase 'Vistas no son ganancias', Sovtiva mark for less than 1.2 seconds, return image matches shot A opening",
+      "camera": "60mm slow return to original macro camera position; matched loop framing",
+      "transition": "Last frame visually matches shot A frame 0 for replay",
+      "sound": "One resolving chime, original recorded VO line, music transition loops",
+      "caption": "VISTAS ≠ GANANCIAS",
+      "quality": "Viewers understand before CTA; final loop seamless and brand doesn't dominate",
+      "end_frame_exclusive": 576,
+      "duration_s": 5,
+      "handle_frames_each_side": 6
+    }
+  ]
+}

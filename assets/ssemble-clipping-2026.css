@@ -1,0 +1,50 @@
+/* SOVTIVA editorial. Ssemble research, November 2026. */
+.ssemble-hero{background:#0b2633;color:#f1f4ed;position:relative;overflow:hidden}
+.ssemble-hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 17%,rgba(163,217,219,.18),transparent 39%),radial-gradient(circle at 8% 78%,rgba(104,40,64,.25),transparent 41%);pointer-events:none}
+.ssemble-hero>.shell{position:relative;z-index:1;padding:85px 0 77px}
+.ssemble-hero h1{font-size:clamp(44px,7vw,92px);line-height:1.01;letter-spacing:-.071em;margin:17px 0 26px;max-width:1030px}
+.ssemble-hero h1 em{color:#b8e6ec;font-style:normal}
+.ssemble-hero .dek{font-size:clamp(18px,2vw,23px);max-width:770px;color:#d3e2df;line-height:1.52}
+.ssemble-hero .byline{margin-top:22px}
+.ssemble-body{padding:52px 0 90px}
+.ssemble-body .lead{font-size:22px;line-height:1.6;letter-spacing:-.015em;color:#263f49;margin:0 0 32px}
+.ssemble-body h2{font-size:clamp(31px,4vw,46px);line-height:1.12;letter-spacing:-.057em;margin:62px 0 18px}
+.ssemble-body h3{font-size:25px;line-height:1.2;letter-spacing:-.04em;margin:31px 0 10px}
+.ssemble-body p,.ssemble-body li{font-size:17px;line-height:1.76}
+.ssemble-body p{margin:16px 0}.ssemble-body li{margin:8px 0}
+.ssemble-body a{color:#235d69}.ssemble-body a:hover{text-decoration-thickness:2px}
+.ssemble-body .source-list li{font-size:14px}
+.fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:29px 0 12px}
+.fact{background:#e2ebe7;border:1px solid #c9dbd5;border-radius:15px;padding:24px}
+.fact strong{font-size:clamp(37px,5vw,64px);letter-spacing:-.07em;line-height:1.05;display:block;color:#0b2c3b}
+.fact span{font-size:13px;font-weight:750;color:#607980;line-height:1.45;display:block;margin-top:9px}
+.graph{margin:35px 0;background:#0e2c38;color:#eff6f3;border-radius:19px;padding:31px 28px}
+.graph .graph-kicker{font-size:11px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:#a8ced6}
+.graph h3{margin:10px 0 13px;color:#fff;font-size:27px}
+.graph p{font-size:14px;color:#c5d9db;line-height:1.65}
+.graph .bar{height:21px;background:#3b5860;border-radius:30px;overflow:hidden;margin:20px 0 9px;display:flex}
+.graph .bar .hit{width:51.3%;background:#b5e9e9}
+.graph .bar .tail{flex:1;background:#8e5470}
+.graph .legend{display:flex;justify-content:space-between;gap:15px;font-weight:800;font-size:13px;flex-wrap:wrap}
+.graph .legend .left{color:#b6e8ed}.graph .legend .right{color:#efc5d8}
+.ssemble-body .breakout{font-size:clamp(23px,3.1vw,37px);font-weight:780;letter-spacing:-.044em;border-left:5px solid #672d43;padding:16px 0 16px 23px;margin:37px 0;background:transparent;line-height:1.32}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:29px 0}
+.process div{background:#d9e8e4;border:1px solid #c4d8d2;border-radius:11px;padding:16px}
+.process b{display:block;font-size:11px;color:#567a82;letter-spacing:.12em}
+.process strong{display:block;font-size:17px;line-height:1.24;margin-top:7px}
+.table-wrap{overflow-x:auto;margin:30px 0}.comparison{width:100%;border-collapse:collapse;min-width:550px;background:#f6f9f7}
+.comparison th,.comparison td{border:1px solid #cddcda;padding:16px;text-align:left;vertical-align:top;font-size:15px;line-height:1.6}
+.comparison th{background:#d5e7e5;font-weight:800}
+.ssemble-body .caption{font-size:12px;color:#627e85;margin:6px 0 20px}
+.ssemble-body .callout{background:#e0e9e5;border:1px solid #c5d8d1;border-radius:16px;padding:23px 28px;margin:29px 0}
+.ssemble-body .callout h3{margin-top:0}
+.ssemble-body .callout p{font-size:15px}
+.ssemble-body .caution{border-left:5px solid #6b3247;background:#f3e9e8;padding:18px 23px;border-radius:0 14px 14px 0;margin:26px 0}
+.ssemble-body .caution p{margin:0;font-size:16px}
+.ssemble-body .sources{border-top:1px solid #c4d8d2;margin-top:58px;padding-top:6px}
+.ssemble-body .cta{background:#672d43;color:#fff;border-radius:18px;padding:34px;margin:48px 0 14px}
+.ssemble-body .cta h2{color:#fff;margin:0 0 12px;font-size:33px}
+.ssemble-body .cta p{color:#f3e4e9}
+.ssemble-body .cta a.button{display:inline-block;padding:12px 19px;background:#b8e6ec;color:#0c2530;font-weight:800;text-decoration:none;border-radius:40px}
+.ssemble-body .source-note{font-size:13px;color:#607980}
+@media(max-width:700px){.fact-grid{grid-template-columns:1fr;gap:8px}.process{grid-template-columns:1fr 1fr}.ssemble-hero>.shell{padding:55px 0}.ssemble-body{padding-top:35px}.graph{padding:24px 18px}.ssemble-body .cta{padding:24px}}

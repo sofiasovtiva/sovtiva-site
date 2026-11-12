@@ -115,3 +115,19 @@ The user rejected V2 as too two-dimensional. The next prototype uses the actual 
 - **Next creative test:** introduce an owned or licensed physical scene (hands, phone, studio desk) or a generated 3D narrative with realistic props, a distinctive original character, camera whip/transitions, natural voice-over and mixed sound. Compare two creative hooks in native TikTok player after explicit publication approval. More geometry alone won't guarantee attention.
 
 Source copy also stored in SOVTIVA Website Drive folder as `SOVTIVA | True 3D Motion Video Engine V3 | Source.txt`. The rendered MP4 is a conversation artifact, not uploaded to the public GitHub repository.
+
+## V4: Cinema Notes — refined 3D editorial short (11 November 2026)
+
+**Purpose:** replace V3's blunt oversized 3D typography with more cinematic, deliberate visual storytelling for Sovtiva's own TikTok/Reels/Shorts tests. Not a customer case study and not published.
+
+**Actual technical features:** off-screen VTK 3D rendering of a physical phone, metallic coin, two angled campaign statements and a studio nameplate. Independent geometry, real perspective camera positions, rim lighting and original self-generated procedural stereo audio. Spanish in-scene typography, softer palette, coherent visual margins and protected subtitle zone. Source: `tools/video-studio/cinema_notes_v4.py` (Python 3.10+, VTK, numpy, scipy, Pillow, FFmpeg). No Claude, paid model, sampled commercial song or downloaded footage.
+
+**Observed test:** 372 rendered frames, 15.500 seconds at 24 fps. Native 3D scene rasterization 720×1280, exported/upscaled with Lanczos to 1080×1920 H.264 + AAC stereo; FFprobe verified streams, duration and dimensions. FFmpeg audio verification: mean -17.6 dB, peak -7.2 dB after correcting overly quiet first mix. Frame contact sheet generated from the exported video and visually inspected. Render process status=0. No social upload/metrics verified.
+
+**Factual gate:** The example $109 *gross* is conditional on 100,000 campaign-eligible approved views and an illustrative $1.09/1K rate, subject to terms, caps and available budgets. Rejected/unsuccessful clips may earn $0; neither number is a guaranteed payout or verified creator income. On-screen paper explicitly says `EJEMPLO / NO ES UN PAGO`. Underlying editorial research: `/journal/higgsfield-seeded-paid-views-2026/es/`.
+
+**Design changes over V3:** less competing text; a consistent 3D visual metaphor (phone → metallic payout token → campaign statement → rejection → studio mark); quiet camera dolly/orbit instead of hard rotations; softer lighting and color; fewer sound effects with atmospheric music; all explanatory visual text is now in Spanish; receipt size/placement revised to clear the lower caption safe zone.
+
+**Limitations:** still a procedural stylized 3D animation, not filmed product footage or physically-based path-traced cinema. Original audio has no human voiceover. Final video is a local conversation artifact, not committed as a public video to the site or imported to Descript. Code has system-font assumptions and requires local dependencies and approved footage checks for adaptation. Visual mobile review and actual social retention have not been tested.
+
+**Next creative decision:** compare this with one genuine camera-shot or licensed B-roll driven variant with voice, tighter hooks and richer tactile material/lighting, then obtain specific publication approval before release. Do not claim a production economics benchmark from the synthetic demo. No spending or social publication.

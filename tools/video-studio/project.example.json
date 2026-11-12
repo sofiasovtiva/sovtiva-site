@@ -1,0 +1,16 @@
+{
+  "source": "source.mp4",
+  "captions": "captions.example.json",
+  "output_dir": "out",
+  "rights": {
+    "status": "PENDING",
+    "owner": "",
+    "basis": ""
+  },
+  "clip": {
+    "start": 0,
+    "end": 6
+  },
+  "width": 1080,
+  "height": 1920
+}

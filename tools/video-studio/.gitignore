@@ -1,0 +1,14 @@
+# Never commit client footage, exports, approvals or internal production data
+out/
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.srt
+*.ass
+*.log
+project.json
+captions.json
+.DS_Store
+__pycache__/

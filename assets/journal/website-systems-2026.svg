@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc"><title id="title">The website that explains itself</title><desc id="desc">Original Sovtiva editorial concept: a carefully typeset web layout with three connected elements labelled clarity, demonstration and next step. No third-party logos or screenshots.</desc>
+<defs><linearGradient id="fade" x1="0" x2="1"><stop stop-color="#173441"/><stop offset="1" stop-color="#143a46"/></linearGradient></defs>
+<rect width="1200" height="630" fill="#ede9df"/><path d="M44 42H1156V588H44Z" fill="none" stroke="#91a6a2" stroke-width="2"/>
+<rect width="1200" height="94" fill="#173441"/><text x="66" y="58" fill="#d5e9e7" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3.8">SOVTIVA / RESEARCH ON DIGITAL CRAFT</text>
+<text x="73" y="207" fill="#183744" font-family="Arial,sans-serif" font-size="67" font-weight="800" letter-spacing="-3.2">MAKE THE WORK</text><text x="73" y="283" fill="#793d53" font-family="Arial,sans-serif" font-size="72" font-weight="800" letter-spacing="-3.2">UNDERSTANDABLE.</text>
+<path d="M73 328H1126" stroke="#a8b6b0" stroke-width="2"/>
+<g font-family="Arial,sans-serif"><rect x="73" y="362" width="318" height="151" rx="8" fill="#c0e0e0"/><rect x="405" y="362" width="318" height="151" rx="8" fill="#f3d5d4"/><rect x="737" y="362" width="389" height="151" rx="8" fill="#d1d7bd"/>
+<text x="98" y="406" font-size="16" font-weight="700" fill="#355761" letter-spacing="2">01 / CLARITY</text><text x="98" y="462" font-size="32" font-weight="800" fill="#183744">What is it?</text>
+<text x="430" y="406" font-size="16" font-weight="700" fill="#744257" letter-spacing="2">02 / PROOF</text><text x="430" y="462" font-size="32" font-weight="800" fill="#533747">Show the work.</text>
+<text x="762" y="406" font-size="16" font-weight="700" fill="#566852" letter-spacing="2">03 / ACTION</text><text x="762" y="462" font-size="32" font-weight="800" fill="#314734">Make the next step easy.</text></g>
+<text x="73" y="563" fill="#475e62" font-family="Arial,sans-serif" font-size="17" letter-spacing="1.4">A GOOD SITE IS AN EXPLANATION YOU CAN USE.</text>
+<text x="1125" y="563" text-anchor="end" fill="#173441" font-family="Arial,sans-serif" font-size="22" font-weight="800">sovtiva.</text>
+</svg>

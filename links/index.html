@@ -61,11 +61,11 @@
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main"><span data-lang="en">Skip to content</span><span data-lang="es">Saltar al contenido</span></a>
   <div class="hub-shell">
     <header class="hub-top">
       <a class="wordmark" href="/" aria-label="sovtiva home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>sovtiva<span class="wordmark-point">.</span></a>
-      <div class="hub-language" aria-label="Language">
+      <div class="hub-language" role="group" data-aria-en="Language" data-aria-es="Idioma" aria-label="Language">
         <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
         <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
       </div>
@@ -76,7 +76,7 @@
         <h1><span data-lang="en">A good place<br>to <em>begin.</em></span><span data-lang="es">Un buen lugar<br>para <em>empezar.</em></span></h1>
         <p><span data-lang="en">Practical technology, clearer workflows and thoughtful specialist connections. Choose the conversation that makes sense for you.</span><span data-lang="es">Tecnología práctica, procesos más claros y conexiones con especialistas. Elige la conversación que tenga sentido para ti.</span></p>
       </section>
-      <section class="hub-primary" aria-label="Start with Sovtiva">
+      <section class="hub-primary" data-aria-en="Start with Sovtiva" data-aria-es="Empieza con Sovtiva" aria-label="Start with Sovtiva">
         <a class="hub-card hub-card-main" data-track="free-review" href="/ai-review/?from=links-primary">
           <span class="hub-card-label"><span data-lang="en">01 / A useful first step</span><span data-lang="es">01 / Un primer paso útil</span></span>
           <div><h2><span data-lang="en">Find the work<br>worth <em>changing.</em></span><span data-lang="es">Encuentra el trabajo<br>que vale la pena <em>cambiar.</em></span></h2><p><span data-lang="en">Tell us about one task taking too much time. We'll help you find a practical next move.</span><span data-lang="es">Cuéntanos qué tarea te quita demasiado tiempo. Buscaremos un siguiente paso práctico.</span></p></div>
@@ -89,7 +89,7 @@
         </a>
       </section>
       <div class="hub-section-label"><span data-lang="en">MORE FROM SOVTIVA</span><span data-lang="es">MÁS DE SOVTIVA</span><span>03 — 07</span></div>
-      <nav class="hub-links" aria-label="Sovtiva destinations">
+      <nav class="hub-links" data-aria-en="Sovtiva destinations" data-aria-es="Destinos de Sovtiva" aria-label="Sovtiva destinations">
         <a class="hub-link" data-track="specialist-solutions" href="/solutions/#partner-solutions"><span class="hub-link-index">03</span><span class="hub-link-copy"><strong><span data-lang="en">Specialist-led solutions</span><span data-lang="es">Soluciones con especialistas</span></strong><small><span data-lang="en">Tell Sovtiva what you need. We coordinate the right introduction and commercial route.</span><span data-lang="es">Cuéntanos qué necesitas. Coordinamos la presentación y la ruta comercial adecuada.</span></small></span><span class="hub-link-arrow">↗</span></a>
         <a class="hub-link" data-track="digital-shop" href="https://sovtiva.etsy.com/"><span class="hub-link-index">04</span><span class="hub-link-copy"><strong><span data-lang="en">Digital tools & templates</span><span data-lang="es">Herramientas y plantillas digitales</span></strong><small><span data-lang="en">Original tools for the details behind everyday business.</span><span data-lang="es">Herramientas originales para organizar el día a día de un negocio.</span></small></span><span class="hub-link-arrow">↗</span></a>
         <a class="hub-link" data-track="journal" href="/journal/"><span class="hub-link-index">05</span><span class="hub-link-copy"><strong><span data-lang="en">The Journal & Research Desk</span><span data-lang="es">Journal e Investigación</span></strong><small><span data-lang="en">Independent thinking on technology, business systems and what works.</span><span data-lang="es">Ideas e investigación sobre tecnología, sistemas de negocio y lo que funciona.</span></small></span><span class="hub-link-arrow">↗</span></a>
@@ -101,43 +101,77 @@
   </div>
   <script>
     (function(){
-      const params=new URLSearchParams(location.search);
-      const source=params.get('utm_source'), medium=params.get('utm_medium'), campaign=params.get('utm_campaign');
+      const params = new URLSearchParams(location.search);
+      const source = params.get('utm_source');
+      const medium = params.get('utm_medium');
+      const campaign = params.get('utm_campaign');
+
       document.querySelectorAll('a[data-track]').forEach(function(link){
-        try{
-          const url=new URL(link.href,location.origin);
-          if(source)url.searchParams.set('utm_source',source);
-          if(medium)url.searchParams.set('utm_medium',medium);
-          if(campaign)url.searchParams.set('utm_campaign',campaign);
-          if(link.dataset.track!=='whatsapp')url.searchParams.set('utm_content','links-'+link.dataset.track);
-          if(link.origin===location.origin)link.href=url.pathname+url.search+url.hash;
-          else link.href=url.toString();
-        }catch(_){}
-        link.addEventListener('click',function(){
-          if(typeof window.gtag==='function'){
-            window.gtag('event','hub_click',{hub_destination:link.dataset.track,link_url:link.href});
+        try {
+          const url = new URL(link.href, location.origin);
+          if (url.protocol === 'http:' || url.protocol === 'https:') {
+            if (source) url.searchParams.set('utm_source', source);
+            if (medium) url.searchParams.set('utm_medium', medium);
+            if (campaign) url.searchParams.set('utm_campaign', campaign);
+            url.searchParams.set('utm_content', 'links-' + link.dataset.track);
+            link.href = url.origin === location.origin
+              ? url.pathname + url.search + url.hash
+              : url.toString();
+          }
+        } catch (_) {}
+        link.addEventListener('click', function(){
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'hub_click', {
+              hub_destination: link.dataset.track,
+              link_url: link.href,
+              transport_type: 'beacon'
+            });
           }
         });
       });
+
       function updateWhatsAppMessage(){
-        const link=document.querySelector('[data-whatsapp-link]');
-        if(!link)return;
-        const message=document.documentElement.lang==='es'
+        const link = document.querySelector('[data-whatsapp-link]');
+        if (!link) return;
+        const message = document.documentElement.lang === 'es'
           ? 'Hola, Sovtiva. Me gustaría hablar sobre una solución para mi negocio.'
           : 'Hi Sovtiva. I would like to discuss a solution for my business.';
-        link.href='https://wa.me/5215666485824?text='+encodeURIComponent(message);
+        try {
+          const url = new URL(link.href);
+          url.searchParams.set('text', message);
+          link.href = url.toString();
+        } catch (_) {}
       }
+
+      function applyLanguage(lang, remember){
+        if (lang !== 'en' && lang !== 'es') return;
+        document.documentElement.lang = lang;
+        document.title = lang === 'es' ? 'Empieza aquí | sovtiva' : 'Start here | sovtiva';
+        document.querySelectorAll('[data-aria-en][data-aria-es]').forEach(function(element){
+          element.setAttribute('aria-label', element.getAttribute('data-aria-' + lang));
+        });
+        document.querySelectorAll('[data-set-lang]').forEach(function(button){
+          button.setAttribute('aria-pressed', String(button.dataset.setLang === lang));
+        });
+        if (remember) {
+          try { localStorage.setItem('sovtiva_links_language', lang); } catch (_) {}
+        }
+        updateWhatsAppMessage();
+        document.dispatchEvent(new CustomEvent('sovtiva:language', { detail: { language: lang } }));
+      }
+
       document.querySelectorAll('[data-set-lang]').forEach(function(button){
-        button.addEventListener('click',function(){
-          const lang=button.dataset.setLang;
-          document.documentElement.lang=lang;
-          document.querySelectorAll('[data-set-lang]').forEach(function(other){other.setAttribute('aria-pressed',String(other===button));});
-          try{localStorage.setItem('sovtiva_links_language',lang);}catch(_){}
+        button.addEventListener('click', function(){
+          applyLanguage(button.dataset.setLang, true);
         });
       });
-      try{const saved=localStorage.getItem('sovtiva_links_language');if(saved==='es'||saved==='en'){document.documentElement.lang=saved;document.querySelectorAll('[data-set-lang]').forEach(function(button){button.setAttribute('aria-pressed',String(button.dataset.setLang===saved));});}}catch(_){}
-      updateWhatsAppMessage();
-      document.querySelectorAll('[data-set-lang]').forEach(function(button){button.addEventListener('click',updateWhatsAppMessage);});
+
+      try {
+        const saved = localStorage.getItem('sovtiva_links_language');
+        applyLanguage(saved === 'es' ? 'es' : 'en', false);
+      } catch (_) {
+        applyLanguage('en', false);
+      }
     })();
   </script>
 </body>

@@ -1,0 +1,35 @@
+/* Sovtiva Research — AI video economics and programmatic editing, 2026-11-11 */
+.video-mast{position:relative;background:#0c2733;color:#f8faf7;overflow:hidden}
+.video-mast:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 22%,rgba(179,229,232,.16),transparent 37%),linear-gradient(128deg,transparent 60%,rgba(110,44,66,.28));pointer-events:none}
+.video-mast>.shell{position:relative;padding:85px 0 74px}
+.video-mast h1{font-size:clamp(44px,7.2vw,93px);line-height:.99;letter-spacing:-.07em;max-width:1000px;margin:18px 0 26px}
+.video-mast h1 em{font-style:normal;color:#bbe8e8}
+.video-mast .deck{font-size:clamp(18px,2.15vw,23px);max-width:810px;line-height:1.54;color:#d5e4e5}
+.video-mast .micro{display:flex;gap:14px 24px;flex-wrap:wrap;font-size:12px;color:#aac2c8;font-weight:720;margin-top:29px}
+.video-body{padding:52px 0 78px}.video-body .lead{font-size:22px;line-height:1.63;color:#254651;margin:5px 0 34px}
+.video-body h2{font-size:clamp(31px,4.3vw,45px);letter-spacing:-.057em;line-height:1.13;margin:63px 0 20px}
+.video-body h3{font-size:24px;line-height:1.25;letter-spacing:-.032em;margin:30px 0 15px}
+.video-body p,.video-body li{font-size:17px;line-height:1.77}.video-body a{color:#206070;text-underline-offset:4px}
+.video-body .eyebrow{font-size:11px;letter-spacing:.15em;font-weight:850;color:#497985;text-transform:uppercase}
+.video-body .source-caption{font-size:12px;line-height:1.65;color:#56737b}
+.video-body .visual{margin:35px 0 32px;background:#0b2a36;border-radius:17px;overflow:hidden;box-shadow:0 20px 55px rgba(7,34,43,.14)}
+.video-body .visual img{width:100%;height:auto;display:block}.video-body .visual figcaption{color:#c3d7dc;background:#0b2a36;padding:11px 18px;font-size:12px}
+.stat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0}.stat-tile{padding:24px;background:#e4ede9;border:1px solid #c9dcd5;border-radius:13px}
+.stat-tile b{display:block;font-size:clamp(28px,4.3vw,56px);letter-spacing:-.067em;line-height:1.1;color:#123947}.stat-tile span{display:block;font-size:13px;line-height:1.4;font-weight:730;color:#56727b;margin-top:9px}
+.video-body .table-wrap{margin:30px 0;overflow:auto;border:1px solid #c9d9d4;border-radius:13px}
+.video-body table{border-collapse:collapse;width:100%;background:#f9fbf9;min-width:600px}
+.video-body th,.video-body td{padding:15px 17px;border-bottom:1px solid #d0e0dc;vertical-align:top;text-align:left;font-size:15px;line-height:1.54}
+.video-body th{background:#d9e9e5;font-weight:850;color:#224a55}.video-body tr:last-child td{border-bottom:0}
+.video-body .standout{margin:44px 0;border-left:5px solid #74354e;padding:14px 0 14px 24px;font-size:clamp(24px,3.2vw,35px);font-weight:780;letter-spacing:-.04em;line-height:1.28}
+.video-body .caveat{background:#f2e9e9;border-left:4px solid #74354e;padding:19px 24px;margin:28px 0;border-radius:0 12px 12px 0}
+.video-body .caveat p{margin:0;font-size:16px}
+.video-body .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:30px 0}
+.video-body .steps>div{padding:20px 17px;background:#dce9e5;border:1px solid #c6d9d2;border-radius:12px}
+.video-body .steps b{font-size:11px;letter-spacing:.12em;color:#577d83;display:block}.video-body .steps strong{display:block;margin-top:8px;font-size:17px;line-height:1.25}
+.video-body .quote-panel{padding:26px 29px;border-radius:17px;background:#133e49;color:#e6efeb;margin:30px 0}.video-body .quote-panel p{margin:5px 0;font-size:19px;color:#e7efea}
+.video-body .offer{background:#692f45;color:#fff;border-radius:20px;padding:37px;margin:46px 0}.video-body .offer h2{margin:0 0 13px;color:#fff;font-size:34px}.video-body .offer p{color:#f1e4e9}
+.video-body .offer a{display:inline-block;background:#b9e5e5;color:#11303a;font-weight:840;text-decoration:none;border-radius:50px;padding:11px 19px;margin-top:8px}
+.video-body .sources{border-top:1px solid #cbded9;padding-top:2px;margin-top:50px}
+.video-body .sources li{font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+.video-body .inline-tag{display:inline-block;padding:5px 10px;border-radius:99px;background:#dcebe8;color:#345d68;font-size:12px;font-weight:800;margin-right:5px}
+@media(max-width:760px){.video-mast>.shell{padding:58px 0}.video-body{padding:28px 0 64px}.video-body .lead{font-size:19px}.stat-grid{grid-template-columns:1fr}.video-body .steps{grid-template-columns:1fr 1fr}.video-body .offer{padding:26px}}

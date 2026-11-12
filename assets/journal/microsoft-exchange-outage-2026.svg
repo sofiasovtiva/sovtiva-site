@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">When the inbox goes dark</title><desc id="desc">Original Sovtiva editorial graphic: a disrupted central exchange mailbox, with lines leading to sales, support, appointments and automation. It is a conceptual representation, not a Microsoft infrastructure map.</desc>
+<rect width="1200" height="630" fill="#0d2632"/><path d="M0 89H1200M0 541H1200" stroke="#4a6370" stroke-width="2" opacity=".7"/>
+<g font-family="Arial,sans-serif"><text x="66" y="60" fill="#a4cfdb" font-size="16" font-weight="700" letter-spacing="4">SOVTIVA / INCIDENT DESK</text>
+<text x="1135" y="60" fill="#a4cfdb" font-size="16" text-anchor="end" letter-spacing="2">12 NOV 2026</text>
+<text x="65" y="184" fill="#f0f1ec" font-size="70" font-weight="800" letter-spacing="-3">THE INBOX</text><text x="65" y="255" fill="#a7d8e6" font-size="70" font-weight="800" letter-spacing="-3">GOES DARK.</text>
+<text x="67" y="308" fill="#c4d0d1" font-size="23">EXCHANGE ONLINE / EX1550543</text></g>
+<g fill="none" stroke="#c9a1ad" stroke-width="3"><path d="M563 420H659"/><path d="M832 420H946"/><path d="M754 498V552"/></g>
+<g transform="translate(669,348)"><rect width="154" height="143" rx="20" fill="#6a2c44" stroke="#e7a3ba" stroke-width="3"/><rect x="24" y="37" width="106" height="69" rx="5" fill="none" stroke="#fff2ef" stroke-width="5"/><path d="M26 40l51 38 51-38" stroke="#fff2ef" stroke-width="5" fill="none"/><path d="M142 9l-23 23m0-23l23 23" stroke="#ffcad1" stroke-width="5"/></g>
+<g font-family="Arial,sans-serif" font-weight="700" font-size="20" fill="#dbe3df"><rect x="68" y="375" width="210" height="89" rx="9" fill="#1a414b" stroke="#577987"/><text x="101" y="426">SALES</text>
+<rect x="301" y="375" width="224" height="89" rx="9" fill="#1a414b" stroke="#577987"/><text x="326" y="426">CUSTOMER CARE</text>
+<rect x="951" y="375" width="184" height="89" rx="9" fill="#1a414b" stroke="#577987"/><text x="969" y="426">APPOINTMENTS</text></g>
+<text x="67" y="595" font-family="Arial,sans-serif" font-size="18" fill="#b8c9cf">A DISRUPTED EMAIL SERVICE CAN INTERRUPT MORE THAN EMAIL.</text>
+<text x="1137" y="595" fill="#a7d8e6" text-anchor="end" font-family="Arial,sans-serif" font-size="22" font-weight="800">sovtiva.</text></svg>

@@ -1,0 +1,16 @@
+{
+  "rights": {
+    "status": "PENDING",
+    "owner": "",
+    "basis": ""
+  },
+  "width": 1080,
+  "height": 1920,
+  "output_dir": "out_social",
+  "scenes": [
+    {"kicker": "SOVTIVA / FIELD NOTES", "headline": "Una cifra grande no siempre es un buen negocio.", "body": "Antes de producir, revisa cómo te van a pagar y quién valida los resultados.", "seconds": 3.2, "theme": "navy"},
+    {"kicker": "01 / LA ECONOMÍA", "headline": "Las vistas no pagan los costos por sí solas.", "body": "Importan las horas, revisiones, derechos y el límite de cada campaña.", "seconds": 3.4, "theme": "paper"},
+    {"kicker": "02 / LA DECISIÓN", "headline": "Primero un video que valga la pena ver.", "body": "Después medimos retención, clics y conversaciones útiles.", "seconds": 3.2, "theme": "burgundy"},
+    {"kicker": "SOVTIVA / NEXT", "headline": "Menos promesas. Más criterio.", "body": "Investigación, sistemas de contenido y video con IA. sovtiva.com", "seconds": 3.2, "theme": "olive"}
+  ]
+}

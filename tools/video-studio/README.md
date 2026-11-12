@@ -85,3 +85,7 @@ This kit is **also the internal production studio for original Sovtiva videos**,
 Style: editorial navy, beige, burgundy, olive, airy typography, no fake UI/metrics, one claim per video, visible sources in native post text. Choose polished original assets, not generic AI-looking stock. Avoid automated posting and paid generation without action-specific approval. Never commit personal footage, clients' media, API keys, tokens, private manifests or contracts to the public repository.
 
 Test evidence: `social_cards.py` produced a four-scene, 13.04s H.264 draft at 540×960 using original Sovtiva copy. Original scene cards and a storyboard sheet were inspected; a decorative shape conflicting with the headline was moved. This validates the small local flow, **not** 1080p throughput, commercial output quality or channel distribution.
+
+### Additional full-HD research video validation (November 11, 2026)
+
+The revised source-led video `examples/SV-SOC-001-paid-views.example.json` was rendered locally with a separate rights-approved copy and 5 original cards. FFprobe verified **1080 × 1920, H.264, 18.08 seconds**. The storyboard was inspected; the output remains **SILENT / DRAFT_NEEDS_HUMAN_QA / NOT PUBLISHED**. This validates original-graphic full-HD export, not the customer-footage renderer, paid platform eligibility or social engagement. Public example remains `rights.status=PENDING` so copying it alone cannot bypass the rights gate.

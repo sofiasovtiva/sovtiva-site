@@ -1,0 +1,48 @@
+{
+  "rights": {
+    "status": "PENDING",
+    "owner": "",
+    "basis": ""
+  },
+  "width": 1080,
+  "height": 1920,
+  "output_dir": "out_SV_SOC_001",
+  "scenes": [
+    {
+      "kicker": "RESEARCH / CREATOR ECONOMY",
+      "headline": "¿100,000 vistas? Pueden valer unos US$109.",
+      "body": "Depende del CPM y de que las vistas cuenten.",
+      "seconds": 3.7,
+      "theme": "navy"
+    },
+    {
+      "kicker": "707 CAMPAÑAS / NOV 2026",
+      "headline": "CPM mediano anunciado: US$1.09",
+      "body": "Ofertas públicas de Content Rewards, no ingresos cobrados.",
+      "source": "Fuente: Content Rewards, 10 nov 2026.",
+      "seconds": 3.8,
+      "theme": "paper"
+    },
+    {
+      "kicker": "EJEMPLO, NO PROMESA",
+      "headline": "100,000 vistas elegibles ≈ US$109 brutos.",
+      "body": "Antes de edición, generación y revisiones.",
+      "seconds": 3.8,
+      "theme": "burgundy"
+    },
+    {
+      "kicker": "EL RIESGO",
+      "headline": "Aprobación, topes y presupuesto.",
+      "body": "Un clip con vistas puede terminar pagando US$0.",
+      "seconds": 3.3,
+      "theme": "navy2"
+    },
+    {
+      "kicker": "LA DECISIÓN",
+      "headline": "Mide el margen. No el hype.",
+      "body": "Investigación completa en sovtiva.com/journal",
+      "seconds": 3.5,
+      "theme": "olive"
+    }
+  ]
+}

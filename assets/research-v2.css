@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
 /* Research V2: source-led editorial design, November 2026. */
 :root{--ink:#0c2530;--paper:#edf2ef;--muted:#58717a;--line:#cedddb;--aqua:#b8e6ec;--burgundy:#672d43;--olive:#6f8068}
 *{box-sizing:border-box}
@@ -37,7 +37,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #3884
 
 
 /* Editorial Edition 04 · careful typography, accessible depth, no heavy effect library */
-:root{--ed-serif:'Fraunces','Iowan Old Style',Baskerville,Georgia,serif;--ed-sans:'DM Sans',Manrope,Inter,system-ui,sans-serif;--ed-ink:#18343e;--ed-paper:#f3f2eb;--ed-rose:#77445b}
+:root{--ed-serif:'Instrument Serif','Iowan Old Style',Baskerville,Georgia,serif;--ed-sans:'DM Sans',Manrope,Inter,system-ui,sans-serif;--ed-ink:#18343e;--ed-paper:#f3f2eb;--ed-rose:#77445b}
 body{background:var(--ed-paper);color:var(--ed-ink);font-family:var(--ed-sans);font-weight:400;line-height:1.72;letter-spacing:.004em;text-rendering:optimizeLegibility}
 .top{background:#102b35}.brand{font-weight:650;letter-spacing:-.055em}.navlinks{font-weight:500}.navlinks .contact{font-weight:600}
 .mast{background:#153640}.mast:after{background:radial-gradient(circle at 86% 13%,rgba(201,233,217,.17),transparent 46%),repeating-linear-gradient(90deg,transparent 0,transparent 104px,rgba(222,239,234,.035) 105px)}
@@ -63,7 +63,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body:has(article.article)::before{display:none;animation:none}.feature-tile{transition:none}.feature-tile:hover{transform:none}}
 
 /* Editorial edition 05: a fuller serif with less height and gentler contrast. */
-:root{--ed-serif:'Fraunces',Georgia,'Times New Roman',serif;--ed-sans:'DM Sans',Manrope,Arial,sans-serif}
+:root{--ed-serif:'Instrument Serif',Georgia,'Times New Roman',serif;--ed-sans:'DM Sans',Manrope,Arial,sans-serif}
 .mast h1{font-family:var(--ed-serif);font-size:clamp(48px,6.25vw,83px);font-weight:500;line-height:1.14;letter-spacing:-.032em;max-width:980px;text-wrap:balance}
 .mast h1 em{font-family:var(--ed-serif);font-weight:500;letter-spacing:-.03em}
 .article h1,body .article .narrow h1{font-family:var(--ed-serif);font-weight:500;letter-spacing:-.03em}
@@ -74,3 +74,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .article blockquote{font-family:var(--ed-serif);font-weight:500}
 .hub-intro h2,.feature-tile h3{font-family:var(--ed-serif);font-weight:500;letter-spacing:-.02em;line-height:1.2}
 @media(max-width:720px){.mast h1{font-size:clamp(43px,10.3vw,62px);line-height:1.16}.article h2,body .article .narrow h2{font-size:clamp(30px,8vw,38px)}.article p,body .article p,.article li,body .article li{line-height:1.72}}
+
+/* Editorial weight correction 06: retain original display family; reduce overbold article text only. */
+
+body .mast h1,body .mast h1 em{font-family:var(--ed-serif);font-weight:400;line-height:1.05}
+body .article h2,body .article .narrow h2{font-weight:400;line-height:1.14}
+body .article h3,body .article .narrow h3{font-weight:500}
+body .article b,body .article strong{font-weight:500}
+body .article .mini-card h3{font-weight:500}
+body .article blockquote{font-weight:400}

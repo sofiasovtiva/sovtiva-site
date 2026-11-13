@@ -1,4 +1,4 @@
-/* Sovtiva Editorial 04 — progressive article finder. No calls or tracking. */
+/* Sovtiva Editorial 05: progressive search and reading layouts. No calls or tracking. */
 (() => {
  'use strict';
  const tools=document.getElementById('discovery-tools'),search=document.getElementById('discovery-search'),
@@ -13,6 +13,7 @@
  })));
  if(!cards.length)return;
  const buttons=Array.from(tools.querySelectorAll('[data-journal-filter]'));
+ const viewButtons=Array.from(tools.querySelectorAll('[data-journal-view]'));
  let active='all',visible=[];
  function update(){
   const q=search.value.trim().toLocaleLowerCase();
@@ -29,6 +30,7 @@
   const spanish=(document.documentElement.lang||'en').toLowerCase().startsWith('es');
   const labels=spanish?{all:'Todo',latest:'Recientes',guides:'Guías', 'ai-services':'IA y sistemas','partner-desk':'Partners'}:{all:'Everything',latest:'Latest',guides:'Field guides','ai-services':'AI & systems','partner-desk':'Partner desk'};
   buttons.forEach(b=>{b.textContent=labels[b.dataset.journalFilter]||b.textContent;});
+  viewButtons.forEach(b=>{b.textContent=spanish?(b.dataset.journalView==='list'?'Lista':'Tarjetas'):(b.dataset.journalView==='list'?'List':'Cards');});
   search.placeholder=spanish?'Busca un tema, idea o tecnología…':'Search a topic, idea or technology…';
   surprise.textContent=spanish?'Sorpréndeme ↗':'Surprise me ↗';
   empty.textContent=spanish?'No encontramos coincidencias. Prueba otra frase o selecciona Todo.':'No stories match that search. Try another phrase or choose Everything.';
@@ -41,6 +43,11 @@
   active=b.dataset.journalFilter;
   buttons.forEach(other=>other.setAttribute('aria-pressed',String(other===b)));
   update();
+ }));
+ viewButtons.forEach(b=>b.addEventListener('click',()=>{
+   const list=b.dataset.journalView==='list';
+   document.body.classList.toggle('journal-list-view',list);
+   viewButtons.forEach(other=>other.setAttribute('aria-pressed',String(other===b)));
  }));
  search.addEventListener('input',update);
  search.addEventListener('keydown',e=>{if(e.key==='Escape'){search.value='';update();}});

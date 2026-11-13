@@ -685,3 +685,78 @@ body{--font:'Space Grotesk','Manrope','DM Sans',Arial,sans-serif}
 @media(max-width:380px){
   .product-section .product-inner.shell{width:calc(100% - 30px)}
 }
+
+
+/* TECH ATELIER 08: HOME TYPOGRAPHY UNIFIED */
+/* CEO feedback: the historic high-contrast editorial face on Journal and story cards
+   conflicts with Sovtiva's tech-led design. Reserve expressive Instrument Serif
+   for small intentional accents; use the site's already-loaded Space Grotesk
+   for all home display headings and card titles. Does not change article-page CSS. */
+.journal-intro h2,
+.journal-sideband-center h2,
+.discover-copy h2,
+.fit-intro h2,
+.partner-lead h2,
+.manifesto-grid h2,
+.ventures-intro h2,
+.contact-inner h2,
+.workflow-lab-intro h2{
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+  font-weight:500;
+  letter-spacing:-.055em;
+  line-height:1.07;
+}
+.journal-intro h2{
+  font-size:clamp(64px,7.6vw,112px);
+  letter-spacing:-.067em;
+  line-height:1.04;
+}
+.journal-tile h3,
+.journal-sidecard-title,
+.discover-trail>strong,
+.path-card h3,
+.partner-tile h3{
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+  font-weight:500;
+  letter-spacing:-.05em;
+  line-height:1.16;
+  overflow-wrap:break-word;
+}
+.journal-tile h3{
+  font-size:clamp(25px,2.55vw,36px);
+  letter-spacing:-.054em;
+  margin:30px 0;
+}
+.discover-trail>strong{
+  font-size:clamp(23px,2.25vw,33px);
+  line-height:1.18;
+  letter-spacing:-.056em;
+}
+.discover-copy h2{
+  font-size:clamp(40px,4.5vw,64px);
+  line-height:1.07;
+}
+.journal-sidecard-title{
+  letter-spacing:-.04em;
+  line-height:1.13;
+}
+.journal-sideband-center h2{
+  line-height:1.1;
+}
+.journal-intro h2 .punctuation{
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+}
+@media(max-width:1100px){
+  .journal-tile h3{font-size:clamp(25px,3vw,34px)}
+  .discover-trail>strong{font-size:clamp(23px,2.8vw,32px)}
+}
+@media(max-width:720px){
+  .journal-intro h2{font-size:clamp(54px,10.7vw,76px)}
+  .discover-copy h2{font-size:clamp(38px,9vw,54px)}
+  .journal-tile h3{font-size:clamp(26px,5.7vw,34px)}
+  .discover-trail>strong{font-size:clamp(25px,6.6vw,31px)}
+}
+@media(max-width:400px){
+  .journal-intro h2{font-size:clamp(48px,11.6vw,58px)}
+  .discover-trail>strong{font-size:clamp(22px,6.5vw,28px)}
+}

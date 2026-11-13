@@ -18,6 +18,10 @@ jobs:
           python-version: '3.11'
       - name: Install rendering dependency
         run: python -m pip install --disable-pip-version-check pillow
+      - name: Install FFmpeg and source fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
       - name: Render 4 original 9:16 MP4 videos and PNG cover assets
         run: |
           command -v ffmpeg

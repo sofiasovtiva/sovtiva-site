@@ -466,3 +466,167 @@ body{--font:'Space Grotesk','Manrope','DM Sans',Arial,sans-serif}
 @media(prefers-reduced-motion:reduce){
   .hero .intent-choice:hover,.hero .intent-choice:focus-visible{transform:none}
 }
+
+
+/* SOVTIVA HERO 05: STRUCTURAL FULL-BLEED LAYOUT FIX */
+/* The hero is no longer a .shell or split grid in HTML. A predictable
+   left-aligned inner column makes the entire message visible, including at
+   large desktop zoom and intermediate viewport sizes. */
+.hero{
+  --hero-gutter:clamp(20px,4.4vw,80px);
+  display:block;
+  position:relative;
+  isolation:isolate;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  margin:0;
+  padding:0;
+  overflow:clip;
+  box-sizing:border-box;
+  grid-template-columns:none;
+}
+.hero .hero-copy.intent-hero{
+  display:block;
+  position:relative;
+  left:auto;
+  right:auto;
+  transform:none;
+  float:none;
+  min-width:0;
+  width:min(960px,calc(100% - var(--hero-gutter) - var(--hero-gutter)));
+  max-width:960px;
+  margin:0 0 0 var(--hero-gutter);
+  padding:clamp(56px,6.3vw,88px) 0 52px;
+  box-sizing:border-box;
+  z-index:3;
+}
+.hero .eyebrow{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px 12px;
+  width:100%;
+  max-width:100%;
+  font-size:10px;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+  white-space:normal;
+}
+.hero h1,.hero .intent-hero h1{
+  display:block;
+  box-sizing:border-box;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  margin:22px 0 23px;
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+  font-size:clamp(42px,6vw,92px);
+  line-height:1.05;
+  font-weight:500;
+  letter-spacing:-.065em;
+  overflow-wrap:normal;
+  white-space:normal;
+  text-wrap:wrap;
+}
+.hero h1 em,.hero .intent-hero h1 em{
+  font-family:'Instrument Serif',Georgia,serif;
+  font-style:italic;
+  font-size:1.12em;
+  line-height:.9;
+  font-weight:400;
+  letter-spacing:-.028em;
+}
+.hero .intent-hero .hero-description{
+  width:100%;
+  max-width:760px;
+  min-width:0;
+  margin:0 0 28px;
+}
+.hero .intent-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  gap:12px;
+}
+.hero .intent-choice{
+  min-width:0;
+  width:100%;
+  min-height:189px;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.hero .intent-choice strong{
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+  font-size:clamp(23px,2.15vw,30px);
+  font-weight:500;
+  letter-spacing:-.052em;
+  overflow-wrap:break-word;
+}
+.hero .intent-preview,.hero .intent-help{
+  min-width:0;
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+}
+.hero .intent-help{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 18px;
+}
+.hero .intent-help>*{
+  max-width:100%;
+  white-space:normal;
+}
+.hero .hero-bottom{
+  position:relative;
+  left:auto;
+  right:auto;
+  bottom:auto;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  width:min(960px,calc(100% - var(--hero-gutter) - var(--hero-gutter)));
+  max-width:960px;
+  min-width:0;
+  margin:0 0 0 var(--hero-gutter);
+  padding:18px 0 24px;
+  box-sizing:border-box;
+}
+.hero .hero-art{display:none!important}
+@media(max-width:760px){
+  .hero{--hero-gutter:clamp(18px,4vw,28px)}
+  .hero .hero-copy.intent-hero{
+    padding:50px 0 44px;
+  }
+  .hero h1,.hero .intent-hero h1{
+    font-size:clamp(39px,8.6vw,61px);
+    letter-spacing:-.06em;
+    line-height:1.07;
+    margin:17px 0 20px;
+  }
+  .hero .intent-grid{
+    grid-template-columns:minmax(0,1fr);
+    gap:10px;
+  }
+  .hero .intent-choice{
+    min-height:160px;
+    padding:18px;
+  }
+  .hero .intent-choice strong{
+    font-size:clamp(22px,5.2vw,30px);
+  }
+  .hero .hero-bottom{
+    padding-bottom:18px;
+  }
+}
+@media(max-width:380px){
+  .hero{--hero-gutter:16px}
+  .hero h1,.hero .intent-hero h1{
+    font-size:clamp(35px,9.4vw,42px);
+  }
+  .hero .eyebrow{font-size:9px}
+  .hero .intent-choice{padding:15px}
+}

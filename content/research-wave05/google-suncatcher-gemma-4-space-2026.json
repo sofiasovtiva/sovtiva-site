@@ -1,0 +1,42 @@
+{
+  "slug": "google-suncatcher-gemma-4-space-2026",
+  "tag": "Infraestructura / IA en órbita",
+  "title": "Gemma 4 escribió desde el espacio. Un centro de datos orbital es otra historia",
+  "description": "Project Suncatcher logró una respuesta desde un TPU a bordo de un satélite. Análisis del hito, su alcance y los costos aún por demostrar.",
+  "takeaway": "Un haiku generado en órbita demuestra una parte del stack. No demuestra por sí mismo capacidad comercial, rentabilidad ni resiliencia de un centro de datos espacial.",
+  "sources": [
+    [
+      "Google Research, primera respuesta del prototipo Project Suncatcher",
+      "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/"
+    ]
+  ],
+  "sections": [
+    [
+      "Lo ocurrido, sin exagerarlo",
+      [
+        "Google comunicó el 30 de octubre de 2026 que había recibido una respuesta del prototipo de Project Suncatcher. Tras lanzar el satélite el 1 de octubre y encender sus bandejas de TPU, el equipo transmitió un prompt al modelo abierto Gemma 4 durante una pasada de estación terrestre y recibió un poema escrito por la IA.",
+        "El informe lo presenta como primera respuesta de un TPU de clase centro de datos en órbita. Ese matiz importa: no es el primer cómputo realizado jamás en el espacio, ni equivale a que Google haya puesto su plataforma completa de nube fuera de la Tierra."
+      ]
+    ],
+    [
+      "Los obstáculos de una nube fuera de la Tierra",
+      [
+        "Todo centro de datos exige alimentación, refrigeración, conectividad, reparación, redundancia y seguridad. En órbita se agregan radiación, gestión térmica, limitaciones de lanzamiento, vida útil y capacidad de enviar resultados al usuario. El experimento inicial aún no proporciona un costo por millón de inferencias ni una comparación de emisiones y energía verificadas frente a centros de datos terrestres.",
+        "Google indicó que seguirá evaluando los TPUs bajo estrés térmico y radiación y planea avanzar hacia dos satélites interconectados en 2027. Una ruta tecnológica no equivale a una fecha comercial asegurada."
+      ]
+    ],
+    [
+      "La enseñanza práctica para Sovtiva",
+      [
+        "Hoy ningún cliente necesita comprar procesamiento orbital para resolver un seguimiento perdido o una integración frágil. Pero el proyecto recuerda que la infraestructura cambia y los sistemas deberían ser portables. Construir flujos desacoplados del proveedor, con registro de errores, reintentos, límites de costo y recuperación, aporta valor ahora mismo.",
+        "Podemos usar este caso para abrir una conversación sobre continuidad, resiliencia y selección de nube sin afirmar que implementamos Project Suncatcher o que el costo orbital ya sea competitivo."
+      ]
+    ],
+    [
+      "Pruebas que faltarían",
+      [
+        "Disponibilidad sostenida, ciclos de estrés, tasa de errores, ancho de banda útil, latencia, rendimiento por watt medido y costo total de operación con sustitución de hardware. Hasta que existan esos datos, el titular correcto es investigación prometedora, no migración inmediata de centros de datos al espacio."
+      ]
+    ]
+  ]
+}

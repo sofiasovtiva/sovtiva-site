@@ -1,0 +1,50 @@
+{
+  "slug": "simulon-reality-aware-rendering-2026",
+  "tag": "Creatividad y realidad aumentada",
+  "title": "Simulon: personajes virtuales que reaccionan a una actuación. Lo real detrás del video viral",
+  "description": "Qué hace realmente Reality-Aware Rendering, qué sigue siendo renderizado posterior y cómo probar un personaje original para una marca.",
+  "takeaway": "No es una criatura autónoma viviendo dentro del teléfono. La novedad está en convertir una grabación dirigida en una nueva actuación visual que considera voz, movimiento y contexto.",
+  "sources": [
+    [
+      "Simulon, producto oficial",
+      "https://simulon.com/"
+    ],
+    [
+      "Simulon, anuncio original Reality-Aware Rendering",
+      "https://teapaw.org/Simulon/status/2115519228564693170"
+    ],
+    [
+      "Simulon en App Store, versiones y disponibilidad",
+      "https://apps.apple.com/us/app/simulon/id6670765943"
+    ]
+  ],
+  "sections": [
+    [
+      "La demostración y el mecanismo",
+      [
+        "El video de una persona junto a un animal prehistórico parece mostrar una criatura que comprende lo que ocurre a su alrededor. Simulon describe un proceso más concreto: el creador coloca un asset neural en la escena, interpreta o graba una acción y después el sistema vuelve a renderizar la toma utilizando lo que la cámara captó, lo que se dijo y el entorno. La reacción del personaje forma parte de esa nueva generación. No es prueba de que todo el efecto final esté calculado de forma instantánea y local en la cámara.",
+        "La aplicación admite crear sujetos desde texto, fotos o bocetos, colocarlos en un espacio y dirigir la acción. Simulon confirmó Reality-Aware Rendering en octubre de 2026. Su sitio ya anuncia presencia en iOS y Android, aunque algunas piezas de lanzamiento se referían solo al iPhone."
+      ]
+    ],
+    [
+      "Lo que falta probar",
+      [
+        "Una demostración elegida por el fabricante no informa cuántas tomas fallan, si un personaje conserva la misma anatomía entre escenas, cómo trata reflejos y oclusiones complejas, ni qué derechos comerciales concretos se transfieren. Los planes tienen límites, consumen créditos y pueden cambiar. También hay que verificar el consentimiento de toda persona cuya voz, rostro o espacio aparece.",
+        "Si el proyecto implica anuncios, no bastan los segundos de video exportado: cuentan la preparación, dirección, edición, seguridad de marca, revisión de detalles y posibles autorizaciones de propiedad intelectual."
+      ]
+    ],
+    [
+      "Aplicación para Sovtiva",
+      [
+        "Hay una oportunidad real en personajes propios para campañas, explicaciones de producto y contenido social episódico. Un personaje verdaderamente distintivo puede aparecer en escenas de la vida cotidiana sin que un equipo pequeño tenga que construir un pipeline completo de VFX. Eso no autoriza a usar personajes de terceros ni a afirmar que una herramienta produce videos de estudio sin edición.",
+        "Piloto propuesto: crear un personaje original, tres actuaciones cortas con objetivos distintos y una hoja de seguimiento con créditos consumidos, duración de generación, tiempo de corrección, consistencia de la figura y costo por video aprobado. Comprar créditos o una suscripción exige autorización específica; todavía no hemos corrido esa prueba."
+      ]
+    ],
+    [
+      "Cómo medir la decisión",
+      [
+        "Una pieza funciona cuando el personaje se reconoce, sus acciones son coherentes, la marca puede usar legalmente las imágenes y la edición posterior es previsible. Compararemos el costo de esa producción con una alternativa de motion design en código y con técnicas 3D convencionales, no solo contra un video promocional."
+      ]
+    ]
+  ]
+}

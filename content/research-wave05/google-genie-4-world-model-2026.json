@@ -1,0 +1,46 @@
+{
+  "slug": "google-genie-4-world-model-2026",
+  "tag": "Google DeepMind / mundos interactivos",
+  "title": "Genie 4: el mundo generado responde, pero todavía no recuerda todo",
+  "description": "La simulación con audio y personajes interactivos de Google es real. Sus límites de duración, precisión y disponibilidad importan más que la demo.",
+  "takeaway": "Google mostró una nueva categoría de experiencias sintéticas; eso no equivale a generar videojuegos completos y estables con un solo prompt.",
+  "sources": [
+    [
+      "Google DeepMind, presentación y límites de Genie 4",
+      "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+    ],
+    [
+      "Google, ficha oficial del modelo y disponibilidad",
+      "https://deepmind.google/models/genie/"
+    ]
+  ],
+  "sections": [
+    [
+      "Lo anunciado el 27 de octubre",
+      [
+        "Genie 4 es un modelo de mundo capaz de simular escenas que responden a controles y a instrucciones en lenguaje natural. DeepMind afirma que integra audio ambiental, música y diálogo, y que otros modelos Gemini ayudan a interpretar cambios y coordinar acciones. Las demostraciones oficiales permiten cambiar la perspectiva, alterar el clima y dirigir eventos dentro de una escena.",
+        "La presentación se refiere a una vista previa de investigación con acceso limitado. Google anunció planes para expandirla a usuarios y socios elegibles, pero no una disponibilidad general sin restricciones en la fecha de lanzamiento."
+      ]
+    ],
+    [
+      "Una prueba visual no es un sistema persistente",
+      [
+        "Google admite que los objetos pueden cambiar o desaparecer con el tiempo y que las interacciones prolongadas, el texto legible y la precisión de lugares reales aún presentan límites. Los entornos funcionan en ventanas de minutos, no como ciudades virtuales permanentes. Por ello no se puede afirmar que el sistema sustituya motores de juego, equipos de QA o simuladores de ingeniería con precisión validada.",
+        "La diferencia entre un mundo espectacular y uno operativo es que este último debe conservar estado, permitir repetición, responder de manera confiable y ofrecer herramientas de depuración. Esa distinción define lo que un cliente puede comprar responsablemente."
+      ]
+    ],
+    [
+      "Aplicaciones empresariales sensatas",
+      [
+        "Vemos oportunidades futuras en previsualización de campañas, formación interactiva, recorridos de producto, escenarios de entrenamiento para robots y pruebas de interfaz. Algunas son posibilidades que Google explora, no servicios que Sovtiva ofrece hoy ni integraciones que hayamos probado.",
+        "Podemos avanzar sin esperar acceso: diseñar guiones ramificados, definir criterios de coherencia temporal, construir pequeñas simulaciones abiertas y documentar qué necesitaría un piloto para ser utilizable por un cliente."
+      ]
+    ],
+    [
+      "Experimento cuando exista acceso",
+      [
+        "Elegir una habitación con cinco objetos y tres acciones, repetir varias veces y medir conservación de objetos, continuidad, legibilidad, respuesta a instrucciones, duración útil y costo operativo. Conservar los resultados fallidos junto a los buenos. En contenido público, señalar la naturaleza sintética de la escena; Google describe el uso de SynthID para procedencia."
+      ]
+    ]
+  ]
+}

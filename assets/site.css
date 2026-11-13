@@ -552,3 +552,10 @@ html[lang="es"] p.lab-es{display:block}
 .discover-dice:hover,.discover-dice:focus-visible{background:#153640;color:#fff}
 @media(max-width:720px){.hero h1{font-size:clamp(47px,10.7vw,72px);line-height:1.11}.discover-copy h2{font-size:clamp(38px,9vw,54px)}.discover-trail>strong{font-size:clamp(25px,7vw,31px)}.discover-dice{min-height:44px}}
 @media(prefers-reduced-motion:reduce){.discover-trail,.discover-dice{transition:none}.discover-trail:hover{transform:none}}
+
+
+/* Private direct-first preview: legible hero route labels on narrow mobile. */
+@media(max-width:650px){
+  .intent-choice-top b{font-size:clamp(10px,2.6vw,11px);letter-spacing:.065em}
+  .intent-choice-foot{font-size:clamp(10px,2.6vw,11px);letter-spacing:.06em;line-height:1.28}
+}

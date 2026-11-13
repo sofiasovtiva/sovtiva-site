@@ -427,7 +427,9 @@ body{--font:'Space Grotesk','Manrope','DM Sans',Arial,sans-serif}
 }
 /* No oversized cursor spotlight: the canvas uses nearby dot/line response only.
    The cards use border and micro-movement, rather than a wide radial glow. */
+.hero .intent-choice::before,
 .hero .intent-choice::after{
+  display:none!important;
   background:none!important;
   opacity:0!important;
 }

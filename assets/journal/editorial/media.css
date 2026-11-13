@@ -6,3 +6,9 @@
 .video-body .editorial-media figcaption,.film-body .editorial-media figcaption{color:#627c7d}
 @media(max-width:720px){.editorial-media{margin:24px auto}.editorial-media figcaption{font-size:12px;line-height:1.48}}
 @media(prefers-reduced-motion:reduce){.editorial-media img{transition:none}}
+
+/* Research Desk: editorial illustration leads the card, not repeated decorative type. */
+.feature-grid .feature-tile .research-tile-visual{display:block;width:100%;height:auto;aspect-ratio:1200 / 630;object-fit:cover;margin:18px 0 6px;border:1px solid rgba(65,111,119,.27);border-radius:10px;background:#0d2530}
+.feature-grid .feature-tile h3{margin-top:12px}
+.feature-grid .feature-tile .eyebrow{margin:0}
+@media(max-width:720px){.feature-grid .feature-tile .research-tile-visual{margin-top:14px}}

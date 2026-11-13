@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 /* Research V2: source-led editorial design, November 2026. */
 :root{--ink:#0c2530;--paper:#edf2ef;--muted:#58717a;--line:#cedddb;--aqua:#b8e6ec;--burgundy:#672d43;--olive:#6f8068}
 *{box-sizing:border-box}
@@ -83,3 +83,64 @@ body .article h3,body .article .narrow h3{font-weight:500}
 body .article b,body .article strong{font-weight:500}
 body .article .mini-card h3{font-weight:500}
 body .article blockquote{font-weight:400}
+
+
+/* TECH 09: JOURNAL + RESEARCH READING TYPE, using the clean video-economics article as reference */
+/* Previous Instrument Serif at large size was beautiful but difficult to scan.
+   One readable geometric display family; DM Sans remains the body/long-form font.
+   Decorative italic accents belong on the homepage, not every research headline. */
+:root{--ed-display:'Space Grotesk','DM Sans',Manrope,Arial,sans-serif}
+body .mast h1,
+body .mast h1 em{
+  font-family:var(--ed-display)!important;
+  font-weight:600;
+  letter-spacing:-.062em;
+  line-height:1.055;
+  font-style:normal;
+  overflow-wrap:break-word;
+}
+body .mast h1{
+  font-size:clamp(49px,6.9vw,95px);
+  max-width:1050px;
+  text-wrap:balance;
+}
+body .mast h1 em{color:#c3ece3}
+body .article h1,body .article .narrow h1,
+body .article h2,body .article .narrow h2,
+body .article h3,body .article .narrow h3{
+  font-family:var(--ed-display)!important;
+  font-weight:500;
+  letter-spacing:-.045em;
+  line-height:1.21;
+  overflow-wrap:break-word;
+}
+body .article h2,body .article .narrow h2{
+  font-size:clamp(30px,3.9vw,43px);
+  margin-top:50px;
+}
+body .article h3,body .article .narrow h3{font-size:clamp(22px,2.3vw,27px);line-height:1.27}
+body .article blockquote{
+  font-family:'DM Sans',Manrope,Arial,sans-serif!important;
+  font-weight:500;
+  font-size:clamp(19px,2.5vw,25px);
+  line-height:1.48;
+  letter-spacing:-.018em;
+}
+body .article p,body .article li{
+  font-family:'DM Sans',Manrope,Arial,sans-serif;
+  line-height:1.76;
+}
+body .article strong,body .article b{font-weight:600}
+body .hub-intro h2,body .feature-tile h3{
+  font-family:var(--ed-display)!important;
+  font-weight:500;
+  letter-spacing:-.055em;
+  line-height:1.13;
+  overflow-wrap:break-word;
+}
+@media(max-width:720px){
+  body .mast h1{font-size:clamp(40px,9.3vw,67px);letter-spacing:-.05em;line-height:1.095}
+  body .article h2,body .article .narrow h2{font-size:clamp(29px,7.6vw,37px)}
+  body .article h3,body .article .narrow h3{font-size:clamp(21px,5.8vw,27px)}
+  body .article blockquote{font-size:clamp(19px,5.2vw,24px)}
+}

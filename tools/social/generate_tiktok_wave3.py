@@ -32,7 +32,18 @@ STORIES=[
 ("¿Qué pasa\nsi Outlook\nse detiene?","No solo se pierde acceso al correo.","inbox"),
 ("Ventas. Soporte.\nConfirmaciones.","Distintos equipos; una dependencia compartida.","flow"),
 ("El respaldo\nno es otro logo.","Registra pendientes, usa otro canal y verifica.","flow"),
-("Recupera\nel proceso.","Qué confirmó Microsoft y qué no. Sovtiva Journal.","proof")])
+("Recupera\nel proceso.","Qué confirmó Microsoft y qué no. Sovtiva Journal.","proof")]),
+("consultant","COMPRAR IA / CONSULTORÍA",(164,168,122),[
+("No compres IA\na ciegas.","Una demo bonita no es un proyecto terminado.","proof"),
+("¿Qué proceso\nva a cambiar?","Define una tarea y el resultado esperado.","flow"),
+("¿Quién responde\nsi falla?","Responsable, permisos y excepciones.","stack"),
+("Primero el alcance.\nDespués la compra.","Siete preguntas en Sovtiva Journal.","proof")]),
+("profit","NEGOCIOS DIGITALES",(185,150,111),[
+("Vender más\nno es ganar más.","Las ventas no muestran todos los gastos.","chart"),
+("Etsy. Shopify.\nGumroad.","Cada plataforma tiene costos distintos.","layers"),
+("Suma todos\nlos costos.","Comisiones, devoluciones, publicidad y producción.","stack"),
+("Calcula tu\nbeneficio real.","Método y guía en Sovtiva Journal.","proof")])
+
 ]
 def ff(path,size):
     return ImageFont.truetype(path,size)

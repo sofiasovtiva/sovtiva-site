@@ -1,0 +1,123 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102c35">
+<title>Rediseñamos nuestra web hasta que se sintiera como Sovtiva | Sovtiva Journal</title><meta name="description" content="Caso real de rediseño web: tipografía, interacción discreta, errores de maquetación, diseño responsivo y lo que aprendimos al reconstruir la web de Sovtiva.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://sovtiva.com/journal/sovtiva-website-redesign-process-2026/es/">
+<link rel="alternate" hreflang="en" href="https://sovtiva.com/journal/sovtiva-website-redesign-process-2026/">
+<link rel="alternate" hreflang="es" href="https://sovtiva.com/journal/sovtiva-website-redesign-process-2026/es/">
+<link rel="alternate" hreflang="x-default" href="https://sovtiva.com/journal/sovtiva-website-redesign-process-2026/">
+<link rel="alternate" type="application/rss+xml" title="Sovtiva Journal" href="/feed.xml">
+<link rel="icon" href="/assets/favicon-96.png" type="image/png">
+<meta property="og:type" content="article"><meta property="og:title" content="Rediseñamos nuestra web hasta que se sintiera como Sovtiva"><meta property="og:description" content="Caso real de rediseño web: tipografía, interacción discreta, errores de maquetación, diseño responsivo y lo que aprendimos al reconstruir la web de Sovtiva."><meta property="og:url" content="https://sovtiva.com/journal/sovtiva-website-redesign-process-2026/es/"><meta property="og:image" content="https://sovtiva.com/assets/share/sovtiva-journal.png"><meta name="twitter:card" content="summary_large_image"><meta property="article:published_time" content="2026-11-13">
+<link rel="stylesheet" href="/assets/research-v2.css?v=20261113-editorial-v5">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rediseñamos nuestra web hasta que se sintiera como Sovtiva","alternativeHeadline":"Ocho iteraciones de diseño web: tipografía, interacción y estructura","description":"Caso real de rediseño web: tipografía, interacción discreta, errores de maquetación, diseño responsivo y lo que aprendimos al reconstruir la web de Sovtiva.","datePublished":"2026-11-13","dateModified":"2026-11-13","inLanguage":"es","mainEntityOfPage":"https://sovtiva.com/journal/sovtiva-website-redesign-process-2026/es/","image":"https://sovtiva.com/assets/share/sovtiva-journal.png","author":{"@type":"Organization","name":"Sovtiva","url":"https://sovtiva.com/"},"publisher":{"@type":"Organization","name":"Sovtiva","url":"https://sovtiva.com/"},"isAccessibleForFree":true,"citation":["https://github.com/sofiasovtiva/sovtiva-site/pull/12","https://github.com/sofiasovtiva/sovtiva-site/pull/13","https://github.com/sofiasovtiva/sovtiva-site/pull/14","https://github.com/sofiasovtiva/sovtiva-site/pull/16","https://github.com/sofiasovtiva/sovtiva-site/pull/17","https://github.com/sofiasovtiva/sovtiva-site/pull/18","https://github.com/sofiasovtiva/sovtiva-site/pull/19"]}</script>
+<script src="/assets/analytics.js?v=20261106-ga4" defer></script>
+<style>
+.article .narrow{max-width:790px}
+.article section{margin:51px 0}
+.article section p{line-height:1.84}
+.article .lead{font-size:clamp(20px,2.4vw,24px);line-height:1.6}
+.article h2{letter-spacing:-.045em}
+.article h3{letter-spacing:-.025em}
+.article figure{margin:39px 0}
+.article figure img{display:block;width:100%;height:auto;border:1px solid #83a3a0;border-radius:8px}
+.article figcaption{font-size:12px;color:#647873;margin-top:12px;line-height:1.55}
+.lesson-note{background:#e6ede8;border-left:3px solid #5d908d;padding:22px 26px;margin:28px 0}
+.lesson-note p{margin:0}
+.rule-list{margin:22px 0;padding-left:24px}
+.rule-list li{margin-bottom:12px}
+.edition-index{font:italic 25px/1 'Instrument Serif',Georgia,serif;color:#895366;display:inline-block;margin-bottom:8px}
+.piece-toc{margin:36px 0;padding:21px 24px;border-top:1px solid #adc9c3;border-bottom:1px solid #adc9c3}
+.piece-toc strong{font-size:12px;letter-spacing:.13em;text-transform:uppercase}
+.piece-toc ol{columns:2;gap:34px;margin-bottom:0}
+.piece-toc li{font-size:14px}
+.piece-toc a{text-decoration:underline;text-underline-offset:3px}
+.story-cta{background:#143945;color:#f0f5ec;border-radius:9px;padding:30px;margin:45px 0}
+.story-cta h2{color:#f0f5ec}
+.story-cta p{color:#c7dad5}
+.story-cta a{color:#d6f2e6}
+.article .source-list li{overflow-wrap:anywhere}
+.piece-stamp{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#517775;font-weight:600}
+@media(max-width:720px){.piece-toc ol{columns:1}.story-cta{padding:22px}.lesson-note{padding:18px}.article figure{margin:27px 0}}
+</style></head><body>
+<a class="skip" href="#content">Saltar al artículo</a>
+<header class="top"><nav class="shell nav" aria-label="Navegación principal"><a href="/" class="brand">sovtiva<span>.</span></a><div class="navlinks"><a href="/solutions/">Soluciones</a><a href="/journal/">Journal</a><a href="/research/">Investigación</a><a class="contact" href="/ai-review/?from=design-diary-es-2026">Hablemos de tu web →</a></div><div class="lang-switch"><a href="https://sovtiva.com/journal/sovtiva-website-redesign-process-2026/" lang="en" hreflang="en">EN</a> / <span aria-current="page">ES</span></div></nav></header>
+<main id="content">
+<section class="mast"><div class="shell mast-inner"><span class="eyebrow">SOVTIVA JOURNAL / DIARIO DE DISEÑO / NOVIEMBRE 2026</span><h1>Rediseñamos nuestra web<br><em>hasta que se sintiera nuestra.</em></h1><p class="dek">Queríamos una web tecnológica, sin caer en el espectáculo tecnológico. La respuesta necesitó más que otra tipografía: capturas de pantalla, errores de diseño, una reconstrucción de la página y la decisión de quitar efectos que acabábamos de agregar.</p><div class="byline"><span>Sovtiva Studio</span><span>13 de noviembre de 2026</span><span>Caso de diseño propio · 8 iteraciones</span></div></div></section>
+<article class="article shell"><div class="narrow">
+<figure><img src="/assets/journal/sovtiva-design-evolution-2026.svg" alt="Ilustración editorial original: evolución del diseño de Sovtiva, desde una página desalineada a un encabezado equilibrado con cuatro opciones claras." width="1200" height="630" fetchpriority="high"><figcaption>Ilustración original, no una captura de antes y después. Los cambios y sus fechas están documentados en los pull requests de GitHub enlazados al final.</figcaption></figure>
+<p class="lead">«What brings you here?» siempre fue la pregunta correcta. El problema era todo lo que la rodeaba. Una web puede tener un buen titular, colores atractivos y botones funcionales y aun así no sentirse como la empresa que representa.</p>
+<p>Queríamos que <a href="/">Sovtiva</a> reflejara lo que hacemos: tecnología práctica, ideas creativas propias y caminos claros para entender servicios que pueden ser complejos. Algunos intentos parecían demasiado editoriales. Otros, demasiado cercanos a un tablero genérico de inteligencia artificial. Después encontramos problemas de diseño que solo se veían bien en el código, pero se cortaban en pantallas reales.</p>
+<p>Esta es la historia sin adornos: qué hicimos, qué salió mal, qué conservamos y qué aprenderíamos para el siguiente proyecto.</p>
+<nav class="piece-toc" aria-label="Capítulos"><strong>En esta historia</strong><ol>
+<li><a href="#brief">La idea que no cambió</a></li><li><a href="#type">Dos tipografías, dos funciones</a></li><li><a href="#motion">Una interacción menos obvia</a></li><li><a href="#layout">El problema de contenido recortado</a></li><li><a href="#balance">Centrar sin empequeñecer</a></li><li><a href="#fullbleed">El fondo que terminaba antes de tiempo</a></li><li><a href="#editorial">La identidad del Journal</a></li><li><a href="#lessons">Lo que haríamos distinto</a></li></ol></nav>
+
+<section id="brief"><span class="edition-index">01 / LA IDEA</span><h2>Una web tecnológica que no pareciera de catálogo</h2>
+<p>El objetivo inicial era sencillo de explicar: una Sovtiva más elegante, técnica e interactiva. Pero queríamos evitar el repertorio de siempre: líneas neón, círculos flotantes, paneles complicados y animaciones enormes.</p>
+<p>La página seguía necesitando algo muy concreto: permitir que alguien encontrara un servicio, el diseño de una web, una herramienta digital o las demás iniciativas de Sovtiva. Por eso mantuvimos la pregunta <strong>«What brings you here?»</strong> y cuatro caminos visibles. El diseño podía cambiar; la orientación del visitante no.</p>
+<div class="lesson-note"><p><strong>La regla útil:</strong> si eliminamos toda la decoración, las cuatro rutas todavía deben tener sentido.</p></div></section>
+
+<section id="type"><span class="edition-index">02 / TIPOGRAFÍA</span><h2>No todas las palabras necesitan la misma personalidad</h2>
+<p>Las primeras versiones tenían una dirección más editorial, con tipografías serif de alto contraste y titulares muy grandes. Aportaban carácter, pero los encabezados y las tarjetas del Journal empezaron a sentirse ajenos al sitio principal.</p>
+<p>Decidimos conservar un detalle preciso: <em>“you”</em> en cursiva. Para el resto, <strong>Space Grotesk</strong> pasó a ser la tipografía principal de titulares, tarjetas y secciones del inicio. Su geometría se siente contemporánea sin necesitar pesos exagerados. <strong>Instrument Serif en cursiva</strong> quedó como contraste intencional en esa palabra.</p>
+<p>También aligeramos las negritas excesivas en las páginas de artículos. El objetivo no era quitar lo editorial de la lectura larga, sino dejar de tratar cada palabra como si compitiera por llamar la atención.</p>
+<p>Una identidad tipográfica no consiste en elegir la fuente más bonita. Consiste en definir para qué sirve cada fuente.</p></section>
+
+<section id="motion"><span class="edition-index">03 / MOVIMIENTO</span><h2>El cursor no necesitaba un reflector</h2>
+<p>El primer fondo reactivo tenía un halo luminoso grande que seguía el movimiento del mouse. Técnicamente respondía, pero visualmente distraía. Además, algunas tarjetas tenían destellos innecesarios.</p>
+<p>Lo reemplazamos por un campo ligero de puntos. En computadoras compatibles, algunos puntos y líneas muy finas reaccionan cerca del cursor. Quitamos el reflector radial y los brillos que barrían las tarjetas. En pantallas táctiles o cuando se solicita reducir el movimiento, queda una textura estática.</p>
+<p>La persona no necesita advertir toda la ingeniería. La interacción debe acompañar la experiencia sin interrumpirla.</p><div class="lesson-note"><p><strong>Aprendizaje:</strong> una reacción pequeña puede sentirse más sofisticada que una animación llamativa.</p></div></section>
+
+<section id="layout"><span class="edition-index">04 / EL ERROR</span><h2>El código parecía correcto; la página se salía de la pantalla</h2>
+<p>Las fotografías tomadas en una pantalla real mostraron algo mucho más serio que un problema de fuentes: el encabezado y las tarjetas aparecían recortados a la derecha, con un espacio vacío enorme a la izquierda.</p>
+<p>La causa estaba en la estructura heredada. El encabezado principal todavía conservaba reglas de una composición dividida en proporción 56/44 y una clase de contenedor compartida. Habíamos ocultado la decoración, pero una parte de aquel diseño seguía decidiendo dónde debía colocarse el contenido.</p>
+<p>Primero agregamos reglas de CSS para contenerlo. No bastó. La solución correcta fue retirar la clase <code>shell</code> del contenedor exterior, eliminar el bloque decorativo oculto y darle al texto y las tarjetas una estructura interior predecible.</p>
+<p>La lección fue incómoda y útil: esconder un elemento no significa que la arquitectura anterior haya desaparecido.</p></section>
+
+<section id="balance"><span class="edition-index">05 / COMPOSICIÓN</span><h2>Arreglar un extremo creó otro</h2>
+<p>Al evitar el recorte, el contenido quedó demasiado a la izquierda. Cabía perfectamente, pero la composición se veía desequilibrada.</p>
+<p>La siguiente iteración centró la pregunta y amplió el espacio utilizable. Las cuatro opciones recuperaron su lugar: cuatro columnas en pantallas grandes, dos en tamaños intermedios y una en móviles. Los títulos y la introducción se centran, pero las tarjetas conservan texto alineado a la izquierda para facilitar su lectura.</p>
+<p>Después hicimos aún más grande «What brings you here?». No queríamos una fuente pequeña solo porque era más fácil acomodarla. Queríamos un titular con presencia y un diseño responsivo capaz de sostenerlo.</p></section>
+
+<section id="fullbleed"><span class="edition-index">06 / EL COLOR</span><h2>“Good tools. Less friction.” no estaba recortado: el fondo terminaba antes</h2>
+<p>Otra fotografía mostró una línea vertical abrupta en la sección de productos digitales. El fondo oscuro estaba aplicado al mismo contenedor estrecho que alojaba el contenido. Al terminar el ancho del contenedor, también terminaba el color.</p>
+<p>Separamos las responsabilidades: la sección ahora ocupa todo el ancho de pantalla, mientras el texto y la ilustración se centran dentro de un contenedor interno. Conservamos la legibilidad del contenido y eliminamos el corte visual.</p>
+<p>Un fondo de sección y una columna de lectura no deberían estar atados al mismo ancho por accidente.</p></section>
+
+<section id="editorial"><span class="edition-index">07 / JOURNAL</span><h2>Una marca, no dos sitios distintos</h2>
+<p>La portada ya se sentía mejor, pero faltaba algo. «The Journal» y las tarjetas de lectura todavía usaban titulares serif delgados. Las fotos evidenciaron el contraste: la zona comercial parecía una marca tecnológica y el Journal parecía otro sitio.</p>
+<p>Llevamos también esos titulares de la portada a Space Grotesk, con peso 500 y espaciado más medido. Mantuvimos los fondos claros, los acentos azul agua y los detalles borgoña. Buscábamos coherencia sin borrar los matices.</p>
+<p>Las páginas de artículo largo siguen siendo un caso distinto: una publicación debe ser cómoda de leer. No tiene que copiar exactamente la escala tipográfica de una tarjeta comercial.</p>
+<p>En el Journal también contamos <a href="/journal/award-winning-websites-editorial-navigation-sovtiva-2026/">qué aprendimos de experiencias editoriales interactivas</a> y <a href="/journal/best-websites-design-systems-2026/">qué observamos en sitios centrados en productos digitales</a>.</p></section>
+
+<section id="lessons"><span class="edition-index">08 / APRENDIZAJES</span><h2>Qué haríamos distinto desde el primer día</h2>
+<p>Ocho iteraciones nos dejaron reglas más claras que el primer concepto:</p>
+<ol class="rule-list">
+<li><strong>Definir primero la jerarquía.</strong> Qué debe entender un visitante y cuál es su siguiente paso antes de elegir efectos visuales.</li>
+<li><strong>Dar una función a cada tipografía.</strong> Encabezados, acentos, etiquetas y lectura extensa necesitan jerarquías distintas.</li>
+<li><strong>Separar fondo y contenido.</strong> El color puede ocupar toda la pantalla sin obligar al texto a hacerlo.</li>
+<li><strong>Eliminar las estructuras obsoletas.</strong> Si una web ya no usa dos columnas, es mejor retirar las piezas anteriores que apilar excepciones de CSS.</li>
+<li><strong>Probar la composición real.</strong> Ejecutamos pruebas geométricas aisladas en Chromium, pero las fotografías de la página fueron las que revelaron varios errores.</li>
+<li><strong>Hacer opcional el movimiento.</strong> Unos cuantos puntos bastan. Nadie debe depender de una animación para navegar.</li>
+<li><strong>Mantener una sola identidad.</strong> La portada, los servicios y el Journal tienen necesidades distintas, pero deben sentirse de la misma marca.</li>
+</ol>
+<p>No estamos afirmando que el rediseño haya aumentado las conversiones, acelerado la web en producción o logrado una certificación de accesibilidad. Esos resultados requieren mediciones y pruebas independientes. Lo documentado son los cambios de código, los criterios de diseño y los problemas que fuimos corrigiendo.</p></section>
+
+<section><span class="edition-index">EVIDENCIA</span><h2>Los cambios están en GitHub</h2><p>Las versiones y correcciones quedaron registradas en pull requests públicos. Es nuestro propio sitio, incluidos los errores y los ajustes:</p>
+<ul class="rule-list">
+<li><a href="https://github.com/sofiasovtiva/sovtiva-site/pull/12">Ajustes de tipografía, primera interacción y negritas más ligeras</a>.</li>
+<li><a href="https://github.com/sofiasovtiva/sovtiva-site/pull/13">Space Grotesk, “you” en cursiva y fondo más discreto</a>.</li>
+<li><a href="https://github.com/sofiasovtiva/sovtiva-site/pull/14">Primer arreglo al recorte y retiro del reflector del cursor</a>.</li>
+<li><a href="https://github.com/sofiasovtiva/sovtiva-site/pull/16">Reconstrucción de la estructura del encabezado</a>.</li>
+<li><a href="https://github.com/sofiasovtiva/sovtiva-site/pull/17">Composición centrada y cuadrícula responsiva</a>.</li>
+<li><a href="https://github.com/sofiasovtiva/sovtiva-site/pull/18">Título de mayor escala y fondo de productos a ancho completo</a>.</li>
+<li><a href="https://github.com/sofiasovtiva/sovtiva-site/pull/19">Tipografía coherente en Journal y tarjetas del inicio</a>.</li>
+</ul>
+<p class="piece-stamp">Siete cambios integrados en esta secuencia y un concepto inicial que permaneció como borrador.</p>
+<p>El avance no llegó por un número en un benchmark. Llegó al observar el sitio en una pantalla real, detectar lo que aún se veía mal y corregirlo sin destruir lo que ya funcionaba.</p></section>
+
+<div class="story-cta"><h2>Una mejor web empieza con una pregunta clara.</h2><p>Ya sea un rediseño o una web nueva, lo importante es lo que tus clientes necesitan entender y hacer. En Sovtiva ayudamos a negocios con páginas web, seguimiento de clientes y tecnología que facilite el trabajo diario.</p><p><a href="/servicios/diseno-web-negocios/">Conoce nuestro enfoque de diseño web ↗</a> &nbsp; <a href="/ai-review/?from=sovtiva-design-diary-es">Cuéntanos qué necesitas mejorar ↗</a></p></div>
+<p class="subtle">Basado en iteraciones de diseño reales, revisión del repositorio y capturas aportadas durante noviembre de 2026. La ilustración es conceptual. Las pruebas de diseño aisladas no equivalen a una auditoría completa de producción.</p>
+<p class="subtle"><a href="/journal/">Volver al Journal</a> · <a href="https://sovtiva.com/journal/sovtiva-website-redesign-process-2026/" lang="en">Read in English</a></p>
+</div></article></main>
+<footer class="shell foot"><span>© 2026 sovtiva · Independiente por diseño</span><span><a href="/">Inicio</a> · <a href="/journal/">Journal</a> · <a href="/feed.xml">RSS</a></span><span>Ciudad de México · Remoto en todo el mundo</span></footer></body></html>

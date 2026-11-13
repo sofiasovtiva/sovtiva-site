@@ -171,3 +171,6 @@ h2,.section-head h2,.note-panel h2{font-family:var(--ed-serif);font-weight:400;l
 a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #85b9b9;outline-offset:4px}
 @media(max-width:720px){.journal-discovery{padding:24px 20px}.discovery-heading{display:block}.discovery-heading p{margin-top:16px}.discovery-heading h2{font-size:57px}.card h3{font-size:33px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.discovery-filterrow button{transition:none}.card:hover{transform:none}}
+
+/* Progressive bilingual reading room: native language remains usable without JS */
+.lab-es{display:none}html[lang="es"] .lab-en{display:none}html[lang="es"] .lab-es{display:inline}

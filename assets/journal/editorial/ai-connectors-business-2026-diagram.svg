@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">The permission boundary — an original Sovtiva editorial illustration</title>
+<desc id="desc">A conceptual diagram, not a screenshot or measured outcome. The graphic visually explains a permissions gate between protected data and verified actions.</desc>
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091923"/><stop offset=".6" stop-color="#12343d"/><stop offset="1" stop-color="#10272f"/></linearGradient><pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#b5d8d0" stroke-width=".7" opacity=".09"/></pattern><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bce9de"/><stop offset="1" stop-color="#528b93"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" rx="0" fill="url(#b)" /><rect x="0" y="0" width="1200" height="630" rx="0" fill="url(#g)" />
+<line x1="45" y1="72" x2="1155" y2="72" stroke="#b6cec4" stroke-width="1" opacity=".44"/>
+<text x="45" y="49" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#e1eee7" letter-spacing="2.1" font-weight="600">SOVTIVA / VISUAL FIELD NOTES</text>
+<text x="1153" y="48" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#9ebebc" text-anchor="end" letter-spacing="2.2">EDITORIAL / 2026</text>
+<text x="68" y="132" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#ecf2e8" >Useful automation needs a clear boundary</text>
+<rect x="83" y="186" width="290" height="300" rx="18" fill="#1d4852" /><rect x="416" y="186" width="372" height="300" rx="18" fill="#102e3a" stroke="#8cc3bc" stroke-dasharray="7 7" stroke-width="2"/><rect x="830" y="186" width="290" height="300" rx="18" fill="#1d4852" />
+<text x="227" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#e3f0e5" text-anchor="middle" letter-spacing="1.7">PRIVATE DATA</text><text x="602" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#d3e9e3" text-anchor="middle" letter-spacing="1.5">SCOPED PERMISSION</text><text x="976" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#e3f0e5" text-anchor="middle" letter-spacing="1.6">VERIFIED ACTION</text>
+<rect x="173" y="275" width="111" height="147" rx="11" fill="#11323b" /><rect x="194" y="301" width="69" height="20" rx="4" fill="#91b6b2" /><rect x="194" y="332" width="69" height="20" rx="4" fill="#678f91" /><rect x="194" y="363" width="69" height="20" rx="4" fill="#91b6b2" />
+<path d="M553 338a49 49 0 1 1 98 0v42h-98z" stroke="#afd8cc" stroke-width="11" fill="#3c7779"/><circle cx="602" cy="355" r="13" fill="#e3efe2"/>
+<rect x="913" y="282" width="126" height="140" rx="9" fill="#0e3340" /><circle cx="976" cy="320" r="26" fill="#8fd4c4"/><path d="M957 320l13 13 23-28" fill="none" stroke="#113e43" stroke-width="8" stroke-linecap="round"/>
+<line x1="373" y1="345" x2="416" y2="345" stroke="#d9e8d7" stroke-width="3" opacity=".75"/><line x1="788" y1="345" x2="830" y2="345" stroke="#d9e8d7" stroke-width="3" opacity=".75"/>
+<text x="71" y="520" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#dcece5" >Access is an explicit decision, never an invisible shortcut.</text>
+
+<line x1="45" y1="570" x2="1155" y2="570" stroke="#b6cec4" stroke-width="1" opacity=".25"/>
+<text x="45" y="600" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#deede5" font-weight="600">The permission boundary</text>
+<text x="1153" y="600" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a1c2be" text-anchor="end" letter-spacing="1">ILLUSTRATIVE • NOT A LIVE PRODUCT</text>
+</svg>

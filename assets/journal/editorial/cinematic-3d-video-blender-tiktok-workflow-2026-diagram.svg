@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Direction before effects — an original Sovtiva editorial illustration</title>
+<desc id="desc">A conceptual diagram, not a screenshot or measured outcome. The graphic visually explains a three-scene storyboard that demonstrates direction and purposeful camera movement.</desc>
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091923"/><stop offset=".6" stop-color="#12343d"/><stop offset="1" stop-color="#10272f"/></linearGradient><pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#b5d8d0" stroke-width=".7" opacity=".09"/></pattern><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bce9de"/><stop offset="1" stop-color="#528b93"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" rx="0" fill="url(#b)" /><rect x="0" y="0" width="1200" height="630" rx="0" fill="url(#g)" />
+<line x1="45" y1="72" x2="1155" y2="72" stroke="#b6cec4" stroke-width="1" opacity=".44"/>
+<text x="45" y="49" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#e1eee7" letter-spacing="2.1" font-weight="600">SOVTIVA / VISUAL FIELD NOTES</text>
+<text x="1153" y="48" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#9ebebc" text-anchor="end" letter-spacing="2.2">EDITORIAL / 2026</text>
+<text x="70" y="132" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#e6efe8" >Shot design beats more visual noise</text>
+<rect x="78" y="177" width="330" height="260" rx="17" fill="#163741" stroke="#678f93" stroke-width="1.5"/><rect x="93" y="191" width="300" height="218" rx="9" fill="#0d2835" /><rect x="430" y="177" width="330" height="260" rx="17" fill="#1b4651" stroke="#678f93" stroke-width="1.5"/><rect x="445" y="191" width="300" height="218" rx="9" fill="#0d2835" /><rect x="782" y="177" width="330" height="260" rx="17" fill="#163741" stroke="#678f93" stroke-width="1.5"/><rect x="797" y="191" width="300" height="218" rx="9" fill="#0d2835" />
+<circle cx="243" cy="289" r="72" fill="#527b7a" opacity=".6"/><path d="M185 338l56-95 63 95z" fill="#c6e8d7"/><circle cx="289" cy="245" r="15" fill="#9cd3d0"/>
+<path d="M458 355c42-87 92-120 254-109" stroke="#d0e9da" stroke-width="3" fill="none" stroke-dasharray="8 7"/><path d="M651 239l-22-21m22 21l-26 15" stroke="#d0e9da" stroke-width="3" fill="none"/><circle cx="583" cy="310" r="49" stroke="#78aaa6" stroke-width="2" fill="#29606a" opacity=".9"/>
+<path d="M830 352c68-126 164-152 244-31l-14 36H841z" fill="#34747c"/><circle cx="1026" cy="248" r="24" fill="#b3dcd0"/><path d="M900 258l75-44" stroke="#c2e7de" stroke-width="4"/><circle cx="900" cy="258" r="10" fill="#d6e7d8"/>
+<text x="98" y="468" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#c6dcd7" letter-spacing="2">FRAME</text><text x="451" y="468" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#c6dcd7" letter-spacing="2">BLOCK</text><text x="803" y="468" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#c6dcd7" letter-spacing="2">REVEAL</text>
+<line x1="150" y1="512" x2="1050" y2="512" stroke="#afdad3" stroke-width="2" opacity=".55"/><circle cx="155" cy="512" r="8" fill="#bce3d9"/><circle cx="505" cy="512" r="8" fill="#bce3d9"/><circle cx="852" cy="512" r="8" fill="#bce3d9"/>
+
+<line x1="45" y1="570" x2="1155" y2="570" stroke="#b6cec4" stroke-width="1" opacity=".25"/>
+<text x="45" y="600" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#deede5" font-weight="600">Direction before effects</text>
+<text x="1153" y="600" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a1c2be" text-anchor="end" letter-spacing="1">ILLUSTRATIVE • NOT A LIVE PRODUCT</text>
+</svg>

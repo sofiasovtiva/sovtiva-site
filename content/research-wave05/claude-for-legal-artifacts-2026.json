@@ -1,0 +1,50 @@
+{
+  "slug": "claude-for-legal-artifacts-2026",
+  "tag": "LegalTech / controles humanos",
+  "title": "Claude for Legal y el futuro del trabajo jurídico: más fuentes, menos promesas de reemplazo",
+  "description": "Anthropic lanzó una galería de herramientas para revisión de contratos, asuntos y cambios regulatorios. Qué puede aprender Sovtiva sin cambiar de plataforma.",
+  "takeaway": "El patrón de valor es conectar documentos, dar referencias, escalar excepciones y mantener el juicio del abogado. No delegar la responsabilidad profesional a una respuesta automática.",
+  "sources": [
+    [
+      "Anthropic, lanzamiento de artifacts for legal work",
+      "https://claude.com/resources/articles/introducing-artifacts-for-legal-work"
+    ],
+    [
+      "Anthropic, visión de Claude for the legal industry",
+      "https://claude.com/resources/guides/claude-for-the-legal-industry/product-overview"
+    ],
+    [
+      "Anthropic, repositorio de herramientas legales de referencia",
+      "https://github.com/anthropics/claude-for-legal"
+    ]
+  ],
+  "sections": [
+    [
+      "Lo que realmente se anunció",
+      [
+        "Anthropic lanzó en octubre de 2026 una colección de herramientas que sus clientes legales pueden configurar y compartir. Incluye verificación de citas, matrices de jurisdicción, tableros de asuntos, comparación de cláusulas contra playbooks y seguimiento normativo. Se alimentan de documentos y conectores con permisos del cliente. Las referencias y fuentes aparecen junto a los resultados para facilitar revisión.",
+        "Esto no significa que una firma pueda soltar sus expedientes en cualquier chatbot y obtener asesoría fiable. El producto está encuadrado en flujos empresariales, y el proveedor subraya la intervención de profesionales responsables en la revisión de resultados."
+      ]
+    ],
+    [
+      "La precisión importa más que la velocidad",
+      [
+        "Si un agente interpreta mal una jurisdicción, confunde versiones de contrato o revela información privilegiada, ahorrar tiempo pierde sentido. Las herramientas deben limitar acceso, conservar los originales, mostrar la cláusula o norma que sustenta cada observación y permitir resolver excepciones. Una cita enlazada no exime de verificar que respalda la conclusión.",
+        "La profesión jurídica incluye privilegio, confidencialidad, conservación de registros, reglas de colegio y responsabilidad personal. Un piloto necesita abogado responsable, datos de prueba autorizados y revisión explícita antes de enviar, firmar o presentar un documento."
+      ]
+    ],
+    [
+      "Qué adoptaría Sovtiva",
+      [
+        "No implementaremos Claude para nuestras operaciones: la decisión actual es operar con ChatGPT. Pero podemos adaptar el patrón de producto al stack autorizado: intake guiado, clasificación de solicitudes, búsqueda dentro de carpetas aprobadas, borradores con referencias, aprobaciones humanas y tablero de plazos. La tecnología concreta será secundaria al protocolo de trabajo.",
+        "El segmento comercial natural son despachos y departamentos legales que pierden tiempo organizando documentos y solicitudes, no automatizar decisiones jurídicas. Una oferta bien planteada es integración documental y flujo de aprobación con abogado supervisor. No vendemos consejo legal ni garantizamos exactitud jurídica."
+      ]
+    ],
+    [
+      "Piloto verificable y seguro",
+      [
+        "Trabajar con contratos públicos o sintéticos. Extraer diez campos definidos, cotejarlos contra el texto real, medir errores de atribución y guardar las correcciones. Probar que un usuario sin permiso no puede abrir material privilegiado. Solo con resultados y consentimiento se consideraría introducir información de clientes reales."
+      ]
+    ]
+  ]
+}

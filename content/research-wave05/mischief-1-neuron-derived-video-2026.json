@@ -1,0 +1,50 @@
+{
+  "slug": "mischief-1-neuron-derived-video-2026",
+  "tag": "Video generativo / biotecnología",
+  "title": "Mischief 1: el modelo de video inspirado en neuronas no lleva un cerebro dentro",
+  "description": "TBC afirma que su modelo genera clips cinco veces más rápido y cuesta 2.5 centavos por cinco segundos. Qué hace el software y cómo medirlo.",
+  "takeaway": "Las neuronas vivas se usan para descubrir mejoras; el modelo comercial corre en hardware convencional. La velocidad 5x es un claim del fabricante.",
+  "sources": [
+    [
+      "TBC, lanzamiento de mischief 1",
+      "https://www.tbc.co/press-releases/neuron-derived-ai-video-model"
+    ],
+    [
+      "TBC, explicación técnica de neuron-derived",
+      "https://www.tbc.co/"
+    ],
+    [
+      "TBC mischief 1 en fal",
+      "https://fal.ai/models/TBC/mischief-1/image-to-video"
+    ]
+  ],
+  "sections": [
+    [
+      "Ciencia en el laboratorio, software en producción",
+      [
+        "The Biological Computing Co. trabaja con neuronas vivas para observar cómo procesan información. Los patrones que encuentra pueden inspirar un método de optimización de software. En su sitio, TBC explica que las neuronas permanecen en el laboratorio y que los clientes ejecutan una capa ligera sobre hardware normal de IA.",
+        "Mischief 1 se basa en el modelo abierto Wan 2.2 y, según TBC, incorpora menos del 0.1% adicional de parámetros. No existe una célula cerebral procesando directamente cada video que un comprador genera mediante una API. Esa distinción desaparece cuando las redes lo reducen a 'videos hechos con neuronas vivas'."
+      ]
+    ],
+    [
+      "Qué dicen las cifras",
+      [
+        "El anuncio de TBC del 30 de octubre atribuye al modelo una generación cinco veces más rápida frente a su base y un precio promocional de medio centavo de dólar por segundo, equivalente a USD 0.025 por cinco segundos. La empresa asegura mantener una calidad comparable, pero Sovtiva no ha realizado una evaluación independiente de video, fidelidad o rendimiento.",
+        "El precio de entrada no representa un presupuesto creativo: se necesitan imágenes de inicio, prompts, variantes, edición, audio, licencias de elementos, QA, exportación y corrección. Resolución, plataforma y condiciones de facturación pueden cambiar el costo final."
+      ]
+    ],
+    [
+      "La prueba que sí interesa a Sovtiva",
+      [
+        "Comparar tres escenas originales con los mismos criterios entre una solución convencional de video, nuestro pipeline de motion design en código y mischief 1. Registrar cuántos resultados cumplen requisitos, minutos de revisión, defectos de continuidad, formato vertical, velocidad y costo real por pieza entregada. Una sola toma viral no sirve como benchmark.",
+        "El uso comercial debe examinar licencia de entrada y salida, permisos sobre imágenes o personas y obligaciones de privacidad. Toda compra de créditos o servicio de pago requiere autorización previa; por ahora la oportunidad es una hipótesis de oferta, no un servicio validado."
+      ]
+    ],
+    [
+      "Posible propuesta al cliente",
+      [
+        "Un paquete de piezas cortas con dirección artística, identidad visual, proceso de revisión y precio total claro. La ventaja competitiva sería el criterio editorial y la consistencia, no prometer producción ilimitada por centavos ni repetir cifras del fabricante como si fuesen un resultado propio."
+      ]
+    ]
+  ]
+}

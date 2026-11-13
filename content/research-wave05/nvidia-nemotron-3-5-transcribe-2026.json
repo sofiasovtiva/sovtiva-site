@@ -1,0 +1,50 @@
+{
+  "slug": "nvidia-nemotron-3-5-transcribe-2026",
+  "tag": "Transcripción / IA multilingüe",
+  "title": "Nemotron 3.5 Transcribe: 40 idiomas, pero la exactitud depende de la conversación",
+  "description": "NVIDIA liberó un modelo de transcripción offline con hablantes e instrucciones. Oportunidades para ventas, atención y accesibilidad y los límites de su despliegue.",
+  "takeaway": "Peso abierto no significa 'gratis de operar' ni que un modelo offline transcriba una llamada en vivo sin arquitectura adicional.",
+  "sources": [
+    [
+      "NVIDIA, documentación de Nemotron 3.5 Transcribe",
+      "https://docs.nvidia.com/nemo/speech/nightly/speechlm2/nemotron_transcribe.html"
+    ],
+    [
+      "NVIDIA Research, arquitectura y resultados anunciados",
+      "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/"
+    ],
+    [
+      "NVIDIA, límites e implementación de Transcribe",
+      "https://docs.nvidia.com/nemotron/nightly/nemotron/transcribe35/README.html"
+    ]
+  ],
+  "sections": [
+    [
+      "Por qué una transcripción empresarial es difícil",
+      [
+        "Una reunión de ventas real mezcla idiomas, siglas, nombres propios, cifras, interrupciones y voces simultáneas. El texto debe diferenciar un precio de una fecha, atribuir cada idea al hablante adecuado y dejar ver qué fue dicho de verdad. Un resumen fluido puede ocultar un error crítico.",
+        "NVIDIA presentó Nemotron 3.5 Transcribe como un modelo de pesos abiertos que procesa grabaciones completas en hasta 40 idiomas y hasta una hora de audio, con opciones de salida controladas por instrucciones: transcripción literal, formato legible, referencia de hablantes, vocabulario de dominio y traducción."
+      ]
+    ],
+    [
+      "Qué significa offline",
+      [
+        "Offline en la descripción técnica significa que el modelo procesa una entrada de audio completa, no que haga streaming de voz en tiempo real. Para llamadas activas NVIDIA remite a la familia Nemotron 3.5 ASR Streaming. También aclara que la precisión de traducción, diarización y reconocimiento puede cambiar por idioma y que el razonamiento sobre audio se evaluó solo en inglés.",
+        "El modelo combina componentes para audio y lenguaje de tamaño considerable: aproximadamente 34 mil millones de parámetros totales y 4.3 mil millones activos, según NVIDIA. Requiere evaluar hardware, memoria, licencia OpenMDW-1.1 y costos de despliegue; no se debe prometer que funciona de inmediato en cualquier laptop o teléfono."
+      ]
+    ],
+    [
+      "Lo aplicable a Sovtiva",
+      [
+        "Un flujo útil recibe una grabación autorizada, genera transcripción, conserva audio y marcas de tiempo, pide revisión humana de nombres y números, y entonces propone tareas o un registro de CRM para aprobación. También podría preparar subtítulos multilingües o archivos de entrevistas. El producto no reemplaza consentimiento para grabar ni revisión de datos sensibles.",
+        "Antes de ofrecerlo, comparar muestras de español mexicano e inglés de negocio, hablantes superpuestos, nombres de empresas y cifras contra una transcripción humana. Medir tasa de error, minutos de corrección, facilidad de instalación y costo por hora efectivamente aprobada."
+      ]
+    ],
+    [
+      "Un riesgo que no aparece en el post",
+      [
+        "La atribución automática de un hablante puede equivocarse y afectar compromisos comerciales o decisiones legales. Los borradores se deben etiquetar y conservar las fuentes. Sovtiva no ha desplegado Nemotron 3.5, no tiene un benchmark propio ni recomienda grabar conversaciones sin autorización."
+      ]
+    ]
+  ]
+}

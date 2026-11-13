@@ -57,8 +57,8 @@
     const dx = node.x - currentX;
     const dy = node.y - currentY;
     const distance = Math.hypot(dx, dy);
-    const influence = Math.pow(Math.max(0, 1 - distance / 265), 2);
-    const shift = influence * glow * 25;
+    const influence = Math.pow(Math.max(0, 1 - distance / 325), 2);
+    const shift = influence * glow * 41;
     return {
       x: node.x + (distance > 1 ? dx / distance * shift : 0),
       y: node.y + (distance > 1 ? dy / distance * shift : 0),
@@ -70,10 +70,10 @@
     ctx.clearRect(0, 0, width, height);
     const active = glow > .015;
     if (active) {
-      const radius = 270;
+      const radius = 325;
       const aura = ctx.createRadialGradient(currentX, currentY, 0, currentX, currentY, radius);
-      aura.addColorStop(0, 'rgba(83,204,216,' + (.16 * glow).toFixed(3) + ')');
-      aura.addColorStop(.38, 'rgba(72,164,195,' + (.09 * glow).toFixed(3) + ')');
+      aura.addColorStop(0, 'rgba(83,204,216,' + (.23 * glow).toFixed(3) + ')');
+      aura.addColorStop(.38, 'rgba(72,164,195,' + (.14 * glow).toFixed(3) + ')');
       aura.addColorStop(1, 'rgba(65,125,160,0)');
       ctx.fillStyle = aura;
       ctx.fillRect(currentX - radius, currentY - radius, radius * 2, radius * 2);
@@ -87,7 +87,7 @@
         if (next === -1) continue;
         const b = placed[next];
         const highlight = Math.max(a.influence, b.influence) * glow;
-        ctx.strokeStyle = 'rgba(135,212,228,' + (.085 + highlight * .45).toFixed(3) + ')';
+        ctx.strokeStyle = 'rgba(135,212,228,' + (.15 + highlight * .57).toFixed(3) + ')';
         ctx.lineWidth = .7 + highlight * .55;
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
@@ -95,9 +95,9 @@
         ctx.stroke();
       }
       const hot = a.influence * glow;
-      ctx.fillStyle = 'rgba(164,235,233,' + (.29 + hot * .66).toFixed(3) + ')';
+      ctx.fillStyle = 'rgba(164,235,233,' + (.42 + hot * .54).toFixed(3) + ')';
       ctx.beginPath();
-      ctx.arc(a.x, a.y, .9 + hot * 1.65, 0, Math.PI * 2);
+      ctx.arc(a.x, a.y, 1.06 + hot * 1.85, 0, Math.PI * 2);
       ctx.fill();
     }
 

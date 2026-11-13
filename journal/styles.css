@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
@@ -222,3 +222,64 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #85b9
 .journal-service-bridge-links a:hover,.journal-service-bridge-links a:focus-visible{background:#2b5048}
 @media(max-width:760px){.journal-service-bridge{grid-template-columns:1fr;gap:24px;padding:25px 22px}.journal-service-bridge-links{min-width:0}.journal-service-bridge h2{font-size:clamp(31px,7vw,39px)}}
 @media(prefers-reduced-motion:reduce){.journal-service-bridge *{transition:none!important}}
+
+
+/* TECH 09: readable Journal typesetting and true visually-hidden form label */
+:root{--ed-display:'Space Grotesk','DM Sans',Manrope,Arial,sans-serif}
+/* A label, unlike a keyboard skip link, must not float over the heading. */
+.sr-only{
+  position:absolute!important;
+  width:1px!important;height:1px!important;
+  padding:0!important;margin:-1px!important;
+  overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;
+  clip-path:inset(50%)!important;
+  white-space:nowrap!important;
+  border:0!important;
+}
+body .hero h1,
+body .section-head h2,
+body .discovery-heading h2,
+body .journal-service-bridge h2,
+body .note-panel h2{
+  font-family:var(--ed-display)!important;
+  font-weight:500;
+  letter-spacing:-.057em;
+  line-height:1.11;
+  overflow-wrap:break-word;
+}
+body .hero h1{font-size:clamp(57px,8.4vw,106px)}
+body .discovery-heading h2{font-size:clamp(40px,4.8vw,62px);line-height:1.12}
+body .discovery-heading h2 em,
+body .journal-service-bridge h2 em{
+  font-family:inherit!important;
+  font-style:normal;
+  font-weight:500;
+  color:#bde8df;
+}
+body .card h3,
+body .article h1,body .article h2,body .article h3{
+  font-family:var(--ed-display)!important;
+  font-weight:500;
+  letter-spacing:-.04em;
+  line-height:1.19;
+  overflow-wrap:break-word;
+}
+body .card h3{font-size:clamp(25px,2.55vw,34px)}
+body .article h1{font-size:clamp(43px,6.4vw,72px)}
+body .article h2{font-size:clamp(31px,3.7vw,42px)}
+body .article h3{font-size:clamp(22px,2.4vw,27px)}
+body .article blockquote{
+  font-family:'DM Sans',Manrope,Arial,sans-serif!important;
+  font-weight:500;
+  font-size:clamp(20px,2.4vw,25px);
+  line-height:1.48;
+}
+body .article p,body .article li{font-family:'DM Sans',Manrope,Arial,sans-serif;line-height:1.77}
+body .article strong,body .article b{font-weight:600}
+@media(max-width:760px){
+  body .discovery-heading h2{font-size:clamp(38px,8.6vw,54px)}
+  body .hero h1{font-size:clamp(47px,9.8vw,69px)}
+  body .card h3{font-size:clamp(25px,6vw,32px)}
+  body .article h2{font-size:clamp(29px,7.5vw,38px)}
+}

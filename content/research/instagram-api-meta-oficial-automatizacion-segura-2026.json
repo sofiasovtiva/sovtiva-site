@@ -1,0 +1,80 @@
+{
+  "slug": "instagram-api-meta-oficial-automatizacion-segura-2026",
+  "title": "Automatizar Instagram sin poner la cuenta en riesgo: lo que la API oficial de Meta permite y lo que no",
+  "dek": "Una conexión oficial no equivale a permiso ilimitado. Investigamos Instagram Login, publicación, comentarios, mensajes, tokens y cuándo tiene sentido construir una integración propia.",
+  "label": "Social operations / Meta Platform",
+  "intro": [
+    "Un carrusel de Instagram propone un consejo razonable: si vas a conectar una herramienta a una cuenta comercial, utiliza la API oficial de Meta. Es una mejor base que entregar la contraseña a un bot de navegador o a un servicio que imita a una persona. Pero la frase «100 % oficial» puede ocultar dos preguntas más importantes: ¿qué permisos obtiene la aplicación y qué acciones están autorizadas?",
+    "Para una empresa que vende servicios mediante contenidos, comentarios y conversaciones, el riesgo no se limita al bloqueo de una cuenta. También incluye perder la trazabilidad de los contactos, responder sin contexto, exponer tokens de acceso o prometer al cliente un flujo que la API no soporta. Esta guía separa funciones documentadas, restricciones y una arquitectura conservadora que una empresa pequeña sí puede evaluar."
+  ],
+  "sections": [
+    [
+      "La API oficial no es un botón de automatización universal",
+      [
+        "Meta mantiene rutas para cuentas profesionales de Instagram, Business y Creator. La colección oficial de Meta publicada en Postman describe Instagram API with Instagram Login y la ruta alternativa Instagram API with Facebook Login. La primera permite autorizar una aplicación con un inicio de sesión de Instagram; la segunda está vinculada a una página de Facebook conectada a la cuenta profesional. Sus límites y conjuntos de permisos no son idénticos.",
+        "En el modelo Instagram Login aparecen permisos como instagram_business_basic, instagram_business_content_publish, instagram_business_manage_comments e instagram_business_manage_messages. Los nombres son específicos de esa ruta: copiar permisos de tutoriales antiguos que usan Facebook Login puede conducir a diagnósticos falsos. El acceso real depende de la cuenta, el producto, la revisión de aplicación que corresponda y los permisos concedidos. No todas las capacidades de anuncios o etiquetado se ofrecen por Instagram Login."
+      ]
+    ],
+    [
+      "Publicar contenido es distinto de responder conversaciones",
+      [
+        "La API permite publicar medios en cuentas profesionales autorizadas, obtener información aplicable y gestionar determinados comentarios y mensajes. Para un flujo empresarial, conviene separar tres procesos con responsables distintos: calendario de publicaciones; clasificación de comentarios y menciones; y atención de personas que ya iniciaron una conversación por un canal admitido.",
+        "Meta explica que los intercambios a través de su Send API de Instagram parten de una interacción entrante del usuario con la cuenta profesional. El hecho de contar con un token no concede una capacidad general para contactar en frío a cualquier perfil. Tampoco elimina límites de mensajería, revisión de permisos ni obligaciones contra spam. Un sistema que intenta suplantar interacciones humanas para evadir esos controles no es una integración segura."
+      ]
+    ],
+    [
+      "El peligro que suele aparecer en las demostraciones: el token",
+      [
+        "Un token de acceso es una credencial. Aunque la imagen de un carrusel muestre una cadena que parece un token, no podemos comprobar si es real ni necesitamos copiarla, guardarla o probarla. En una implementación válida, el intercambio de autorización ocurre mediante OAuth y las credenciales se guardan en un almacén con controles, nunca en imágenes, prompts, hojas públicas, GitHub, URLs de seguimiento o registros abiertos.",
+        "Una práctica responsable incluye mínimo privilegio, expiración y rotación, eliminación de accesos al desconectar la cuenta, registro de qué servicio actuó y qué usuario aprobó cada acción. Meta también advierte contra servicios que solicitan las contraseñas de Facebook o Instagram fuera de sus flujos oficiales."
+      ]
+    ],
+    [
+      "Webhooks: escuchar señales no es permiso para vender indiscriminadamente",
+      [
+        "Los webhooks notifican eventos compatibles, como cambios en comentarios y menciones, sin necesidad de consultar continuamente todas las publicaciones. La documentación de Meta indica que la aplicación debe suscribirse a los campos pertinentes y que ciertos accesos exigen permisos avanzados y revisión. No basta con crear un endpoint HTTPS; un webhook que llega es un dato que puede contener información personal y exige validación, deduplicación y retención limitada.",
+        "Un uso proporcionado sería identificar que una persona preguntó explícitamente por una solución, proponer una respuesta al operador y esperar aprobación antes de enviarla. No es adecuado extraer números privados, atribuir intención de compra sin contexto o abrir conversaciones masivas con usuarios que jamás escribieron."
+      ]
+    ],
+    [
+      "Por qué Sovtiva no debería reconstruir lo que ya hace Metricool",
+      [
+        "El calendario de Sovtiva ya ha utilizado una integración existente con Metricool para programar contenidos. Crear desde cero otro publicador de Instagram duplicaría gestión de tokens, revisión de aplicaciones, manejo de fallos, reintentos y cumplimiento. Solo se justificaría un desarrollo propio si la herramienta conectada no cubre una necesidad precisa y verificable, por ejemplo, un flujo de revisión privada de comentarios entrantes con enlace a una oportunidad real.",
+        "Antes de construirlo se debería comprobar qué capacidades de lectura, moderación y colaboración ofrece realmente la conexión actual, con qué permisos y a qué costo. Una comparación honesta medirá señales válidas detectadas, falsos positivos, tiempo de respuesta aprobado y riesgo de duplicados, no únicamente cuántos mensajes puede enviar un bot."
+      ]
+    ],
+    [
+      "Un piloto útil sin exponer la cuenta",
+      [
+        "El primer piloto no necesita credenciales ni accesos nuevos: diseñar con datos sintéticos una estructura para clasificar comentarios como pregunta real, consulta de precio, spam, solicitud de soporte o desconocido. Guardar el texto mínimo, categoría sugerida, enlace de origen y razón de la clasificación. El resultado es una bandeja de revisión, no un envío automático.",
+        "Solo después de demostrar que existe una brecha en las herramientas actuales tendría sentido solicitar acceso oficial a Meta con permisos mínimos, alcance limitado a la cuenta propia, reglas de almacenamiento y operador responsable. Ninguna lectura de esta investigación constituye autorización para crear una aplicación, enlazar tokens o enviar mensajes a terceros."
+      ]
+    ],
+    [
+      "Conclusión: seguridad también significa saber decir no",
+      [
+        "Usar la API oficial es una condición importante para integrar Instagram, pero no sustituye una política de consentimiento, privacidad y revisión humana. La diferencia comercial está en responder mejor a quien ya mostró interés y conducirlo a una conversación útil; no en simular un ejército de cuentas o publicar sin control.",
+        "Si una empresa quiere automatizar Instagram, primero debería mapear el trabajo real: qué se publica, qué se pregunta, quién responde y dónde queda registro de la decisión. Solo así la tecnología puede apoyar el negocio sin comprometer su identidad digital."
+      ]
+    ]
+  ],
+  "sources": [
+    [
+      "Meta, colección oficial de Instagram API en Postman",
+      "https://www.postman.com/meta/instagram/documentation/6yqw8pt/instagram-api"
+    ],
+    [
+      "Meta, webhooks y requisitos de permisos",
+      "https://developers.facebook.com/docs/graph-api/webhooks/getting-started/webhooks-for-instagram/"
+    ],
+    [
+      "Meta, descripción de permisos y aprobación para webhooks",
+      "https://developers.facebook.com/docs/graph-api/webhooks/"
+    ],
+    [
+      "Meta, advertencia sobre credenciales y servicios no autorizados",
+      "https://about.fb.com/news/2022/07/how-meta-safeguards-people-against-clone-sites/"
+    ]
+  ],
+  "review": "Las capacidades y permisos se refieren a rutas documentadas en noviembre de 2026. La publicación de Instagram capturada por el usuario no prueba que el autor haya obtenido aprobación de Meta, ni que el token ilustrado sea válido."
+}

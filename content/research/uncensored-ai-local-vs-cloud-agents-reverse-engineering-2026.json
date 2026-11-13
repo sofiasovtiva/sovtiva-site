@@ -1,0 +1,112 @@
+{
+  "slug": "uncensored-ai-local-vs-cloud-agents-reverse-engineering-2026",
+  "title": "La IA «sin censura» no es privada ni necesariamente mejor: qué hay detrás de las demostraciones de agentes libres",
+  "dek": "Investigamos el video de Jack Roberts: modelos abliterated, API externa, Ollama local, DeepSeek Harness, Reverse Engineer Anything y VPS. Separar libertad, privacidad y permisos es clave.",
+  "label": "Arquitectura de agentes / software empresarial",
+  "intro": [
+    "El título de un video reciente promete algo provocador: modelos de inteligencia artificial tan poco restringidos que «probablemente deberían ser ilegales». Lo interesante no es el adjetivo, sino la arquitectura. Jack Roberts, en un video del 7 de noviembre de 2026, compara tres formas de ejecutar agentes: llamar a un modelo alojado por un tercero, correr un modelo local y mantener un agente activo en un servidor remoto.",
+    "La demostración mezcla libertad de respuesta, confidencialidad de datos, capacidad de programación, costos de inferencia y análisis de programas ajenos. Esas cinco dimensiones no son equivalentes. Un modelo que responde a más instrucciones puede seguir enviando tus datos a un proveedor; uno que corre localmente puede equivocarse o ejecutar un comando peligroso; y un programa que imita una aplicación no adquiere automáticamente derechos sobre su código, marca o interfaz."
+  ],
+  "sections": [
+    [
+      "Qué significa modificar las negativas de un modelo",
+      [
+        "El video utiliza la palabra abliterated para describir modelos cuyos patrones de rechazo se han alterado mediante técnicas aplicadas a sus pesos o representaciones internas. Eso puede cambiar el comportamiento de una clase de solicitudes, pero no demuestra mayor precisión, mejor razonamiento, ausencia de sesgos ni seguridad de ejecución. Tampoco convierte a un proveedor externo en una herramienta de privacidad.",
+        "Una organización responsable distingue autonomía de riesgo: puede pedir explicaciones más directas, pero los sistemas que acceden a archivos, cuentas o pagos siguen necesitando límites de permisos, pruebas y autorización humana. El objetivo no debe ser eliminar salvaguardas para aumentar el volumen de acciones."
+      ]
+    ],
+    [
+      "Nivel 1: una API de terceros sigue siendo una API de terceros",
+      [
+        "Roberts muestra un proveedor externo, abliteration.ai, y un modelo DeepSeek para ejecutar tareas de programación desde un agente. En su descripción cita costos pequeños por tres ejemplos inspirados en Linear, Granola y Screen Studio: 0.63, 0.32 y 0.55 dólares. Esas cantidades describen ejemplos divulgados por el creador; no prueban que se obtuvieran aplicaciones completas, seguras, probadas o con licencia por esos precios.",
+        "Cuando se utiliza una API, los prompts, documentos y resultados pasan por la infraestructura del proveedor según sus condiciones. «Uncensored» no equivale a «on-premise». Para datos de clientes, credenciales, presupuestos o documentos sensibles, la pregunta es qué información sale, cómo se procesa, qué queda registrado y qué permisos se dan al ejecutor."
+      ]
+    ],
+    [
+      "Nivel 2: Ollama local permite más control, con compromisos",
+      [
+        "Ollama es un proyecto abierto para servir modelos en una computadora o servidor propio. Su documentación indica que al ejecutar modelos realmente locales, los prompts no se envían al servicio de Ollama. Sin embargo, también ofrece opciones alojadas y herramientas que pueden conectarse a Internet; usar una interfaz llamada «local» no basta para certificar que todo el flujo está aislado.",
+        "El equipo necesita memoria, espacio, rendimiento y mantenimiento. Modelos grandes pueden resultar lentos o imposibles en ciertos equipos. La documentación de desarrollo de Ollama señala que Windows sobre ARM no tiene todas las bibliotecas adicionales de aceleración disponibles. Una demostración en una Mac de gran memoria no es una garantía para cualquier equipo de oficina.",
+        "Para Sovtiva, un posible uso sería evaluar si un modelo pequeño puede clasificar un lote de textos públicos o sintéticos sin transmitirlos a un modelo externo. Eso sería una prueba técnica de privacidad y calidad, no una decisión de reemplazar ChatGPT ni una razón para cargar expedientes personales de clientes."
+      ]
+    ],
+    [
+      "Nivel 3: un VPS encendido no es un agente seguro",
+      [
+        "El tercer escalón del video monta un servidor VPS y lo comunica mediante Tailscale para acceder a él cuando la computadora personal está apagada. Esto resuelve disponibilidad y acceso remoto en determinadas condiciones; también crea nuevas obligaciones sobre actualizaciones, certificados, backups, gestión de credenciales y superficie expuesta. Un servidor 24/7 no es una autorización para que un agente realice transacciones o envíe mensajes sin revisión.",
+        "Tailscale permite proteger conexiones entre dispositivos y gestionar permisos de red. Sus propias guías recomiendan controles de menor privilegio. Si se configura mal el acceso a recursos, el cifrado de transporte no corrige una identidad con permisos excesivos. Antes de pagar por hosting necesitamos definir una tarea persistente indispensable que el sistema actual no cubra."
+      ]
+    ],
+    [
+      "DeepSeek Harness: interesante como arquitectura, inmaduro para producción",
+      [
+        "DeepSeek Harness propone un sistema de agentes basado en plugins. Es MIT y está publicado como developer preview; su README anticipa cambios incompatibles. Su aviso de seguridad es especialmente claro: no ha pasado una auditoría de seguridad, puede ejecutar código generado por modelos y acceder a redes, procesos, credenciales o archivos disponibles, y no debe considerarse listo para producción.",
+        "La forma de aprovecharlo es estudiar ideas de modularidad y contratos de plugins, no instalarlo encima de las cuentas reales de Sovtiva. Nuestro entorno ya tiene integraciones y un flujo local de review gate. Reemplazarlo exigiría una ventaja medida y una evaluación de seguridad independiente."
+      ]
+    ],
+    [
+      "Reverse Engineer Anything: entender funciones no significa copiar software",
+      [
+        "El repositorio morluto/rea ofrece herramientas para inspección de programas y sitios, desde comportamiento observable hasta ciertos binarios, con resultados y evidencia. Su declaración de uso permitido es explícita: investigación, interoperabilidad, preservación y auditoría de software propio o autorizado. No autoriza copiar código propietario, saltarse licencias, recopilar datos sin permiso ni probar sistemas de terceros sin autorización.",
+        "Una lección útil para el SaaS de Sovtiva es analizar públicamente cómo los productos resuelven una tarea de usuario y desarrollar una implementación original. Podemos documentar entrada, resultado, fricción, precio público y preguntas de adopción, sin descompilar una aplicación comercial ni copiar sus assets. Para esta investigación, observar interfaces públicas y leer documentación bastan; no hace falta instalar REA."
+      ]
+    ],
+    [
+      "Fish Audio y la voz: otra integración, otro acuerdo",
+      [
+        "El video también presenta una herramienta de voz. Una narración expresiva puede mejorar explicaciones, pero añadir un servicio de voces no elimina gastos, condiciones de uso ni obligaciones sobre consentimiento e identidad. Nunca debe presentarse un clon de voz como si fuese la persona real sin derechos y consentimiento adecuados.",
+        "Para Sovtiva, el primer paso continúa siendo un video original bien diseñado y comprensible sin sonido. Una licencia de voz o un modelo generativo solo tendría sentido después de probar que mejora la historia y revisar las condiciones comerciales."
+      ]
+    ],
+    [
+      "Qué se debe adoptar realmente en Sovtiva",
+      [
+        "No recomendamos activar una API «uncensored», comprar un VPS ni instalar DeepSeek Harness por el impacto del titular. Nuestro flujo actual de fuentes, extracción y revisión ya está más cerca de una arquitectura responsable para información pública. La oportunidad concreta es conservar la investigación de modelos locales como una opción condicional, si aparece un caso real de privacidad o costos que pueda beneficiarse de un entorno aislado.",
+        "Proponemos un criterio de aceptación antes de tocar operaciones: elegir datos sintéticos, medir calidad frente al método actual, comprobar que no sale tráfico inesperado, verificar recursos, mantener acciones externas deshabilitadas y calcular costo total. Si el resultado no mejora una tarea real, se descarta. Una IA más permisiva no es por sí misma una propuesta de valor."
+      ]
+    ]
+  ],
+  "sources": [
+    [
+      "Video identificado de Jack Roberts, 7 noviembre 2026, descripción y capítulos",
+      "https://www.youtube.com/watch?v=bc7QaDmLmoA"
+    ],
+    [
+      "Ficha de contenido del video y comparativa de sus tres niveles",
+      "https://www.dutchstartup.ai/en/tv/i-tested-uncensored-ai-it-should-probably-be-illegal"
+    ],
+    [
+      "DeepSeek Harness, README y estado developer preview",
+      "https://github.com/deepseek-ai/deepseek-harness"
+    ],
+    [
+      "DeepSeek Harness, advertencias de seguridad",
+      "https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.md"
+    ],
+    [
+      "Ollama, código y usos de modelos locales",
+      "https://github.com/ollama/ollama"
+    ],
+    [
+      "Ollama, privacidad de modelos locales versus alojados",
+      "https://registry.ollama.ai/privacy"
+    ],
+    [
+      "Ollama, notas de desarrollo Windows ARM",
+      "https://github.com/ollama/ollama/blob/main/docs/development.md"
+    ],
+    [
+      "REA, proyecto de análisis y avisos de uso responsable",
+      "https://github.com/morluto/rea"
+    ],
+    [
+      "REA, términos sobre software propio o autorizado",
+      "https://github.com/morluto/rea/blob/main/DISCLAIMER.md"
+    ],
+    [
+      "Tailscale, principios de control de acceso",
+      "https://tailscale.com/docs/features/access-control"
+    ]
+  ],
+  "review": "Los costos presentados en el video son testimonios del creador y no benchmarks replicados. No se ejecutaron modelos 'abliterated', REA, DeepSeek Harness ni hosting externo."
+}

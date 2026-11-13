@@ -1,0 +1,38 @@
+name: Build Sovtiva research wave 05 original vertical videos
+on:
+  push:
+    paths:
+      - 'tools/social/generate_tiktok_wave5.py'
+      - '.github/workflows/build-tiktok-wave5.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Pillow, FFmpeg and original typefaces
+        run: |
+          python -m pip install --disable-pip-version-check pillow
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: Render 9 original vertical H264 movies
+        run: |
+          python tools/social/generate_tiktok_wave5.py
+          for f in assets/social/tiktok/wave5/*.mp4; do ffprobe -v error -show_entries stream=width,height,codec_name,duration -of default=noprint_wrappers=1 "$f"; done
+      - name: Commit validated original videos and covers
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add assets/social/tiktok/wave5
+          if git diff --cached --quiet; then
+            echo "No media changes"
+          else
+            git commit -m "Render Sovtiva original research microfilms wave05"
+            git push
+          fi

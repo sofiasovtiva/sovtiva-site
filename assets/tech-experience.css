@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 /* Sovtiva / Tech Atelier 01 — focused homepage layer.
    Static by default, progressive cursor response in assets/hero-reactive.js.
    No framework, WebGL, imported icon pack or extra font.
@@ -160,4 +161,70 @@
   .hero-reactive-field{display:none}
   .hero .intent-choice,.hero .intent-choice::after{transition:none!important}
   .hero .intent-choice:hover,.hero .intent-choice:focus-visible{transform:none!important}
+}
+
+/* Tech Atelier 02: original homepage typography + clearer technical depth */
+/* Specific CEO correction: restore original Instrument Serif + Manrope home lettering.
+   The Journal's stronger-weights fix is separate; do not put a new tech face in the homepage. */
+:root{--ed-serif:'Instrument Serif','Iowan Old Style',Baskerville,Georgia,serif}
+body{--font:'Manrope','DM Sans',Arial,sans-serif}
+.hero h1{
+  font-family:var(--ed-serif);font-size:clamp(74px,8vw,140px);
+  font-weight:400;letter-spacing:-.025em;line-height:.97;
+  max-width:none;text-wrap:balance;
+}
+.hero h1 em{
+  font-family:var(--ed-serif);font-style:italic;
+  font-weight:400;font-size:1em;letter-spacing:-.02em;
+  color:#c0e6e6;text-shadow:none;
+}
+.hero .intent-choice strong{
+  font-family:var(--ed-serif);font-weight:400;
+  font-size:clamp(29px,3.2vw,42px);line-height:1.07;
+  letter-spacing:-.012em;
+}
+.hero .hero-art{opacity:.68;filter:saturate(1.12);mix-blend-mode:screen}
+.hero-reactive-field{
+  opacity:1;
+  -webkit-mask-image:linear-gradient(90deg,transparent 1%,#000 17%,#000 96%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 1%,#000 17%,#000 96%,transparent 100%);
+}
+.hero .system-panel{box-shadow:0 34px 96px #000b,0 0 75px #7adee42b;border-color:#bce9e891}
+.hero .art-grid{opacity:.85}
+.hero .system-glow{background:radial-gradient(ellipse at center,#68c6d753,transparent 68%)}
+.hero-tech-id{color:#a3d1d4}
+.hero .intent-choice{
+  border-color:rgba(161,224,225,.38)!important;
+  box-shadow:0 16px 40px #00101b7a,inset 0 0 0 1px rgba(165,228,226,.035);
+}
+.hero .intent-choice:hover,.hero .intent-choice:focus-visible{
+  border-color:#c5f0ec!important;
+  box-shadow:0 18px 45px #00101b87,0 0 38px rgba(101,204,223,.17);
+}
+.journal-sideband{
+  background:
+    radial-gradient(ellipse at 76% 0%,rgba(85,177,196,.13),transparent 51%),
+    repeating-linear-gradient(90deg,transparent 0,transparent 119px,rgba(167,222,225,.028) 120px),
+    #0a202a;
+  border-block-color:#7cb1b735;
+}
+.workflow-lab-board{
+  border:1px solid rgba(160,226,225,.23);
+  box-shadow:0 22px 68px #0b222d24,0 0 0 1px rgba(150,226,220,.05) inset;
+}
+.workflow-board-node{
+  box-shadow:0 0 30px rgba(94,196,210,.045) inset;
+}
+@media(max-width:1100px){
+  .hero h1{font-size:clamp(67px,9vw,111px)}
+  .hero .intent-choice strong{font-size:clamp(28px,4vw,38px)}
+}
+@media(max-width:720px){
+  .hero h1{font-size:clamp(62px,12.5vw,93px);line-height:.99}
+  .hero .intent-choice strong{font-size:clamp(29px,6.6vw,37px)}
+  .hero .hero-art{opacity:.18}
+}
+@media(max-width:480px){
+  .hero h1{font-size:clamp(57px,11.7vw,70px)}
+  .hero .intent-choice strong{font-size:clamp(27px,7vw,34px)}
 }

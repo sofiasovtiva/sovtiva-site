@@ -1,0 +1,50 @@
+{
+  "slug": "reddit-google-ai-search-traffic-2026",
+  "tag": "IA search / modelos de distribución",
+  "title": "Reddit cayó 29% y perdió referencias de Google: la diferencia entre clics, usuarios y negocio",
+  "description": "Reuters confirma el desplome bursátil mientras Reddit reporta más usuarios semanales y 53% más ingresos. Qué debe aprender una web de este cambio.",
+  "takeaway": "Bajar en referidos de Google y aumentar usuarios registrados es posible al mismo tiempo. Una caída bursátil no es lo mismo que un 29% menos de actividad.",
+  "sources": [
+    [
+      "Reddit, resultados oficiales del tercer trimestre de 2026",
+      "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx"
+    ],
+    [
+      "Reuters, 30 de octubre, acciones y tráfico Google AI",
+      "https://www.reuters.com/business/reddit-pinterest-shares-tumble-weak-user-revenue-growth-2026-10-30/"
+    ],
+    [
+      "Reddit, carta Q3 2026 publicada en SEC",
+      "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000114/exhibit992q326.htm"
+    ]
+  ],
+  "sections": [
+    [
+      "Qué pasó el 30 de octubre",
+      [
+        "Reuters informó de un descenso aproximado de 29% en las acciones de Reddit tras advertencias sobre menor tráfico referido por búsquedas de Google. La aparición de respuestas generadas directamente en buscadores puede hacer que algunas personas resuelvan su duda sin abrir la fuente. Reddit y otros sitios que reciben búsquedas externas están expuestos a ese cambio.",
+        "El resultado no fue una caída simultánea del 29% en sus usuarios. La publicación oficial de Q3 de Reddit indicó 130.3 millones de usuarios diarios únicos, un alza interanual de 12%, y 515.2 millones semanales, 16% más. Los ingresos del trimestre crecieron 53% hasta USD 895 millones. La dinámica de entradas anónimas desde buscadores es diferente de la participación de usuarios habituales."
+      ]
+    ],
+    [
+      "No confundir las cuatro métricas",
+      [
+        "Los referidos desde Google son clics o visitas hacia Reddit. Los usuarios activos diarios o semanales miden personas únicas que usan la plataforma. Los ingresos reflejan monetización y contratos. La cotización refleja expectativas financieras y riesgo, no volumen de visitas. Un titular que colapsa todo esto en un solo porcentaje lleva a decisiones de marketing erradas.",
+        "La caída de búsquedas puede contribuir a una revisión de perspectivas, pero no demuestra por sí sola que 'Google AI destruyó Reddit'. Intervienen proyecciones, publicidad, crecimiento, competencia y valoración previa."
+      ]
+    ],
+    [
+      "Lo que cambia para las marcas",
+      [
+        "Si una página solo contesta una pregunta sencilla, un asistente puede resumirla sin enviar tráfico. Pero fuentes primarias, herramientas originales, comparativas auditables, demos interactivas y casos con evidencia ofrecen razones para abrir la página. El objetivo ya no debería ser acumular artículos genéricos esperando clics.",
+        "Sovtiva puede convertir parte del Journal en experiencias con valor adicional: calculadoras y diagnósticos útiles, guías accionables, diseños para uso real y flujos de implementación. El nombre de la marca debe aparecer de forma natural en la investigación; no mediante menciones vacías."
+      ]
+    ],
+    [
+      "La medición que necesitamos",
+      [
+        "Distinguir distribución, visitas reales con UTM, lecturas, clics a servicio y conversaciones calificadas. Verificar el enlace en perfil social donde sea necesario y no contar URLs escritas como clicables. Comparar semanas sin atribuir cada variación a un cambio algorítmico. No afirmamos que Sovtiva ya tenga ventas o recomendaciones de asistentes por publicar este artículo."
+      ]
+    ]
+  ]
+}

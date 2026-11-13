@@ -1,0 +1,46 @@
+{
+  "slug": "sam-altman-ram-cloud-local-ai-2026",
+  "tag": "Infraestructura / nube y local",
+  "title": "La RAM, Sam Altman y el verdadero dilema entre IA local y nube",
+  "description": "La controversia por la memoria de los PCs nació de un argumento sobre utilización de recursos. Para las empresas también importan privacidad, costos y continuidad.",
+  "takeaway": "La nube puede aprovechar hardware de alta capacidad. La IA local puede dar control y privacidad. Ninguna opción gana sin un caso de uso concreto.",
+  "sources": [
+    [
+      "Tom's Hardware, entrevista y contexto original",
+      "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization"
+    ],
+    [
+      "The Verge, respuesta posterior de Altman",
+      "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments"
+    ]
+  ],
+  "sections": [
+    [
+      "De dónde salió la polémica",
+      [
+        "En una entrevista con Cheeky Pint, Sam Altman argumentó que puede ser poco eficiente que mucha memoria DRAM escasa esté distribuida en equipos personales que se utilizan solo una fracción del tiempo, en lugar de concentrarse en infraestructura compartida con mayor ocupación. La frase llegó a redes como si hubiera pedido quitar la RAM de las computadoras.",
+        "El contexto era la inferencia local y las limitaciones de suministro de componentes para IA. Tras las críticas, Altman dijo que sus palabras se tomaron fuera de contexto y defendió expandir la producción mundial de memoria. La polémica existe, pero el titular que afirma que quiere prohibir RAM personal no está sustentado."
+      ]
+    ],
+    [
+      "El costo real de centralizar",
+      [
+        "Un centro de datos puede repartir inversiones entre usuarios y ofrecer modelos potentes sin exigir que todos compren GPUs. Eso no vuelve la nube automáticamente más barata: hay cuotas, transferencias, colas de procesamiento, privacidad, latencia, caídas de servicio y dependencia contractual.",
+        "En un despliegue local, los costos de hardware, electricidad, administración, actualizaciones y respaldo pueden superar las tarifas de API. Pero cuando un flujo exige privacidad, ejecución sin internet, tiempos previsibles o gran volumen repetitivo, el balance puede cambiar. La opción híbrida es una alternativa frecuente."
+      ]
+    ],
+    [
+      "Un diagnóstico útil para Sovtiva",
+      [
+        "Para cada cliente debemos preguntar qué datos entran al modelo, cuántas solicitudes hay, qué sensibilidad tienen, cuánto tarda cada respuesta, qué infraestructura posee y qué pasa si falla internet. Hacer una comparación de costo total en un periodo concreto y no usar el precio de la suscripción como único criterio.",
+        "Un servicio posible es esa evaluación de arquitectura y costos, seguida de una prueba limitada. No es vender RAM, promover un proveedor específico ni afirmar que hemos medido un ahorro universal."
+      ]
+    ],
+    [
+      "Principio final",
+      [
+        "La eficiencia global de hardware es una variable importante; la privacidad, el control y la continuidad también. El contexto de uso decide la arquitectura. El análisis es independiente y Sovtiva no ha realizado un benchmark de producción local contra nube para esta noticia."
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "china-star50-ai-correction-2026",
+  "tag": "Mercados / economía de la IA",
+  "title": "La caída del STAR 50 sí ocurrió: USD 480,000 millones de valor no son USD 480,000 millones en efectivo",
+  "description": "Reuters documentó una caída cercana a 40% en menos de cuatro meses. Por qué importa al evaluar el negocio de IA sin confundir cotización con utilidad tecnológica.",
+  "takeaway": "Un mercado puede haber pagado demasiado por una promesa real. La caída de una acción no prueba que la tecnología fracase.",
+  "sources": [
+    [
+      "Reuters, investigación sobre caída de valores de IA en China",
+      "https://www.reuters.com/world/china/china-ai-bubble-has-already-burst-2026-10-26/"
+    ],
+    [
+      "Reuters, republicación con fecha y cifras",
+      "https://www.marketscreener.com/news/in-china-the-ai-bubble-has-already-burst-ce785cdcda89f027"
+    ],
+    [
+      "Bolsa de Shanghái, composición y ajustes STAR 50",
+      "https://english.sse.com.cn/news/newsrelease/voice/c/c_20260901_10830946.shtml"
+    ]
+  ],
+  "sections": [
+    [
+      "El dato que sí está sustentado",
+      [
+        "Reuters publicó el 26 de octubre de 2026 que el índice chino STAR 50, expuesto a empresas tecnológicas y semiconductores, se había desplomado cerca de 40% respecto de su máximo reciente en menos de cuatro meses, eliminando aproximadamente USD 480,000 millones de valoración conjunta. La cifra que circula en redes tiene una fuente periodística reconocible.",
+        "El índice no representa a todas las empresas chinas de IA, y una pérdida de capitalización bursátil no es dinero que esas empresas hayan transferido, gastado o perdido de caja. Es la diferencia aproximada entre valores estimados por el mercado en dos momentos."
+      ]
+    ],
+    [
+      "Los detonantes no son una sola causa",
+      [
+        "El reporte de Reuters recoge valoraciones que habían subido mucho, dudas sobre demanda futura y riesgos de restricciones comerciales a productos chinos, además de factores fiscales y especulativos. No prueba que toda venta obedezca a una sola política estadounidense ni que todas las empresas hayan perdido la misma proporción.",
+        "Un proveedor de hardware puede mantener tecnología competitiva y aun así sufrir porque el precio de su acción suponía márgenes y crecimiento que no cumplió. También hay empresas que crecen mientras la bolsa baja. Comprender estas diferencias evita convertir noticias de mercado en diagnósticos técnicos."
+      ]
+    ],
+    [
+      "Qué le enseña a un comprador B2B",
+      [
+        "No comprar software porque su proveedor está de moda, ni abandonar una automatización que ahorra trabajo porque las acciones de empresas comparables cayeron. Evaluar el resultado funcional, precio total, dependencia del proveedor, portabilidad de datos, seguridad, capacidad de cambiar de herramienta y recuperación ante fallas.",
+        "Para Sovtiva, esto favorece pilotos acotados con aceptación escrita y costos claros. La disciplina financiera importa más que un pronóstico sobre el próximo máximo de mercado."
+      ]
+    ],
+    [
+      "Alcance y limitaciones",
+      [
+        "Las cifras corresponden al periodo citado por Reuters; el porcentaje cambia cuando se mueve el índice. No son un dato en vivo para noviembre ni una recomendación de inversión. La utilidad comercial es aprender a diferenciar economía del mercado bursátil y economía de proyectos reales de IA."
+      ]
+    ]
+  ]
+}

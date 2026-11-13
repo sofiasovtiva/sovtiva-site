@@ -185,3 +185,18 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #85b9
 .card:hover,.card:focus-within{box-shadow:0 11px 28px #17394416;transform:translateY(-2px)}
 @media(max-width:720px){.hero h1{font-size:clamp(46px,11vw,69px)}.discovery-heading h2{font-size:clamp(40px,10vw,56px)}.card h3{font-size:30px}}
 @media(prefers-reduced-motion:reduce){.card:hover,.card:focus-within{transform:none}}
+
+/* Edition 05: Journal list view; reversible, no JS dependency for content. */
+.discovery-view{display:flex;align-items:center;gap:4px;padding:3px;border:1px solid #779b9b;border-radius:100px;margin-left:auto}
+.discovery-view button{border:0;background:transparent;color:#dce9e5;padding:8px 13px;border-radius:100px;font:600 12px/1.3 var(--ed-sans);cursor:pointer;min-height:35px}
+.discovery-view button[aria-pressed="true"]{background:#e3eee8;color:#1a4048}
+.discovery-view button:hover:not([aria-pressed="true"]){background:#ffffff15}
+.journal-list-view .cards{grid-template-columns:1fr;gap:10px;margin-bottom:42px}
+.journal-list-view .card{min-height:0;border-radius:6px;padding:17px 21px;gap:7px;box-shadow:none;transform:none}
+.journal-list-view .card .meta{font-size:10px}
+.journal-list-view .card h3{font-size:clamp(22px,2.8vw,30px);line-height:1.19;margin:4px 0}
+.journal-list-view .card p{font-size:13px;line-height:1.52;margin:0 0 7px}
+.journal-list-view .card .card-cover{margin:-17px -21px 12px}
+.journal-list-view .card .card-cover img{height:128px}
+.journal-list-view .card:hover,.journal-list-view .card:focus-within{transform:none;background:#fff;box-shadow:0 5px 16px #17394412}
+@media(max-width:720px){.discovery-view{margin-left:0}.discovery-results{gap:12px}.discovery-random{margin-right:auto}.journal-list-view .card{padding:15px}.journal-list-view .card h3{font-size:25px}}

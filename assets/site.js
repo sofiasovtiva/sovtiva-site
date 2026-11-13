@@ -38,4 +38,14 @@
       choice.addEventListener('blur', reset);
     });
   }
+  // Optional editorial exploration: the original three clear destination links always remain.
+  const dice = document.getElementById('discover-dice');
+  if (dice) {
+    const links = [...document.querySelectorAll('.discover-trails .discover-trail[href]')];
+    dice.addEventListener('click', () => {
+      if (!links.length) return;
+      const choice = links[Math.floor(Math.random() * links.length)];
+      window.location.assign(choice.href);
+    });
+  }
 })();

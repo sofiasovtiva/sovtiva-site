@@ -355,3 +355,114 @@ body{--font:'Space Grotesk','Manrope','DM Sans',Arial,sans-serif}
 @media(prefers-reduced-motion:reduce){
   .hero .intent-choice:hover,.hero .intent-choice:focus-visible{transform:none}
 }
+
+
+/* HERO HOTFIX 04 / FIX CLIPPED HOME CONTENT + QUIET POINTER */
+/* The old split hero is not used in Tech Atelier 03. Reset its inherited
+   split layout explicitly, rather than masking horizontal overflow. */
+.hero.shell{
+  display:block;
+  grid-template-columns:none;
+  width:min(1320px,calc(100% - 48px));
+  max-width:100%;
+  min-width:0;
+  padding:0;
+  margin-inline:auto;
+  overflow-x:clip;
+  min-height:0;
+}
+.hero .hero-copy.intent-hero{
+  display:block;
+  position:relative;
+  left:auto;right:auto;
+  width:100%;max-width:100%;min-width:0;
+  margin:0;
+  padding:clamp(48px,5.2vw,78px) 0 62px;
+  transform:none;
+  box-sizing:border-box;
+}
+.hero .eyebrow{
+  max-width:100%;
+  flex-wrap:wrap;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  line-height:1.55;
+}
+.hero h1,.hero .intent-hero h1{
+  display:block;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  margin:22px 0 22px;
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+  font-size:clamp(52px,6.2vw,92px);
+  font-weight:500;
+  line-height:1.04;
+  letter-spacing:-.065em;
+  overflow-wrap:normal;
+  text-wrap:wrap;
+}
+.hero h1 em,.hero .intent-hero h1 em{
+  font-family:'Instrument Serif',Georgia,serif;
+  font-size:1.12em;font-weight:400;font-style:italic;
+  letter-spacing:-.025em;line-height:.88;
+}
+.hero .intent-hero .hero-description{
+  max-width:800px;
+  width:100%;
+}
+.hero .intent-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  width:100%;max-width:100%;min-width:0;
+}
+.hero .intent-choice{
+  min-width:0;
+  padding:20px 18px;
+}
+.hero .intent-choice strong{
+  overflow-wrap:break-word;
+  font-size:clamp(20px,2vw,29px);
+}
+/* No oversized cursor spotlight: the canvas uses nearby dot/line response only.
+   The cards use border and micro-movement, rather than a wide radial glow. */
+.hero .intent-choice::before,
+.hero .intent-choice::after{
+  display:none!important;
+  background:none!important;
+  opacity:0!important;
+}
+.hero .intent-choice:hover,.hero .intent-choice:focus-visible{
+  box-shadow:0 6px 20px rgba(0,17,25,.18);
+  border-color:rgba(177,221,221,.54)!important;
+  transform:translateY(-1px);
+}
+.hero .intent-preview,.hero .intent-help,.hero .hero-bottom{
+  width:100%;max-width:100%;min-width:0;
+}
+@media(max-width:1150px){
+  .hero.shell{width:min(100% - 44px,1080px)}
+  .hero .intent-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero h1,.hero .intent-hero h1{font-size:clamp(48px,7.5vw,84px)}
+}
+@media(max-width:680px){
+  .hero.shell{width:calc(100% - 32px)}
+  .hero .hero-copy.intent-hero{padding:45px 0 50px}
+  .hero h1,.hero .intent-hero h1{
+    font-size:clamp(39px,9.2vw,62px);
+    line-height:1.07;letter-spacing:-.063em;
+    margin:17px 0 20px;
+  }
+  .hero .intent-grid{grid-template-columns:minmax(0,1fr);gap:10px}
+  .hero .intent-choice{min-height:164px;padding:17px 18px}
+  .hero .intent-choice strong{font-size:clamp(23px,5.8vw,30px)}
+  .hero .intent-help{flex-wrap:wrap}
+}
+@media(max-width:380px){
+  .hero h1,.hero .intent-hero h1{font-size:clamp(35px,9.1vw,43px)}
+  .hero.shell{width:calc(100% - 28px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero .intent-choice:hover,.hero .intent-choice:focus-visible{transform:none}
+}

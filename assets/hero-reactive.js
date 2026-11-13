@@ -55,36 +55,27 @@
 
   function paint() {
     ctx.clearRect(0, 0, width, height);
-    if (intensity > .009) {
-      const radius = 230;
-      const halo = ctx.createRadialGradient(currentX, currentY, 0, currentX, currentY, radius);
-      halo.addColorStop(0, 'rgba(116,204,210,' + (.07 * intensity).toFixed(3) + ')');
-      halo.addColorStop(.5, 'rgba(101,173,185,' + (.025 * intensity).toFixed(3) + ')');
-      halo.addColorStop(1, 'rgba(101,173,185,0)');
-      ctx.fillStyle = halo;
-      ctx.fillRect(currentX - radius, currentY - radius, radius * 2, radius * 2);
-    }
-
+    // No radial spotlight: nearby dots and hairlines are the entire cursor response.
     for (let index = 0; index < nodes.length; index += 1) {
       const node = nodes[index];
       const dx = node.x - currentX;
       const dy = node.y - currentY;
-      const proximity = Math.max(0, 1 - Math.hypot(dx, dy) / 225);
+      const proximity = Math.max(0, 1 - Math.hypot(dx, dy) / 155);
       const influence = proximity * proximity * intensity;
-      const x = node.x + (dx > 0 ? 1 : -1) * influence * 3.5;
+      const x = node.x + (dx > 0 ? 1 : -1) * influence * 1.4;
       const y = node.y + (dy > 0 ? 1 : -1) * influence * 3.5;
 
       ctx.beginPath();
-      ctx.arc(x, y, .82 + influence * .8, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(169,219,220,' + (.19 + influence * .48).toFixed(3) + ')';
+      ctx.arc(x, y, .76 + influence * .33, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(169,219,220,' + (.15 + influence * .24).toFixed(3) + ')';
       ctx.fill();
 
       // A handful of links materialize near the cursor; the rest of the field stays quiet.
       if (influence < .02) continue;
       const right = (index + 1) % columns !== 0 ? nodes[index + 1] : null;
       const down = nodes[index + columns];
-      ctx.strokeStyle = 'rgba(158,220,220,' + (influence * .17).toFixed(3) + ')';
-      ctx.lineWidth = .75;
+      ctx.strokeStyle = 'rgba(158,220,220,' + (influence * .095).toFixed(3) + ')';
+      ctx.lineWidth = .6;
       for (const neighbor of [right, down]) {
         if (!neighbor) continue;
         ctx.beginPath();

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">The Reel experiment loop — an original Sovtiva editorial illustration</title>
+<desc id="desc">A conceptual diagram, not a screenshot or measured outcome. The graphic visually explains four stages of a short-form content experiment: question, scene, publish and learn.</desc>
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091923"/><stop offset=".6" stop-color="#12343d"/><stop offset="1" stop-color="#10272f"/></linearGradient><pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#b5d8d0" stroke-width=".7" opacity=".09"/></pattern><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bce9de"/><stop offset="1" stop-color="#528b93"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" rx="0" fill="url(#b)" /><rect x="0" y="0" width="1200" height="630" rx="0" fill="url(#g)" />
+<line x1="45" y1="72" x2="1155" y2="72" stroke="#b6cec4" stroke-width="1" opacity=".44"/>
+<text x="45" y="49" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#e1eee7" letter-spacing="2.1" font-weight="600">SOVTIVA / VISUAL FIELD NOTES</text>
+<text x="1153" y="48" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#9ebebc" text-anchor="end" letter-spacing="2.2">EDITORIAL / 2026</text>
+<text x="69" y="134" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#ecf2e8" >Make a useful scene. Learn from the result.</text>
+<rect x="65" y="186" width="237" height="294" rx="15" fill="#173945" stroke="#709b9e" stroke-width="1.5"/><rect x="95" y="209" width="176" height="217" rx="9" fill="#0b2d3a" /><rect x="344" y="186" width="237" height="294" rx="15" fill="#1d4751" stroke="#709b9e" stroke-width="1.5"/><rect x="374" y="209" width="176" height="217" rx="9" fill="#0b2d3a" /><rect x="623" y="186" width="237" height="294" rx="15" fill="#173945" stroke="#709b9e" stroke-width="1.5"/><rect x="653" y="209" width="176" height="217" rx="9" fill="#0b2d3a" /><rect x="902" y="186" width="237" height="294" rx="15" fill="#1d4751" stroke="#709b9e" stroke-width="1.5"/><rect x="932" y="209" width="176" height="217" rx="9" fill="#0b2d3a" />
+<circle cx="183" cy="307" r="67" fill="#558f92" opacity=".4"/><path d="M150 342l32-70 35 70z" fill="#c9e8dc"/>
+<path d="M406 255h111v12H406zm0 26h97v12h-97zm0 27h124v12H406zm0 26h92v12h-92z" fill="#a3c9c2"/>
+<path d="M680 359l24-65 35 31 48-84 42 68" fill="none" stroke="#b4e3d4" stroke-width="6"/><circle cx="791" cy="240" r="10" fill="#b4e3d4"/>
+<rect x="957" y="366" width="13" height="19" rx="3" fill="#c0e2d5" /><rect x="976" y="349" width="13" height="36" rx="3" fill="#7bb6af" /><rect x="995" y="332" width="13" height="53" rx="3" fill="#c0e2d5" /><rect x="1014" y="315" width="13" height="70" rx="3" fill="#7bb6af" /><rect x="1033" y="298" width="13" height="87" rx="3" fill="#c0e2d5" /><rect x="1052" y="353" width="13" height="32" rx="3" fill="#7bb6af" />
+<text x="185" y="451" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#dbeee5" text-anchor="middle" letter-spacing="1.2">QUESTION</text><text x="464" y="451" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#dbeee5" text-anchor="middle" letter-spacing="1.2">SCENE</text><text x="743" y="451" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#dbeee5" text-anchor="middle" letter-spacing="1.2">PUBLISH</text><text x="1022" y="451" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#dbeee5" text-anchor="middle" letter-spacing="1.2">LEARN</text>
+<path d="M1050 510H188q-75 0-75-40" fill="none" stroke="#91b9b4" stroke-dasharray="8 7" stroke-width="2"/>
+
+<line x1="45" y1="570" x2="1155" y2="570" stroke="#b6cec4" stroke-width="1" opacity=".25"/>
+<text x="45" y="600" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#deede5" font-weight="600">The Reel experiment loop</text>
+<text x="1153" y="600" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a1c2be" text-anchor="end" letter-spacing="1">ILLUSTRATIVE • NOT A LIVE PRODUCT</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Control access to social tools — an original Sovtiva editorial illustration</title>
+<desc id="desc">A conceptual diagram, not a screenshot or measured outcome. The graphic visually explains a business account moving through a scoped API permission lock before allowed operations.</desc>
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091923"/><stop offset=".6" stop-color="#12343d"/><stop offset="1" stop-color="#10272f"/></linearGradient><pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#b5d8d0" stroke-width=".7" opacity=".09"/></pattern><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bce9de"/><stop offset="1" stop-color="#528b93"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="630" rx="0" fill="url(#b)" /><rect x="0" y="0" width="1200" height="630" rx="0" fill="url(#g)" />
+<line x1="45" y1="72" x2="1155" y2="72" stroke="#b6cec4" stroke-width="1" opacity=".44"/>
+<text x="45" y="49" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#e1eee7" letter-spacing="2.1" font-weight="600">SOVTIVA / VISUAL FIELD NOTES</text>
+<text x="1153" y="48" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#9ebebc" text-anchor="end" letter-spacing="2.2">EDITORIAL / 2026</text>
+<text x="70" y="133" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#ebf1e8" >An integration is not unlimited permission</text>
+<rect x="102" y="180" width="309" height="335" rx="27" fill="#153945" stroke="#9fc8bd" stroke-width="2"/>
+<rect x="120" y="200" width="272" height="282" rx="13" fill="#0b2835" /><circle cx="253" cy="218" r="5" fill="#a5c9c5"/>
+<rect x="150" y="255" width="213" height="44" rx="8" fill="#28606a" /><rect x="150" y="316" width="213" height="44" rx="8" fill="#163b47" /><rect x="150" y="377" width="213" height="44" rx="8" fill="#163b47" />
+<circle cx="175" cy="277" r="9" fill="#b6ddd2"/><circle cx="175" cy="338" r="9" fill="#b6ddd2"/><circle cx="175" cy="399" r="9" fill="#b6ddd2"/>
+<path d="M421 339h133m-18-14 18 14-18 14" fill="none" stroke="#bee3d8" stroke-width="3"/>
+<rect x="560" y="226" width="228" height="229" rx="18" fill="#255361" stroke="#9fcdc7"/>
+<path d="M644 313v-23c0-46 63-46 63 0v23M640 315h71v65h-71z" fill="none" stroke="#bfdfd7" stroke-width="9"/>
+<path d="M800 339h100m-18-14 18 14-18 14" fill="none" stroke="#bee3d8" stroke-width="3"/>
+<rect x="907" y="230" width="211" height="225" rx="18" fill="#183c47" /><circle cx="1013" cy="285" r="29" fill="#a5dccd"/><path d="M997 284l12 13 23-28" fill="none" stroke="#15444b" stroke-width="8" stroke-linecap="round"/>
+<text x="105" y="545" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#cddfd8" letter-spacing="1">BUSINESS ACCOUNT</text><text x="568" y="500" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#cddfd8" letter-spacing="1">SCOPED API</text><text x="920" y="500" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#cddfd8" letter-spacing="1">ALLOWED ACTION</text>
+
+<line x1="45" y1="570" x2="1155" y2="570" stroke="#b6cec4" stroke-width="1" opacity=".25"/>
+<text x="45" y="600" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#deede5" font-weight="600">Control access to social tools</text>
+<text x="1153" y="600" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a1c2be" text-anchor="end" letter-spacing="1">ILLUSTRATIVE • NOT A LIVE PRODUCT</text>
+</svg>

@@ -1,0 +1,14 @@
+/* Sovtiva editorial visuals v1: readable, responsive media inside Journal and Research */
+.editorial-media{width:100%;max-width:980px;margin:clamp(25px,4vw,48px) auto;box-sizing:border-box}
+.editorial-media img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;border-radius:9px;border:1px solid rgba(65,110,116,.26);background:#0d2530}
+.editorial-media--diagram img{border-color:rgba(71,126,127,.32)}
+.editorial-media figcaption{display:block;font:500 12px/1.55 'DM Sans','Manrope',Arial,sans-serif;color:#617573;margin:10px 2px 0;max-width:760px}
+.video-body .editorial-media figcaption,.film-body .editorial-media figcaption{color:#627c7d}
+@media(max-width:720px){.editorial-media{margin:24px auto}.editorial-media figcaption{font-size:12px;line-height:1.48}}
+@media(prefers-reduced-motion:reduce){.editorial-media img{transition:none}}
+
+/* Research Desk: editorial illustration leads the card, not repeated decorative type. */
+.feature-grid .feature-tile .research-tile-visual{display:block;width:100%;height:auto;aspect-ratio:1200 / 630;object-fit:cover;margin:18px 0 6px;border:1px solid rgba(65,111,119,.27);border-radius:10px;background:#0d2530}
+.feature-grid .feature-tile h3{margin-top:12px}
+.feature-grid .feature-tile .eyebrow{margin:0}
+@media(max-width:720px){.feature-grid .feature-tile .research-tile-visual{margin-top:14px}}

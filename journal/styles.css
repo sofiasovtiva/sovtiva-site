@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
@@ -130,7 +130,7 @@ footer{border-color:#d0dbd9;color:#6b858c}
 
 
 /* Editorial Edition 04: reading-room navigation without heavy dependencies */
-:root{--ed-serif:'Fraunces','Iowan Old Style',Baskerville,Georgia,serif;--ed-sans:'DM Sans',Manrope,Inter,system-ui,sans-serif}
+:root{--ed-serif:'Instrument Serif','Iowan Old Style',Baskerville,Georgia,serif;--ed-sans:'DM Sans',Manrope,Inter,system-ui,sans-serif}
 body{background:#f4f2eb;color:#15313d;font-family:var(--ed-sans);font-weight:400;line-height:1.72}
 .brand{font-weight:650;letter-spacing:-.05em}.navlinks{font-weight:500}
 .hero h1{font:400 clamp(65px,9vw,119px)/1 var(--ed-serif);letter-spacing:-.027em}
@@ -176,7 +176,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #85b9
 .lab-es{display:none}html[lang="es"] .lab-en{display:none}html[lang="es"] .lab-es{display:inline}
 
 /* Editorial edition 05: sculpted bookish headlines, not elongated display type. */
-:root{--ed-serif:'Fraunces',Georgia,'Times New Roman',serif;--ed-sans:'DM Sans',Manrope,Arial,sans-serif}
+:root{--ed-serif:'Instrument Serif',Georgia,'Times New Roman',serif;--ed-sans:'DM Sans',Manrope,Arial,sans-serif}
 .hero h1{font:500 clamp(48px,6.8vw,84px)/1.12 var(--ed-serif);letter-spacing:-.034em;max-width:850px;text-wrap:balance}
 .card h3{font:500 clamp(26px,2.65vw,35px)/1.19 var(--ed-serif);letter-spacing:-.025em}
 .section-head h2,.discovery-heading h2{font-family:var(--ed-serif);font-weight:500;letter-spacing:-.028em;line-height:1.15}
@@ -200,3 +200,12 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #85b9
 .journal-list-view .card .card-cover img{height:128px}
 .journal-list-view .card:hover,.journal-list-view .card:focus-within{transform:none;background:#fff;box-shadow:0 5px 16px #17394412}
 @media(max-width:720px){.discovery-view{margin-left:0}.discovery-results{gap:12px}.discovery-random{margin-right:auto}.journal-list-view .card{padding:15px}.journal-list-view .card h3{font-size:25px}}
+
+/* Editorial weight correction 06: retain original display family; reduce overbold article text only. */
+
+.article h1,.article h2,.article h3{font-weight:400}
+.article strong,.article b{font-weight:500}
+.article .fact strong,.article .fact span{font-weight:600}
+.article .endnote strong,.article .endnote b{font-weight:500}
+.card h3{font-weight:400}
+@media(max-width:720px){.article h1,.article h2{font-weight:400}}

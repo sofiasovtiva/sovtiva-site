@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 /* Sovtiva / Tech Atelier 01 — focused homepage layer.
    Static by default, progressive cursor response in assets/hero-reactive.js.
    No framework, WebGL, imported icon pack or extra font.
@@ -244,4 +244,114 @@ body{--font:'Manrope','DM Sans',Arial,sans-serif}
   }
   .hero .hero-art{opacity:.23;filter:none}
   .hero .hero-copy,.hero .hero-bottom{position:relative;z-index:3}
+}
+
+/* TECH ATELIER 03 — Minimal interactive atmosphere; geometric primary type.
+   Key design rule: main display = Space Grotesk; expressive accent "you" = Instrument Serif italic.
+   Intentionally no neon crosshair, no decorative orbiting display and no constant animation. */
+body{--font:'Space Grotesk','Manrope','DM Sans',Arial,sans-serif}
+.hero{
+  background:radial-gradient(ellipse at 80% 20%,rgba(78,136,147,.13),transparent 49%),linear-gradient(135deg,#071721 0%,#081e27 66%,#091b25 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background-image:linear-gradient(rgba(160,212,214,.043) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(160,212,214,.043) 1px,transparent 1px);
+  background-size:72px 72px;
+  -webkit-mask-image:linear-gradient(90deg,transparent 5%,rgba(0,0,0,.7) 34%,#000 100%);
+  mask-image:linear-gradient(90deg,transparent 5%,rgba(0,0,0,.7) 34%,#000 100%);
+  pointer-events:none;
+}
+.hero::after{background:linear-gradient(90deg,rgba(4,18,28,.52),rgba(4,18,28,.11) 66%,transparent)}
+/* Former ornamental systems dashboard was obscuring the intended quiet reactive field. */
+.hero .hero-art{display:none}
+.hero-reactive-field{
+  opacity:.8;
+  -webkit-mask-image:linear-gradient(90deg,transparent 4%,#000 27%,#000 96%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 4%,#000 27%,#000 96%,transparent 100%);
+}
+.hero .hero-copy{position:relative;z-index:3}
+.hero h1{
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+  font-size:clamp(64px,7.75vw,113px);
+  font-weight:500;
+  letter-spacing:-.074em;
+  line-height:1.02;
+  max-width:1100px;
+  color:#edf5f2;
+  text-wrap:balance;
+}
+.hero h1 em{
+  font-family:'Instrument Serif',Georgia,serif;
+  font-weight:400;font-style:italic;
+  font-size:1.12em;
+  line-height:.84;
+  letter-spacing:-.027em;
+  color:#c5e7e0;
+  text-shadow:none;
+}
+.hero .hero-stop{color:#d3e8e7}
+.hero .eyebrow{color:#91b8be;font-family:'Space Grotesk',Manrope,sans-serif;letter-spacing:.125em}
+.hero-tech-id{
+  top:27px;font:500 10px/1.35 'Space Grotesk',Arial,sans-serif;
+  letter-spacing:.12em;color:#80abb1;opacity:.75;
+}
+.hero .intent-choice{
+  background:rgba(12,36,46,.81)!important;
+  border:1px solid rgba(148,201,204,.23)!important;
+  box-shadow:none;
+  border-radius:5px;
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+}
+.hero .intent-choice::after{
+  background:radial-gradient(230px circle at var(--hover-x,50%) var(--hover-y,45%),
+    rgba(124,205,211,.115),transparent 67%);
+}
+.hero .intent-choice:hover,.hero .intent-choice:focus-visible,.hero .intent-choice.is-active{
+  background:rgba(19,52,62,.94)!important;
+  border-color:rgba(176,226,224,.54)!important;
+  box-shadow:0 12px 28px rgba(0,15,26,.23);
+  transform:translateY(-2px);
+}
+.hero .intent-choice strong{
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+  font-size:clamp(22px,2.3vw,31px);
+  line-height:1.15;font-weight:500;letter-spacing:-.057em;
+}
+.hero .intent-choice-top b{font-weight:500;letter-spacing:.13em}
+.hero .intent-choice-top i{border-color:rgba(178,217,219,.32)}
+.hero .intent-preview{background:rgba(7,25,33,.76)}
+.hero .review-hero-link{
+  font-family:'Space Grotesk',Manrope,sans-serif;font-weight:600;
+}
+.fit-intro h2,.partner-lead h2,.product-copy h2,.workflow-lab-intro h2,.contact-inner h2{
+  font-family:'Space Grotesk','Manrope',Arial,sans-serif;
+  font-weight:500;letter-spacing:-.055em;line-height:1.03;
+}
+@media(max-width:1100px){
+  .hero h1{font-size:clamp(59px,8.5vw,94px)}
+  .hero .intent-choice strong{font-size:clamp(22px,2.8vw,30px)}
+}
+@media(max-width:880px), (hover:none), (pointer:coarse){
+  .hero::before{
+    background:linear-gradient(rgba(145,204,206,.048) 1px,transparent 1px),
+               linear-gradient(90deg,rgba(145,204,206,.048) 1px,transparent 1px);
+    background-size:62px 62px;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 65%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 65%,transparent);
+  }
+  .hero .intent-choice{backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+@media(max-width:720px){
+  .hero h1{font-size:clamp(43px,10.2vw,65px);line-height:1.06;letter-spacing:-.064em}
+  .hero h1 em{font-size:1.12em}
+  .hero .intent-choice strong{font-size:clamp(23px,5.8vw,30px)}
+}
+@media(max-width:480px){
+  .hero h1{font-size:clamp(43px,10vw,52px)}
+  .hero .intent-choice strong{font-size:clamp(23px,6.15vw,27px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero .intent-choice:hover,.hero .intent-choice:focus-visible{transform:none}
 }

@@ -219,7 +219,7 @@
     for (const button of document.querySelectorAll('.language-switch button[data-language]')) {
       const selected = button.dataset.language === current;
       button.setAttribute('aria-pressed', String(selected));
-      button.setAttribute('aria-label', button.dataset.language === 'es' ? 'Español' : 'English');
+      button.setAttribute('aria-label', button.dataset.language === 'es' ? 'ES, Español' : 'EN, English');
       button.setAttribute('title', button.dataset.language === 'es' ? 'Ver en español' : 'View in English');
     }
   }

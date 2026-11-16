@@ -324,7 +324,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #8fdfed;outline-offset:4p
 .mock-bars i{background:#81acb3}
 .mock-bars i:nth-child(4),.mock-bars i:nth-child(6){background:#325b6c}
 .mock-bars i:nth-child(9){background:#6d8874}
-.ventures-section{background:#f0eee8;color:#182b33}
+.ventures-section{background:#f0eee8;color:#182b33}.ventures-section .section-aside{color:#4b6064}
 .ventures-intro h2 em{color:#688d97}
 .ventures-intro p{color:#65757a}
 .venture{background:#f5f3ee;border:1px solid #dde1dc;border-radius:11px}

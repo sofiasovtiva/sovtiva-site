@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f5ef">
+<meta name="robots" content="noindex,follow">
+<meta name="description" content="Explora cómo Invoice Watch detecta cambios de precio y empaque con datos completamente ficticios. Una demostración interactiva de SOVTIVA.">
+<title>Invoice Watch — Ejemplo interactivo | sovtiva</title>
+<style>
+:root{--bg:#f7f5ef;--paper:#fff;--ink:#1a3024;--green:#29533e;--line:#d8e0d5;--muted:#617265;--rust:#925343;--pale:#edf3e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}button,input{font:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #bc8a68;outline-offset:3px}
+.wrap{width:min(1180px,calc(100% - 52px));margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}
+.brand{font-size:27px;letter-spacing:-.065em;font-weight:800;text-decoration:none}.brand small{font-size:13px;letter-spacing:.05em;font-weight:500;color:var(--muted);margin-left:16px}
+.switch{display:inline-flex;gap:5px;padding:3px;border:1px solid var(--line);border-radius:5px}
+.switch button{border:0;color:var(--muted);background:transparent;padding:7px 11px;border-radius:3px;cursor:pointer;font-size:13px}
+.switch button[aria-pressed="true"]{color:#fff;background:var(--green)}
+.hero{padding:73px 0 38px}.eyebrow{font-size:11px;letter-spacing:.17em;font-weight:700;color:#607b68;text-transform:uppercase}
+h1,h2,h3,.currency{font-family:Georgia,Times,serif;font-weight:400}
+h1{font-size:clamp(47px,6.8vw,86px);line-height:1.01;letter-spacing:-.051em;max-width:890px;margin:17px 0 24px}
+.lede{font-size:18px;line-height:1.65;color:#526657;max-width:730px}
+.disclaimer{display:inline-block;border:1px solid #d5bba8;color:#87513c;background:#f7eee6;padding:10px 14px;font-size:12px;font-weight:700;letter-spacing:.02em}
+.workspace{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:28px;padding:18px 0 54px}
+.panel{border:1px solid var(--line);border-radius:6px;background:var(--paper);padding:32px}
+.panel h2{font-size:33px;letter-spacing:-.045em;line-height:1.15;margin:10px 0 15px}
+.muted{color:var(--muted);font-size:13px;line-height:1.65}
+.control{margin:33px 0}.control-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:13px}.control label{font-size:14px;font-weight:650;line-height:1.4}
+.output{font-size:15px;color:var(--green);font-weight:750;white-space:nowrap}
+input[type=range]{width:100%;accent-color:var(--green);cursor:pointer}
+.endpoints{display:flex;justify-content:space-between;font-size:11px;color:#809083;margin-top:5px}
+.primary-stat{background:var(--pale);border:1px solid #dce7d7;padding:25px 26px;border-radius:5px}
+.primary-stat .caption{font-size:12px;font-weight:700;letter-spacing:.11em;color:#586c5c;text-transform:uppercase}
+.currency{display:block;font-size:clamp(42px,5vw,65px);letter-spacing:-.05em;color:var(--green);margin:10px 0}
+.primary-stat p{font-size:13px;color:#596c5b;margin:8px 0 0;line-height:1.55}
+.rows{margin-top:16px}.result{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(90px,.65fr) minmax(90px,.65fr);gap:12px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.result strong{display:block;font-size:14px}.result small{display:block;color:var(--muted);line-height:1.45;font-size:12px;margin-top:5px}
+.money{font-size:13px;font-weight:700;text-align:right}.change{font-size:13px;font-weight:700;text-align:right;color:var(--rust)}.change.neutral{color:#657a6b}
+.subtotal{display:flex;justify-content:space-between;align-items:center;padding:15px 0;font-size:13px;color:#516958}
+.subtotal strong{font-size:14px;color:var(--rust)}.bottom{padding:40px 0 75px;border-top:1px solid var(--line)}
+.bottom h2{font-size:clamp(31px,4vw,49px);max-width:600px;line-height:1.13;letter-spacing:-.04em;margin:11px 0}
+.bottom p{max-width:770px;color:var(--muted);line-height:1.7;font-size:14px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0 14px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;min-height:48px;text-decoration:none;font-size:13px;font-weight:700;border-radius:4px;background:var(--green);color:#fff;border:1px solid var(--green)}.btn.alt{background:transparent;color:var(--green)}
+footer{padding:25px 0 35px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);gap:20px;font-size:12px}
+@media(max-width:850px){.workspace{grid-template-columns:1fr}.hero{padding-top:48px}.panel{padding:25px}}
+@media(max-width:480px){.wrap{width:calc(100% - 32px)}h1{font-size:48px}.top{padding:18px 0}.brand{font-size:23px}.brand small{display:none}.panel{padding:19px}.result{grid-template-columns:1fr 80px 80px;gap:7px}.money,.change{font-size:12px}.btn{width:100%}.bottom{padding-bottom:45px}footer{display:block}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="brand" href="https://sovtiva.com/">sovtiva.<small>/ Invoice Watch</small></a><div class="switch" aria-label="Language"><button id="es-btn" type="button" aria-pressed="true">ES</button><button id="en-btn" type="button" aria-pressed="false">EN</button></div></header>
+<main>
+<section class="hero"><p class="eyebrow" data-t="label">SOVTIVA / SOFTWARE / EJEMPLO INTERACTIVO</p><h1 data-t="title">El precio cambió. Mira la diferencia.</h1><p class="lede" data-t="subtitle">Ajusta tres datos de un proveedor ficticio. Observa cómo cambia el costo real por unidad y qué importe merecería una revisión.</p><p class="disclaimer" data-t="fiction">SIMULACIÓN · DATOS 100% FICTICIOS · SIN COMPRAS</p></section>
+<section class="workspace" aria-label="Invoice Watch interactive sample">
+<div class="panel">
+<p class="eyebrow" data-t="step1">01 / CAMBIA LOS DATOS</p>
+<h2 data-t="source">Un proveedor de café.</h2>
+<p class="muted" data-t="base">Periodo anterior: un empaque de 5 kg costaba MX$500. Para comparar, usamos un consumo hipotético de 12 kg.</p>
+<div class="control"><div class="control-top"><label for="price" data-t="newPrice">Precio actual por empaque</label><output class="output" id="price-out" for="price">MX$480</output></div><input id="price" type="range" min="300" max="650" step="10" value="480"><div class="endpoints"><span>MX$300</span><span>MX$650</span></div></div>
+<div class="control"><div class="control-top"><label for="pack" data-t="newPack">Tamaño actual del empaque (kg)</label><output class="output" id="pack-out" for="pack">4 kg</output></div><input id="pack" type="range" min="3" max="5" step=".5" value="4"><div class="endpoints"><span>3 kg</span><span>5 kg</span></div></div>
+<div class="control"><div class="control-top"><label for="fee" data-t="extraFee">Cargo adicional de ejemplo</label><output class="output" id="fee-out" for="fee">MX$35</output></div><input id="fee" type="range" min="0" max="100" step="5" value="35"><div class="endpoints"><span>MX$0</span><span>MX$100</span></div></div>
+<p class="muted" data-t="controlsNote">Los datos no se envían a servidores. Esta página no permite subir facturas reales.</p>
+</div>
+<div class="panel" aria-live="polite" aria-atomic="false">
+<p class="eyebrow" data-t="step2">02 / LEE EL REPORTE</p>
+<h2 data-t="results">Diferencias detectadas.</h2>
+<div class="primary-stat"><div class="caption" data-t="totalCaption">IMPORTE ESTIMADO A REVISAR</div><strong class="currency" id="total">MX$395</strong><p data-t="totalNote">Diferencias simuladas, no ahorros obtenidos ni cobros indebidos confirmados.</p></div>
+<div class="rows">
+<div class="result"><div><strong data-t="coffee">Café en grano</strong><small id="coffee-sub">MX$100/kg → MX$120/kg</small></div><div class="money" id="coffee-cost">MX$240</div><div class="change" id="coffee-change">+20%</div></div>
+<div class="result"><div><strong data-t="tomato">Jitomate saladet</strong><small data-t="tomatoSub">Precio unitario: MX$25/kg → MX$28/kg · 40 kg</small></div><div class="money" id="tomato-cost">MX$120</div><div class="change">+12%</div></div>
+<div class="result"><div><strong data-t="milk">Leche entera</strong><small data-t="milkSub">Precio unitario sin cambios</small></div><div class="money" id="milk-cost">MX$0</div><div class="change neutral">0%</div></div>
+</div>
+<div class="subtotal"><span data-t="fees">Cargo adicional por revisar</span><strong id="fee-cost">MX$35</strong></div>
+<p class="muted" data-t="reportNote">Para los productos, el cálculo compara costos unitarios multiplicados por una cantidad de referencia. Un cambio de precio negativo se muestra como reducción, no como cargo. El cargo adicional se muestra por separado.</p>
+</div>
+</section>
+<section class="bottom"><p class="eyebrow" data-t="ctaLabel">03 / EL PRODUCTO REAL</p><h2 data-t="ctaTitle">Una vista rápida. No una promesa de recuperación.</h2><p data-t="ctaBody">Invoice Watch compara archivos CSV y CFDI 4.0 XML entre periodos, señala cambios de precio, empaque y cargos, y organiza un reporte para revisión humana. El acceso público de pago aún no está disponible mientras se termina la configuración fiscal y de seguridad.</p><div class="ctas"><a id="product-link" class="btn" href="/productos/invoice-watch/" data-t="productLink">Conocer Invoice Watch</a><a id="notify-link" class="btn alt" href="mailto:sofia.delgado@sovtiva.com?subject=Invoice%20Watch%20-%20aviso%20de%20lanzamiento" data-t="notify">Solicitar aviso de lanzamiento</a></div><p class="muted" data-t="finePrint">Ninguna operación de pago se realiza aquí. No envíes facturas ni información sensible por correo.</p></section>
+</main>
+<footer><span>© 2026 sovtiva · Invoice Watch</span><a href="https://sovtiva.com/" data-t="back">Volver a Sovtiva</a></footer>
+</div>
+<script>
+(function(){
+"use strict";
+const t={
+es:{label:"SOVTIVA / SOFTWARE / EJEMPLO INTERACTIVO",title:"El precio cambió. Mira la diferencia.",subtitle:"Ajusta tres datos de un proveedor ficticio. Observa cómo cambia el costo real por unidad y qué importe merecería una revisión.",fiction:"SIMULACIÓN · DATOS 100% FICTICIOS · SIN COMPRAS",step1:"01 / CAMBIA LOS DATOS",source:"Un proveedor de café.",base:"Periodo anterior: un empaque de 5 kg costaba MX$500. Para comparar, usamos un consumo hipotético de 12 kg.",newPrice:"Precio actual por empaque",newPack:"Tamaño actual del empaque (kg)",extraFee:"Cargo adicional de ejemplo",controlsNote:"Los datos no se envían a servidores. Esta página no permite subir facturas reales.",step2:"02 / LEE EL REPORTE",results:"Diferencias detectadas.",totalCaption:"IMPORTE ESTIMADO A REVISAR",totalNote:"Diferencias simuladas, no ahorros obtenidos ni cobros indebidos confirmados.",coffee:"Café en grano",tomato:"Jitomate saladet",tomatoSub:"Precio unitario: MX$25/kg → MX$28/kg · 40 kg",milk:"Leche entera",milkSub:"Precio unitario sin cambios",fees:"Cargo adicional por revisar",reportNote:"Para los productos, el cálculo compara costos unitarios multiplicados por una cantidad de referencia. Un cambio de precio negativo se muestra como reducción, no como cargo. El cargo adicional se muestra por separado.",ctaLabel:"03 / EL PRODUCTO REAL",ctaTitle:"Una vista rápida. No una promesa de recuperación.",ctaBody:"Invoice Watch compara archivos CSV y CFDI 4.0 XML entre periodos, señala cambios de precio, empaque y cargos, y organiza un reporte para revisión humana. El acceso público de pago aún no está disponible mientras se termina la configuración fiscal y de seguridad.",productLink:"Conocer Invoice Watch",notify:"Solicitar aviso de lanzamiento",finePrint:"Ninguna operación de pago se realiza aquí. No envíes facturas ni información sensible por correo.",back:"Volver a Sovtiva"},
+en:{label:"SOVTIVA / SOFTWARE / INTERACTIVE EXAMPLE",title:"The price changed. See the difference.",subtitle:"Adjust three values for a fictional supplier. See how cost per unit shifts and which amount deserves a closer look.",fiction:"SIMULATION · 100% FICTIONAL DATA · NO PURCHASES",step1:"01 / CHANGE THE INPUTS",source:"A coffee supplier.",base:"Previous period: a 5 kg package cost MX$500. Our example uses an assumed 12 kg purchase volume.",newPrice:"Current price per package",newPack:"Current package size (kg)",extraFee:"Example additional charge",controlsNote:"No data is sent to our servers. This page does not accept real invoices.",step2:"02 / READ THE REPORT",results:"Differences identified.",totalCaption:"ESTIMATED AMOUNT TO REVIEW",totalNote:"Simulated differences, not recovered savings or confirmed supplier errors.",coffee:"Whole coffee beans",tomato:"Roma tomatoes",tomatoSub:"Unit price: MX$25/kg → MX$28/kg · 40 kg",milk:"Whole milk",milkSub:"No unit price change",fees:"Extra charge to review",reportNote:"For items, the calculation compares unit costs multiplied by a reference quantity. A negative change is treated as a reduction, not an extra charge. Additional charges are shown separately.",ctaLabel:"03 / THE REAL PRODUCT",ctaTitle:"A quick look. Not a savings guarantee.",ctaBody:"Invoice Watch compares CSV and CFDI 4.0 XML supplier invoices across periods, flags price, pack-size and fee differences, and builds a report for human review. Public paid access is not available yet while fiscal and security setup is completed.",productLink:"Explore Invoice Watch",notify:"Request a launch notification",finePrint:"No payment is collected here. Do not send invoices or sensitive information by email.",back:"Back to Sovtiva"}
+};
+let lang=new URLSearchParams(location.search).get("lang")==="en"?"en":"es";
+const e=id=>document.getElementById(id);
+const money=v=>new Intl.NumberFormat(lang==="en"?"en-US":"es-MX",{style:"currency",currency:"MXN",maximumFractionDigits:2}).format(v);
+function render(){
+const price=Number(e("price").value),pack=Number(e("pack").value),fee=Number(e("fee").value);
+const coffeeBase=500/5,coffeeNow=price/pack,coffeeDelta=(coffeeNow-coffeeBase)*12;
+const tomatoDelta=(560/20-500/20)*40;
+const total=Math.max(0,coffeeDelta)+tomatoDelta+fee;
+e("price-out").textContent=money(price);
+e("pack-out").textContent=pack+" kg";
+e("fee-out").textContent=money(fee);
+e("coffee-sub").textContent=money(coffeeBase)+"/kg → "+money(coffeeNow)+"/kg";
+e("coffee-cost").textContent=(coffeeDelta>=0?"+":"−")+money(Math.abs(coffeeDelta));
+e("coffee-change").textContent=(coffeeNow>=coffeeBase?"+":"")+((coffeeNow/coffeeBase-1)*100).toFixed(1)+"%";
+e("coffee-change").className="change"+(coffeeNow<=coffeeBase?" neutral":"");
+e("tomato-cost").textContent="+"+money(tomatoDelta);
+e("milk-cost").textContent=money(0);
+e("fee-cost").textContent=money(fee);
+e("total").textContent=money(total);
+}
+function setLang(next){
+lang=next;document.documentElement.lang=lang;document.title=(lang==="en"?"Invoice Watch — Interactive example":"Invoice Watch — Ejemplo interactivo")+" | sovtiva";
+document.querySelectorAll("[data-t]").forEach(node=>{const k=node.getAttribute("data-t");node.textContent=t[lang][k]||""});
+e("es-btn").setAttribute("aria-pressed",lang==="es"?"true":"false");e("en-btn").setAttribute("aria-pressed",lang==="en"?"true":"false");
+e("product-link").href=lang==="en"?"/products/invoice-watch/":"/productos/invoice-watch/";
+const u=new URL(location.href);if(lang==="en")u.searchParams.set("lang","en");else u.searchParams.delete("lang");history.replaceState(null,"",u.pathname+u.search);
+render();
+}
+["price","pack","fee"].forEach(id=>e(id).addEventListener("input",render));
+e("es-btn").addEventListener("click",()=>setLang("es"));e("en-btn").addEventListener("click",()=>setLang("en"));
+setLang(lang);
+})();
+</script>
+</body>
+</html>

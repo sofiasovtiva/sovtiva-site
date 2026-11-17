@@ -114,8 +114,8 @@ footer{border-color:#d0dbd9;color:#405b62}
 .article-media.process-feature{margin:32px 0 38px}
 .article .fact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:27px 0}
 .article .fact{padding:18px;border:1px solid #cbdad9;background:#f9fbf9;border-radius:12px}
-.article .fact span{display:block;color:#4f7c84;font-size:10px;letter-spacing:.08em;font-weight:800;margin-bottom:11px}
-.article .fact.caution span{color:#9c6c4d}
+.article .fact span{display:block;color:#3b626b;font-size:10px;letter-spacing:.08em;font-weight:800;margin-bottom:11px}
+.article .fact.caution span{color:#785037}
 .article .fact strong{display:block;line-height:1.25;font-size:16px}
 .article .fact p{font-size:13px;line-height:1.5;color:#516873;margin-bottom:0}
 .video-shell{position:relative;width:100%;aspect-ratio:16/9;background:#0b1e26;border-radius:16px;overflow:hidden;box-shadow:0 15px 40px rgba(20,45,56,.14)}

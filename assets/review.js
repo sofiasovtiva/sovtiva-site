@@ -25,7 +25,7 @@
     'solutions-client-intake': { en: 'client intake and follow-up', es: 'atención y seguimiento de clientes' },
     'seo-web-diseno-mx': { en: 'website design and maintenance', es: 'diseño y mantenimiento web' }
   };
-  const directService = directServiceRoutes[source] || null;
+  const directService = directServiceRoutes[source] || (source.startsWith('portfolio-') ? directServiceRoutes['solutions-websites'] : null);
   const directCategory = directService ? 'Sovtiva service: ' + directService.en : '';
   let directServiceOption = null;
   if (directService) {

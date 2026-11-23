@@ -1,0 +1,8 @@
+(()=>{'use strict';
+const search=document.getElementById('sector-search'),buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.project')],count=document.getElementById('result-count'),empty=document.getElementById('empty-state');if(!search||!cards.length)return;
+const allowed=new Set(['todos','salud','diseno','inmuebles','profesionales','hospitalidad']);const requested=new URLSearchParams(location.search).get('nicho');let active=allowed.has(requested)?requested:'todos';
+const normalize=value=>value.toLocaleLowerCase('es-MX').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+function render(){const q=normalize(search.value.trim());let n=0;cards.forEach(card=>{const matches=(active==='todos'||card.dataset.sector===active)&&(!q||normalize(card.dataset.search).includes(q));card.hidden=!matches;if(matches)n++});count.textContent=String(n);empty.hidden=n!==0;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===active)))}
+buttons.forEach(b=>b.addEventListener('click',()=>{active=b.dataset.filter;const url=new URL(location.href);if(active==='todos')url.searchParams.delete('nicho');else url.searchParams.set('nicho',active);history.replaceState(null,'',url.pathname+url.search+url.hash);render()}));
+search.addEventListener('input',render);render();
+})();

@@ -23,7 +23,14 @@
     'solutions-social-ai': { en: 'social media workflows', es: 'procesos para redes sociales' },
     'solutions-sales-systems': { en: 'sales workflows', es: 'procesos de ventas' },
     'solutions-client-intake': { en: 'client intake and follow-up', es: 'atención y seguimiento de clientes' },
-    'seo-web-diseno-mx': { en: 'website design and maintenance', es: 'diseño y mantenimiento web' }
+    'seo-web-diseno-mx': { en: 'website design and maintenance', es: 'diseño y mantenimiento web' },
+    'seo-automatizacion-mx': { en: 'business workflow automation', es: 'automatización de procesos para empresas' },
+    'seo-whatsapp-crm-es': { en: 'WhatsApp Business and CRM integration', es: 'integración de WhatsApp Business y CRM' },
+    'seo-whatsapp-crm-en': { en: 'WhatsApp Business and CRM integration', es: 'integración de WhatsApp Business y CRM' },
+    'seo-agentes-empresas': { en: 'AI agents for business', es: 'agentes de IA para empresas' },
+    'seo-agents-business': { en: 'AI agents for business', es: 'agentes de IA para empresas' },
+    'produccion-reels-ia': { en: 'short-form video production', es: 'producción de videos cortos' },
+    'ai-video-studio': { en: 'short-form video production', es: 'producción de videos cortos' }
   };
   const directService = directServiceRoutes[source] || (source.startsWith('portfolio-') ? directServiceRoutes['solutions-websites'] : null);
   const directCategory = directService ? 'Sovtiva service: ' + directService.en : '';
